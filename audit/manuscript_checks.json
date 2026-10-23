@@ -11,6 +11,23 @@
     "checks": "passed"
   },
   {
+    "journal": "tusur",
+    "file": "Никитин_Доклады_ТУСУР_Идентификация_динамической_модели_2026-10-23.docx",
+    "sha256": "237d8d4b7f58ccfa919d0b045f23e70ad32d785d0cb2104a0ef743ef3a5d24f9",
+    "native_equations": 22,
+    "tables": 3,
+    "bordered_cells": 68,
+    "em_dashes": 0,
+    "table_shading": 0,
+    "checks": "passed",
+    "submission_ready": false,
+    "open_requirements": [
+      "MathType conversion",
+      "author compliance with AI policy",
+      "signed author documents"
+    ]
+  },
+  {
     "journal": "ejce",
     "file": "Статья_EJCE_Междисциплинарные_траектории_русская_редакция_2026-10-23.docx",
     "sha256": "aa34917074f7c52282be9a9e14d33154951fe97c03ebc1b4429da5086d1e3fae",

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-23",
+  "journal": "Доклады ТУСУР",
+  "specialty": "1.2.2 (технические науки)",
+  "pages": 7,
+  "visual_review": {
+    "all_pages_inspected": true,
+    "renderer": "Microsoft Word read-only PDF export and Poppler page PNGs",
+    "clipping_or_overflow_detected": false
+  },
+  "document_sha256": "237d8d4b7f58ccfa919d0b045f23e70ad32d785d0cb2104a0ef743ef3a5d24f9",
+  "template_sha256": "f4d40c38fc54640978e1a800fc559b3678d98403c6edf1b8c16f5dd9bc2d9f20",
+  "changed_template_parts": [
+    "[Content_Types].xml",
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/header1.xml",
+    "word/header2.xml",
+    "word/footer1.xml",
+    "word/footer2.xml",
+    "docProps/core.xml"
+  ],
+  "unchanged_template_parts_verified": true,
+  "semantic_formulas": 22,
+  "formula_change": "unexplained q replaced by defined kappa in calibration determinant; no model change",
+  "references": 15,
+  "recent_references_2022_2026": 8,
+  "table_shading": 0,
+  "native_word_equations": 22,
+  "mathtype_equations": 0,
+  "submission_ready": false,
+  "open_requirements": [
+    "MathType conversion",
+    "author compliance with AI policy",
+    "author documents"
+  ],
+  "computed_files_sha256": {
+    "results.json": "9458af8dd88e3c65305daacfe867780c9e24a5c4774dd5ca4af2ebc348e093bc",
+    "exact_recovery.csv": "ba6d1e4ea2db5e389652937da80e4d03b0ed9e5da186f2b485e656b06620d217",
+    "conditioning.csv": "f055746a5e846db3a67e36adbf6068073f47736e6ab4010a66afb58c53d280b1",
+    "binomial_calibration.csv": "7481f6ddec0a4e79b2859cce115b248e4e0b17a7657219a076a36102820a496d",
+    "transfer_excitation.csv": "5e3d7b5e1d634d7f77f274b9a22b6747b7ac3314e7e77996cd6e76926f995da0"
+  },
+  "recomputed_files_identical": true,
+  "exact_recovery_cases": 80,
+  "max_parameter_error": 4.646838469568593e-13,
+  "independent_forward_error": 7.402967128200544e-13,
+  "binomial_replicates": 180000,
+  "student_experiment_performed": false,
+  "institution_phone": "+7 (499) 700-86-00",
+  "phone_source": "https://www.fa.ru/university/contacts/",
+  "computation_environment": "Windows; CPython 3.12.14; pinned requirements.txt",
+  "computed_file_checksum_scope": "Original and regenerated Windows working-file bytes; Git may normalize text line endings"
+}

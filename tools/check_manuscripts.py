@@ -11,7 +11,7 @@ def q(s):a,b=s.split(':');return '{'+NS[a]+'}'+b
 def check():
     report=[]
     for file in sorted((B/'articles').glob('*.docx')):
-        key='ejce_en' if 'EJCE' in file.name and '_EN_' in file.name else 'sitito' if 'SITITO' in file.name else 'ejce' if 'EJCE' in file.name else 'injoit' if 'INJOIT' in file.name else 'itvs'
+        key='tusur' if 'ТУСУР' in file.name else 'ejce_en' if 'EJCE' in file.name and '_EN_' in file.name else 'sitito' if 'SITITO' in file.name else 'ejce' if 'EJCE' in file.name else 'injoit' if 'INJOIT' in file.name else 'itvs'
         with ZipFile(file) as z:
             for name in z.namelist():
                 if name.endswith('.xml'):assert '—' not in z.read(name).decode('utf8'),(file.name,name)
@@ -23,7 +23,7 @@ def check():
             for edge in ['top','bottom','left','right']:
                 bd=cell.find('w:tcPr/w:tcBorders/w:'+edge,NS)
                 assert bd is not None and bd.get(q('w:val'))=='single'
-        eq=len(root.findall('.//m:oMath',NS));assert eq=={'sitito':11,'ejce':8,'ejce_en':8,'injoit':21,'itvs':22}[key]
+        eq=len(root.findall('.//m:oMath',NS));assert eq=={'sitito':11,'ejce':8,'ejce_en':8,'injoit':21,'itvs':22,'tusur':22}[key]
         doc=Document(file);sec=doc.sections[0]
         assert abs(sec.page_width-Cm(21))<1300 and abs(sec.page_height-Cm(29.7))<1300
         if key=='sitito':
@@ -70,9 +70,28 @@ def check():
             assert all(len(meta[k].split())<=120 for k in ['abstract','abstract_en'])
             body=' '.join(v for k,v in meta['blocks'] if k in ['p','s'])
             assert all('('+str(n)+')' in body for n in range(1,7))
+        if key=='tusur':
+            meta=json.loads((B/'research/diff_eq/manuscript_tusur.json').read_text(encoding='utf8'))
+            assert len(meta['references'])==15 and meta['recent_references_2022_2026']>=8
+            assert len(doc.sections)==2
+            assert doc.sections[-1]._sectPr.find(q('w:cols')).get(q('w:num'))=='2'
+            for lang in ['abstract','abstract_en']:
+                assert 50<=sum(len(label.split())+len(value.split()) for label,value in meta[lang])<=300
+            seen=[]
+            for kind,value in meta['blocks']:
+                if kind not in ['p','s']:continue
+                for mt in re.finditer(r'\[(\d+)\]',value):
+                    if int(mt[1]) not in seen:seen.append(int(mt[1]))
+            assert seen==list(range(1,16))
+            maths=[value for kind,value in meta['blocks'] if kind=='e']
+            assert '^2κ(1-κ)' in maths[9] and '^2q(1-κ)' not in maths[9]
+            assert '700-86-00' in text and '1.2.2 (технические науки)' in text
+            # Structural conformance is not a claim of submission readiness:
+            # native Word equations still require conversion to MathType.
         assert not any(v in text for v in ['TODO','TBD','[вставить','<source_ref>'])
         report.append({'journal':key,'file':file.name,'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'native_equations':eq,'tables':len(root.findall('.//w:tbl',NS)),'bordered_cells':len(cells),'em_dashes':0,'table_shading':0,'checks':'passed'})
-    assert len(report)==5 and {r['journal'] for r in report}=={'sitito','ejce','ejce_en','injoit','itvs'}
+        if key=='tusur':report[-1].update(submission_ready=False,open_requirements=['MathType conversion','author compliance with AI policy','signed author documents'])
+    assert len(report)==6 and {r['journal'] for r in report}=={'sitito','ejce','ejce_en','injoit','itvs','tusur'}
     return report
 if __name__=='__main__':
     r=check();(B/'audit/manuscript_checks.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(r,ensure_ascii=False,indent=2))

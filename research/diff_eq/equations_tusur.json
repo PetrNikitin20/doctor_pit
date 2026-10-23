@@ -1,0 +1,156 @@
+[
+  {
+    "index": 1,
+    "number": 1,
+    "tex": "\\begin{aligned}\\dot x_1&=\\alpha_1u_1(t)(1-x_1)-\\lambda_1x_1,\\\\x_1(0)&=X_1,\\end{aligned}",
+    "semantic_tex": "\\dot x_1=\\alpha_1u_1(t)(1-x_1)-\\lambda_1x_1,\\qquad x_1(0)=X_1,",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><msub><mover><mi>x</mi><mo>˙</mo></mover><mn>1</mn></msub><mo>=</mo><msub><mi>α</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><msub><mi>λ</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 2,
+    "number": 2,
+    "tex": "\\begin{aligned}\\dot x_2&=u_2(t)(\\alpha_2+\\beta x_1)(1-x_2)-\\lambda_2x_2,\\\\x_2(0)&=X_2.\\end{aligned}",
+    "semantic_tex": "\\dot x_2=u_2(t)(\\alpha_2+\\beta x_1)(1-x_2)-\\lambda_2x_2,\\qquad x_2(0)=X_2.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><msub><mover><mi>x</mi><mo>˙</mo></mover><mn>2</mn></msub><mo>=</mo><msub><mi>u</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi>α</mi><mn>2</mn></msub><mo>+</mo><mi>β</mi><msub><mi>x</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><msub><mi>λ</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>X</mi><mn>2</mn></msub><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 3,
+    "number": 3,
+    "tex": "\\begin{aligned}p_i(t,χ)&=χ\\eta_i+(1-χ\\eta_i)x_i(t),\\\\χ&\\in\\{0,1\\},\\quad i=1,2.\\end{aligned}",
+    "semantic_tex": "p_i(t,χ)=χ\\eta_i+(1-χ\\eta_i)x_i(t),\\qquad χ\\in\\{0,1\\},\\quad i=1,2.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><msub><mi>p</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo>,</mo><mi>χ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>χ</mi><msub><mi>η</mi><mi>i</mi></msub><mo>+</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>χ</mi><msub><mi>η</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>χ</mi><mo>∈</mo><mo stretchy=\"false\">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">}</mo><mo>,</mo><mspace width=\"1em\"/><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 4,
+    "number": null,
+    "tex": "\\begin{aligned}\\psi=&(X_1,\\lambda_1,\\eta_1,X_2,\\lambda_2,\\eta_2,\\\\&\\alpha_1,\\alpha_2,\\beta)\\in\\Theta,\\end{aligned}",
+    "semantic_tex": "\\psi=(X_1,\\lambda_1,\\eta_1,X_2,\\lambda_2,\\eta_2,\\alpha_1,\\alpha_2,\\beta)\\in\\Theta,",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mi>ψ</mi><mo>=</mo><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>λ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>η</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><msub><mi>λ</mi><mn>2</mn></msub><mo>,</mo><msub><mi>η</mi><mn>2</mn></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>α</mi><mn>1</mn></msub><mo>,</mo><msub><mi>α</mi><mn>2</mn></msub><mo>,</mo><mi>β</mi><mo stretchy=\"false\">)</mo><mo>∈</mo><mi>Θ</mi><mo>,</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 5,
+    "number": null,
+    "tex": "\\begin{aligned}\\Theta=&(0,1)\\times(0,\\infty)\\times(0,1)\\\\&\\times(0,1)\\times(0,\\infty)\\times(0,1)\\\\&\\times(0,\\infty)^3.\\end{aligned}",
+    "semantic_tex": "\\Theta=(0,1)\\times(0,\\infty)\\times(0,1)\\times(0,1)\\times(0,\\infty)\\times(0,1)\\times(0,\\infty)^3.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mi>Θ</mi><mo>=</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mo>∞</mo><mo stretchy=\"false\">)</mo><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mo>∞</mo><mo stretchy=\"false\">)</mo><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>×</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>,</mo><mo>∞</mo><msup><mo stretchy=\"false\">)</mo><mn>3</mn></msup><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 6,
+    "number": null,
+    "tex": "\\begin{aligned}X&=P_0,\\quad κ=P_1/P_0,\\\\\\lambda&=-h^{-1}\\ln κ,\\end{aligned}",
+    "semantic_tex": "X=P_0,\\qquad κ=P_1/P_0,\\qquad \\lambda=-h^{-1}\\ln κ,",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mi>X</mi><mo>=</mo><msub><mi>P</mi><mn>0</mn></msub><mo>,</mo><mspace width=\"1em\"/><mi>κ</mi><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>/</mo><msub><mi>P</mi><mn>0</mn></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>λ</mi><mo>=</mo><mo>−</mo><msup><mi>h</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>ln</mi><mi>κ</mi><mo>,</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 7,
+    "number": null,
+    "tex": "\\eta=\\frac{P_2-Xκ^2}{1-Xκ^2}.",
+    "semantic_tex": "\\eta=\\frac{P_2-Xκ^2}{1-Xκ^2}.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B7;</mi><mo>&#x0003D;</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><mo>&#x02212;</mo><mi>X</mi><msup><mi>κ</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>&#x02212;</mo><mi>X</mi><msup><mi>κ</mi><mn>2</mn></msup></mrow></mfrac><mo>&#x0002E;</mo></mrow></math>"
+  },
+  {
+    "index": 8,
+    "number": null,
+    "tex": "κ=\\frac{P_1-P_2}{P_0-P_1},\\quad\\lambda=-h^{-1}\\ln κ,",
+    "semantic_tex": "κ=\\frac{P_1-P_2}{P_0-P_1},\\qquad \\lambda=-h^{-1}\\ln κ,",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>κ</mi><mo>&#x0003D;</mo><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>&#x02212;</mo><msub><mi>P</mi><mn>2</mn></msub></mrow><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>&#x02212;</mo><msub><mi>P</mi><mn>1</mn></msub></mrow></mfrac><mo>&#x0002C;</mo><mspace width=\"1em\" /><mi>&#x003BB;</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><msup><mi>h</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mi>ln</mi><mi>κ</mi><mo>&#x0002C;</mo></mrow></math>"
+  },
+  {
+    "index": 9,
+    "number": null,
+    "tex": "\\eta=\\frac{P_1-κP_0}{1-κ},\\qquad X=\\frac{P_0-\\eta}{1-\\eta}.",
+    "semantic_tex": "\\eta=\\frac{P_1-κP_0}{1-κ},\\qquad X=\\frac{P_0-\\eta}{1-\\eta}.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B7;</mi><mo>&#x0003D;</mo><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>&#x02212;</mo><mi>κ</mi><msub><mi>P</mi><mn>0</mn></msub></mrow><mrow><mn>1</mn><mo>&#x02212;</mo><mi>κ</mi></mrow></mfrac><mo>&#x0002C;</mo><mspace width=\"2em\" /><mi>X</mi><mo>&#x0003D;</mo><mfrac><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>&#x02212;</mo><mi>&#x003B7;</mi></mrow><mrow><mn>1</mn><mo>&#x02212;</mo><mi>&#x003B7;</mi></mrow></mfrac><mo>&#x0002E;</mo></mrow></math>"
+  },
+  {
+    "index": 10,
+    "number": 4,
+    "tex": "\\begin{aligned}\\det J_M&=-hXκ(1-Xκ^2),\\\\\\det J_A&=-hX(1-\\eta)^2κ(1-κ)^2.\\end{aligned}",
+    "semantic_tex": "\\det J_M=-hXκ(1-Xκ^2),\\qquad \\det J_A=-hX(1-\\eta)^2κ(1-κ)^2.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mi>M</mi></msub><mo>=</mo><mo>−</mo><mi>h</mi><mi>X</mi><mi>κ</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>X</mi><msup><mi>κ</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mi>A</mi></msub><mo>=</mo><mo>−</mo><mi>h</mi><mi>X</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>η</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mi>κ</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>κ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 11,
+    "number": null,
+    "tex": "\\begin{aligned}A=&\\frac{\\alpha_1c_1}{k}\\\\&+\\left(X_1e^{-2h\\lambda_1}-\\frac{\\alpha_1c_1}{k}\\right)e^{-kL},\\\\k=&\\alpha_1c_1+\\lambda_1.\\end{aligned}",
+    "semantic_tex": "A=\\frac{\\alpha_1c_1}{k}+\\left(X_1e^{-2h\\lambda_1}-\\frac{\\alpha_1c_1}{k}\\right)e^{-kL},\\qquad k=\\alpha_1c_1+\\lambda_1.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><msub><mi>α</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub></mrow><mrow><mi>k</mi></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mo>+</mo><mrow><mo stretchy=\"true\" fence=\"true\" form=\"prefix\">(</mo><msub><mi>X</mi><mn>1</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>h</mi><msub><mi>λ</mi><mn>1</mn></msub></mrow></msup><mo>−</mo><mfrac><mrow><msub><mi>α</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub></mrow><mrow><mi>k</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" form=\"postfix\">)</mo></mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>k</mi><mi>L</mi></mrow></msup><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>k</mi><mo>=</mo><msub><mi>α</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>λ</mi><mn>1</mn></msub><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 12,
+    "number": null,
+    "tex": "\\begin{aligned}w(t)&=Ae^{-\\lambda_1t},\\\\B&=X_2e^{-\\lambda_2(2h+L)},\\end{aligned}",
+    "semantic_tex": "w(t)=Ae^{-\\lambda_1t},\\qquad B=X_2e^{-\\lambda_2(2h+L)},",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mi>w</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>λ</mi><mn>1</mn></msub><mi>t</mi></mrow></msup><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>B</mi><mo>=</mo><msub><mi>X</mi><mn>2</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>λ</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mn>2</mn><mi>h</mi><mo>+</mo><mi>L</mi><mo stretchy=\"false\">)</mo></mrow></msup><mo>,</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 13,
+    "number": null,
+    "tex": "\\begin{aligned}\\dot z&=c_2(\\alpha+\\beta w(t))(1-z)-\\lambda_2z,\\\\z(0)&=B,\\quad\\alpha=\\alpha_2.\\end{aligned}",
+    "semantic_tex": "\\dot z=c_2(\\alpha+\\beta w(t))(1-z)-\\lambda_2z,\\qquad z(0)=B,\\quad \\alpha=\\alpha_2.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mover><mi>z</mi><mo>˙</mo></mover><mo>=</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mi>w</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mi>z</mi><mo stretchy=\"false\">)</mo><mo>−</mo><msub><mi>λ</mi><mn>2</mn></msub><mi>z</mi><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mi>z</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mi>B</mi><mo>,</mo><mspace width=\"1em\"/><mi>α</mi><mo>=</mo><msub><mi>α</mi><mn>2</mn></msub><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 14,
+    "number": null,
+    "tex": "\\begin{aligned}\\dot v+k(t)v&=c_2(\\delta\\alpha+\\delta\\beta w(t))\\\\&\\quad\\times(1-\\widetilde z(t)),\\quad v(0)=0,\\end{aligned}",
+    "semantic_tex": "\\dot v+k(t)v=c_2(\\delta\\alpha+\\delta\\beta w(t))(1-\\widetilde z(t)),\\quad v(0)=0,",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mover><mi>v</mi><mo>˙</mo></mover><mo>+</mo><mi>k</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mi>v</mi><mo>=</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi>δ</mi><mi>α</mi><mo>+</mo><mi>δ</mi><mi>β</mi><mi>w</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mspace width=\"1em\"/><mo>×</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><mover><mi>z</mi><mo>~</mo></mover><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>,</mo><mspace width=\"1em\"/><mi>v</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo>,</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 15,
+    "number": null,
+    "tex": "k(t)=c_2(\\alpha+\\beta w(t))+\\lambda_2.",
+    "semantic_tex": "k(t)=c_2(\\alpha+\\beta w(t))+\\lambda_2.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><msub><mi>c</mi><mn>2</mn></msub><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003B1;</mi><mo>&#x0002B;</mo><mi>&#x003B2;</mi><mi>w</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><msub><mi>&#x003BB;</mi><mn>2</mn></msub><mo>&#x0002E;</mo></mrow></math>"
+  },
+  {
+    "index": 16,
+    "number": null,
+    "tex": "\\begin{aligned}S_\\alpha(t)&=c_2e^{-K(t)}\\int_0^tW(s)\\,ds,\\\\S_\\beta(t)&=c_2e^{-K(t)}\\int_0^tW(s)w(s)\\,ds.\\end{aligned}",
+    "semantic_tex": "S_\\alpha(t)=c_2e^{-K(t)}\\int_0^t W(s)\\,ds,\\qquad S_\\beta(t)=c_2e^{-K(t)}\\int_0^t W(s)w(s)\\,ds.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><msub><mi>S</mi><mi>α</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>c</mi><mn>2</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>K</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></msup><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup><mi>W</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo stretchy=\"false\">)</mo><mspace width=\"0.167em\"/><mi>d</mi><mi>s</mi><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>S</mi><mi>β</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>c</mi><mn>2</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>K</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow></msup><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup><mi>W</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo stretchy=\"false\">)</mo><mi>w</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo stretchy=\"false\">)</mo><mspace width=\"0.167em\"/><mi>d</mi><mi>s</mi><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 17,
+    "number": null,
+    "tex": "R^{\\prime}(t)=\\frac{W(t)}{\\int_0^t W(s)\\,ds}\\bigl(w(t)-R(t)\\bigr)<0.",
+    "semantic_tex": "R^{\\prime}(t)=\\frac{W(t)}{\\int_0^t W(s)\\,ds}\\bigl(w(t)-R(t)\\bigr)<0.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>R</mi><mrow><mi>&#x02032;</mi></mrow></msup><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>W</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo></mrow><mrow><msubsup><mo>&#x0222B;</mo><mn>0</mn><mi>t</mi></msubsup><mi>W</mi><mo stretchy=\"false\">&#x00028;</mo><mi>s</mi><mo stretchy=\"false\">&#x00029;</mo><mspace width=\"0.167em\" /><mi>d</mi><mi>s</mi></mrow></mfrac><mo stretchy=\"true\" fence=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><mi>w</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02212;</mo><mi>R</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"true\" fence=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo><mo>&#x0003C;</mo><mn>0</mn><mo>&#x0002E;</mo></mrow></math>"
+  },
+  {
+    "index": 18,
+    "number": null,
+    "tex": "\\begin{aligned}\\det J_{\\alpha,\\beta}=&S_\\alpha(t_1)S_\\alpha(t_2)\\\\&\\times\\bigl(R(t_2)-R(t_1)\\bigr)<0.\\end{aligned}",
+    "semantic_tex": "\\det J_{\\alpha,\\beta}=S_\\alpha(t_1)S_\\alpha(t_2)\\bigl(R(t_2)-R(t_1)\\bigr)<0.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow></msub><mo>=</mo><msub><mi>S</mi><mi>α</mi></msub><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><msub><mi>S</mi><mi>α</mi></msub><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo>×</mo><mo stretchy=\"true\" fence=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">(</mo><mi>R</mi><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo>−</mo><mi>R</mi><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"true\" fence=\"true\" minsize=\"1.2em\" maxsize=\"1.2em\">)</mo><mo>&lt;</mo><mn>0</mn><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 19,
+    "number": 5,
+    "tex": "\\begin{aligned}\\det DF=&\\det J_1\\det J_2(1-\\eta_1)\\frac{\\partial A}{\\partial\\alpha_1}\\\\&\\times(1-\\eta_2)^2\\det J_{\\alpha,\\beta}\\ne0.\\end{aligned}",
+    "semantic_tex": "\\det DF=\\det J_1\\det J_2\\,(1-\\eta_1)\\frac{\\partial A}{\\partial\\alpha_1}\\,(1-\\eta_2)^2\\det J_{\\alpha,\\beta}\\ne0.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mo movablelimits=\"true\">det</mo><mi>D</mi><mi>F</mi><mo>=</mo><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mn>1</mn></msub><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>η</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo><mfrac><mrow><mo>∂</mo><mi>A</mi></mrow><mrow><mo>∂</mo><msub><mi>α</mi><mn>1</mn></msub></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mo>×</mo><mo stretchy=\"false\">(</mo><mn>1</mn><mo>−</mo><msub><mi>η</mi><mn>2</mn></msub><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup><mo movablelimits=\"true\">det</mo><msub><mi>J</mi><mrow><mi>α</mi><mo>,</mo><mi>β</mi></mrow></msub><mo>≠</mo><mn>0</mn><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 20,
+    "number": 6,
+    "tex": "\\begin{aligned}\\|\\psi-\\widetilde\\psi\\|_2&\\le\\frac{2}{\\sigma_0}\\|F(\\psi)-F(\\widetilde\\psi)\\|_2,\\\\\\sigma_0&=\\sigma_{\\min}(DF(\\psi_0))>0.\\end{aligned}",
+    "semantic_tex": "\\|\\psi-\\widetilde\\psi\\|_2\\le\\frac{2}{\\sigma_0}\\|F(\\psi)-F(\\widetilde\\psi)\\|_2,\\qquad \\sigma_0=\\sigma_{\\min}(DF(\\psi_0))>0.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mo fence=\"false\" stretchy=\"false\">‖</mo><mi>ψ</mi><mo>−</mo><mover><mi>ψ</mi><mo>~</mo></mover><msub><mo fence=\"false\" stretchy=\"false\">‖</mo><mn>2</mn></msub><mo>≤</mo><mfrac><mrow><mn>2</mn></mrow><mrow><msub><mi>σ</mi><mn>0</mn></msub></mrow></mfrac><mo fence=\"false\" stretchy=\"false\">‖</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>ψ</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mover><mi>ψ</mi><mo>~</mo></mover><mo stretchy=\"false\">)</mo><msub><mo fence=\"false\" stretchy=\"false\">‖</mo><mn>2</mn></msub><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>σ</mi><mn>0</mn></msub><mo>=</mo><msub><mi>σ</mi><mrow><mo>min</mo></mrow></msub><mo stretchy=\"false\">(</mo><mi>D</mi><mi>F</mi><mo stretchy=\"false\">(</mo><msub><mi>ψ</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>&gt;</mo><mn>0</mn><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  },
+  {
+    "index": 21,
+    "number": null,
+    "tex": "\\|\\widehat\\psi-\\psi_0\\|_2\\le\\frac{2}{\\sigma_0}(\\varepsilon+\\omega).",
+    "semantic_tex": "\\|\\widehat\\psi-\\psi_0\\|_2\\le\\frac{2}{\\sigma_0}(\\varepsilon+\\omega).",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mover><mi>&#x003C8;</mi><mo>&#x0005E;</mo></mover><mo>&#x02212;</mo><msub><mi>&#x003C8;</mi><mn>0</mn></msub><msub><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mn>2</mn></msub><mo>&#x02264;</mo><mfrac><mrow><mn>2</mn></mrow><mrow><msub><mi>&#x003C3;</mi><mn>0</mn></msub></mrow></mfrac><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003B5;</mi><mo>&#x0002B;</mo><mi>&#x003C9;</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002E;</mo></mrow></math>"
+  },
+  {
+    "index": 22,
+    "number": null,
+    "tex": "\\begin{aligned}\\|\\widehat p-p\\|_\\infty&\\le\\sqrt{\\frac{\\ln(18/\\zeta)}{2n}},\\\\\\|\\widehat p-p\\|_2&\\le3\\sqrt{\\frac{\\ln(18/\\zeta)}{2n}}.\\end{aligned}",
+    "semantic_tex": "\\|\\widehat p-p\\|_\\infty\\le\\sqrt{\\frac{\\ln(18/\\zeta)}{2n}},\\qquad \\|\\widehat p-p\\|_2\\le3\\sqrt{\\frac{\\ln(18/\\zeta)}{2n}}.",
+    "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mrow><mo fence=\"false\" stretchy=\"false\">‖</mo><mover><mi>p</mi><mo>^</mo></mover><mo>−</mo><mi>p</mi><msub><mo fence=\"false\" stretchy=\"false\">‖</mo><mo>∞</mo></msub><mo>≤</mo><msqrt><mrow><mfrac><mrow><mi>ln</mi><mo stretchy=\"false\">(</mo><mn>18</mn><mo>/</mo><mi>ζ</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mn>2</mn><mi>n</mi></mrow></mfrac></mrow></msqrt><mo>,</mo></mrow></mtd></mtr><mtr><mtd><mrow><mo fence=\"false\" stretchy=\"false\">‖</mo><mover><mi>p</mi><mo>^</mo></mover><mo>−</mo><mi>p</mi><msub><mo fence=\"false\" stretchy=\"false\">‖</mo><mn>2</mn></msub><mo>≤</mo><mn>3</mn><msqrt><mrow><mfrac><mrow><mi>ln</mi><mo stretchy=\"false\">(</mo><mn>18</mn><mo>/</mo><mi>ζ</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mn>2</mn><mi>n</mi></mrow></mfrac></mrow></msqrt><mo>.</mo></mrow></mtd></mtr></mtable></math>"
+  }
+]

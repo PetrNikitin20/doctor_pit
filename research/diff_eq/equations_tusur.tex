@@ -1,0 +1,109 @@
+% 1
+\[
+\begin{aligned}\dot x_1&=\alpha_1u_1(t)(1-x_1)-\lambda_1x_1,\\x_1(0)&=X_1,\end{aligned}
+\]
+
+% 2
+\[
+\begin{aligned}\dot x_2&=u_2(t)(\alpha_2+\beta x_1)(1-x_2)-\lambda_2x_2,\\x_2(0)&=X_2.\end{aligned}
+\]
+
+% 3
+\[
+\begin{aligned}p_i(t,χ)&=χ\eta_i+(1-χ\eta_i)x_i(t),\\χ&\in\{0,1\},\quad i=1,2.\end{aligned}
+\]
+
+% 4
+\[
+\begin{aligned}\psi=&(X_1,\lambda_1,\eta_1,X_2,\lambda_2,\eta_2,\\&\alpha_1,\alpha_2,\beta)\in\Theta,\end{aligned}
+\]
+
+% 5
+\[
+\begin{aligned}\Theta=&(0,1)\times(0,\infty)\times(0,1)\\&\times(0,1)\times(0,\infty)\times(0,1)\\&\times(0,\infty)^3.\end{aligned}
+\]
+
+% 6
+\[
+\begin{aligned}X&=P_0,\quad κ=P_1/P_0,\\\lambda&=-h^{-1}\ln κ,\end{aligned}
+\]
+
+% 7
+\[
+\eta=\frac{P_2-Xκ^2}{1-Xκ^2}.
+\]
+
+% 8
+\[
+κ=\frac{P_1-P_2}{P_0-P_1},\quad\lambda=-h^{-1}\ln κ,
+\]
+
+% 9
+\[
+\eta=\frac{P_1-κP_0}{1-κ},\qquad X=\frac{P_0-\eta}{1-\eta}.
+\]
+
+% 10
+\[
+\begin{aligned}\det J_M&=-hXκ(1-Xκ^2),\\\det J_A&=-hX(1-\eta)^2κ(1-κ)^2.\end{aligned}
+\]
+
+% 11
+\[
+\begin{aligned}A=&\frac{\alpha_1c_1}{k}\\&+\left(X_1e^{-2h\lambda_1}-\frac{\alpha_1c_1}{k}\right)e^{-kL},\\k=&\alpha_1c_1+\lambda_1.\end{aligned}
+\]
+
+% 12
+\[
+\begin{aligned}w(t)&=Ae^{-\lambda_1t},\\B&=X_2e^{-\lambda_2(2h+L)},\end{aligned}
+\]
+
+% 13
+\[
+\begin{aligned}\dot z&=c_2(\alpha+\beta w(t))(1-z)-\lambda_2z,\\z(0)&=B,\quad\alpha=\alpha_2.\end{aligned}
+\]
+
+% 14
+\[
+\begin{aligned}\dot v+k(t)v&=c_2(\delta\alpha+\delta\beta w(t))\\&\quad\times(1-\widetilde z(t)),\quad v(0)=0,\end{aligned}
+\]
+
+% 15
+\[
+k(t)=c_2(\alpha+\beta w(t))+\lambda_2.
+\]
+
+% 16
+\[
+\begin{aligned}S_\alpha(t)&=c_2e^{-K(t)}\int_0^tW(s)\,ds,\\S_\beta(t)&=c_2e^{-K(t)}\int_0^tW(s)w(s)\,ds.\end{aligned}
+\]
+
+% 17
+\[
+R^{\prime}(t)=\frac{W(t)}{\int_0^t W(s)\,ds}\bigl(w(t)-R(t)\bigr)<0.
+\]
+
+% 18
+\[
+\begin{aligned}\det J_{\alpha,\beta}=&S_\alpha(t_1)S_\alpha(t_2)\\&\times\bigl(R(t_2)-R(t_1)\bigr)<0.\end{aligned}
+\]
+
+% 19
+\[
+\begin{aligned}\det DF=&\det J_1\det J_2(1-\eta_1)\frac{\partial A}{\partial\alpha_1}\\&\times(1-\eta_2)^2\det J_{\alpha,\beta}\ne0.\end{aligned}
+\]
+
+% 20
+\[
+\begin{aligned}\|\psi-\widetilde\psi\|_2&\le\frac{2}{\sigma_0}\|F(\psi)-F(\widetilde\psi)\|_2,\\\sigma_0&=\sigma_{\min}(DF(\psi_0))>0.\end{aligned}
+\]
+
+% 21
+\[
+\|\widehat\psi-\psi_0\|_2\le\frac{2}{\sigma_0}(\varepsilon+\omega).
+\]
+
+% 22
+\[
+\begin{aligned}\|\widehat p-p\|_\infty&\le\sqrt{\frac{\ln(18/\zeta)}{2n}},\\\|\widehat p-p\|_2&\le3\sqrt{\frac{\ln(18/\zeta)}{2n}}.\end{aligned}
+\]
