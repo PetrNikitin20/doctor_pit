@@ -1,0 +1,182 @@
+{
+  "source_sha256": "3139b83453cb809609f997c9b4e2ed571dff1dd58da3a1e4a7da2f5d5f9b4ae1",
+  "repository_russian_sha256": "aa34917074f7c52282be9a9e14d33154951fe97c03ebc1b4429da5086d1e3fae",
+  "note": "Translation follows the author's attached revision, including changes to paragraph 20 and paragraph 40. Paragraph numbers refer to the 95 top-level source paragraphs before insertions. Mathematical paragraphs and picture anchors retain their original elements.",
+  "paragraphs": {
+    "0": "UDC 378.147:004.8",
+    "1": "Instructional Design of Interdisciplinary Learning Pathways with Knowledge Transfer Verification",
+    "2": "Petr Vladimirovich Nikitin",
+    "3": "Financial University under the Government of the Russian Federation, Moscow, Russian Federation",
+    "4": "Candidate of Pedagogical Sciences, Associate Professor; Department of Artificial Intelligence, Faculty of Information Technology and Big Data Analysis",
+    "5": "49/2 Leningradsky Prospekt, Moscow, 125167, Russian Federation",
+    "6": "Corresponding author: pvnikitin@fa.ru; ORCID: 0000-0001-8866-5610",
+    "7": "Abstract",
+    "8": "This study addresses the design of individual learning pathways in which progression between disciplines is supported by verifiable evidence of the independent application of knowledge. The problem is examined in the context of an undergraduate Applied Machine Learning programme: a correct solution produced with artificial intelligence may not indicate that a student can solve a new problem independently. The aim is to develop an instructional specification for an interdisciplinary transition and examine the consequences of alternative recommendation rules. The methods combine a focused literature review, the design of learning scenarios, and deterministic probability calculations for synthetic task histories. A transition passport is proposed as a structured specification linking the target action, prerequisites, assistance conditions, transfer assessment, and subsequent support. Three scenarios connect algorithms with mathematics, databases, and machine learning. The computational study compares three recommendation rules across 96 configurations of four hypothetical profiles. Under the selected parameters, independent assessment and transfer checks reduce the progression probability for a profile with a transfer difficulty from 99.9991% to 25.3165%. Adding a strict confidence threshold reduces this probability to 2.1844%, while also reducing progression for a consistently strong profile from 96.5763% to 8.3331%. The result demonstrates the need to design assessment content and acceptable uncertainty jointly. Greater confidence in prerequisite performance cannot replace a diagnostically meaningful transfer task. The study provides an instructional specification, three scenarios, and a quantified trade-off between recommendation caution and the amount of corroborating evidence. The values describe the specified model rather than student learning outcomes. The educational effectiveness of the proposed arrangement remains to be evaluated in a subsequent empirical study.",
+    "9": "Keywords: interdisciplinarity, pathways, transfer, independence, assessment, AI, programming, simulation.",
+    "10": "1. Introduction",
+    "11": "Interdisciplinary preparation in machine learning requires coordination between mathematical concepts, algorithmic reasoning, and work with data. A student may complete a programming course yet struggle to explain a database index or choose a method for comparing rankings. Pathway design therefore requires identifying which outcomes of earlier learning actually support a new action. Research on transfer highlights the importance of context, task characteristics, and subsequent assessment conditions (Barnett, Ceci, 2002; Pan, Rickard, 2018).",
+    "12": "Generative tools further complicate the interpretation of a learning outcome. Code obtained with a model is an artifact of joint activity, whereas the ability to reproduce and adapt the solution independently requires separate evidence. Reviews of language model capabilities and experimental studies show that educational outcomes depend on how assistance and independent assessment are organised (Kasneci et al., 2023; Bastani et al., 2025; Kestin et al., 2025). The research question therefore concerns the instructional basis for progression between disciplines, alongside the sequencing of available materials.",
+    "13": "Personalised environments, learner models, and knowledge graphs are well represented in current research (Ismail et al., 2023; Abdelrahman et al., 2023; Li et al., 2026). Graph-based models can account for concept dependencies and levels of mastery (Hou et al., 2025). EJCE has published studies on adaptive testing, computer support for mathematical literacy, and research skills in AI-supported learning (Polozhentseva et al., 2024; Dvoryatkina et al., 2025; Smirnov et al., 2025). These strands of research provide a basis for specifying what interdisciplinary readiness should demonstrate.",
+    "14": "Evidence-centred assessment design provides the theoretical foundation: a claim about a learner should be linked to an observable action, a task, and an interpretation rule (Mislevy, Haertel, 2006). Self-regulation complements this relationship through goal setting, performance monitoring, and strategy revision (Zimmerman, 2002). A division of responsibilities between humans and AI preserves the teacher's responsibility for assessment decisions (Molenaar, 2022). The development of self-regulated learning through intelligent agents is already being investigated in higher education, together with the risk of excessive reliance on recommendations (Semenyuk et al., 2026).",
+    "15": "The aim of this study is to develop an instructional specification for an interdisciplinary transition and examine the consequences of alternative recommendation rules when evidence is limited. Three questions are considered: which elements a transition passport should contain; how learning activities and transfer assessment can be organised through examples from algorithms; and how evidence provenance and threshold stringency affect the probability of a recommendation. The work is a design and computational study. It reports no experiment with students and does not establish the educational effectiveness of the system.",
+    "16": "2. Materials and Methods",
+    "17": "The design materials comprise the Applied Machine Learning curriculum, the target graduate competency framework, the project specification, and a local software prototype. The prepared register contains 38 competencies and 116 unique indicators. The project spans four years, although the pilot tasks and simulators developed in detail primarily concern algorithms and data structures. The documents define the domain; their availability does not imply that all proposed instructional relationships have been approved.",
+    "18": "The methodology combines conceptual design, the development of three learning scenarios, and deterministic calculation of decision probabilities for synthetic histories. A focused analytical review brings together research on transfer, assessment, personalised learning, and educational uses of AI. Empirical findings from the cited studies inform the problem formulation; the numerical parameters of our profiles are specified conditions of the computational investigation. A design format with an explicitly identified simulation is also represented in EJCE (Kovrigin, 2026). This provides a methodological example without justifying the transfer of parameters from another discipline.",
+    "19": "The modelled unit is a transition with two mandatory prerequisites and a separate transfer assessment. Parameters θ₁ and θ₂ denote the probabilities of independent success in two classes of prerequisite tasks, and φ denotes the probability in a new target context. Table 1 presents four hypothetical profiles. By definition, profile A meets the threshold of 0.8 for all three parameters; each other profile has at least one parameter below that threshold. These profiles are neither a typology of actual students nor the results of psychological assessment.",
+    "20": "Table 1. Profiles for investigating transition rules",
+    "21": "For each prerequisite, N attempts are recorded, of which a proportion r is completed with tool assistance. The probability of a correct response on an assisted attempt, γ, is fixed at 0.98. This is a stress-test assumption of highly successful assistance rather than a measured accuracy for any particular language model. The remaining attempts are grouped into task families: when d=1, each attempt belongs to a separate family; when d=2, one binary outcome is copied into two variants. Repetition does not model additional learning; it tests only the effect of duplicated evidence.",
+    "23": "Here, k is the number of independent families of unassisted assessment tasks per prerequisite. The numbers of successful families X₁ and X₂, successful assisted attempts Y₁ and Y₂, and successful transfer probes Z follow the distributions below. Different families, the two prerequisites, and the transfer assessment are conditionally independent. Within a duplicated family, the outcomes coincide completely.",
+    "26": "Three rules are compared. R₀ uses the proportion of successful recorded attempts for each prerequisite, without accounting for assistance provenance or transfer. R₁ requires a success proportion of at least 0.8 across independent unassisted families and at least four successes in five transfer probes. R₂ retains the same transfer assessment and replaces the observed success proportion with a lower posterior bound for each prerequisite. The prior is Beta(1,1), the threshold is 0.8, and the total budget of 0.05 is divided equally between the two prerequisites.",
+    "30": "In Equation (3), qⱼ is the 0.025 quantile of the Beta(1+Xⱼ, 1+k−Xⱼ) distribution; the inequalities are checked for each of the two prerequisites. The budget concerns the assessment of the initial prerequisites. It implies neither a five-percent frequency of erroneous transitions in a real population nor a guarantee of mastery in the target context. R₁ and R₂ use five additional probes, so their difference from R₀ cannot be attributed to a statistical formula alone.",
+    "31": "The notation θⱼ, τ=0.8, δ=0.05, and qⱼ follows the probabilistic transition model: these denote the probability of independent success, the threshold, the risk budget, and the lower posterior bound. R₂ uses a sufficient condition with an equal allocation of δ/2, which is stricter than a general constraint on the sum of the two marginal risks. Thus, R₂ and a planner that constrains only that sum need not produce the same decisions. The comparison here uses the predefined version of R₂.",
+    "32": "The calculation enumerates N∈{24,48,96}, r∈{0;0.25;0.5;0.75}, and d∈{1,2} for four profiles, yielding 96 configurations and 288 evaluations of the three rules. Probabilities are obtained by summing binomial distributions without generating random samples. The main configuration is N=48, r=0.5, d=1, giving k=24. A configuration number does not identify a participant, and the number of calculations is not a student sample size. All parameters and rules are specified before the analysis.",
+    "35": "To reproduce R₀, sum the probabilities of outcome pairs Xⱼ,Yⱼ satisfying dXⱼ+Yⱼ≥⌈0.8N⌉ and multiply the results for the two prerequisites. For R₁ in Equation (4), h=⌈0.8k⌉; for R₂, h is the smallest integer number of successes for which q≥0.8. If no such number exists, the progression probability is zero. C in the binomial expression denotes a binomial coefficient. Quantiles were evaluated by the prototype's numerical kernel; the maximum deviation of the sum of the checked binomial probabilities from one did not exceed 1.23·10⁻¹⁵.",
+    "36": "3. Findings",
+    "37": "The interdisciplinary transition passport",
+    "38": "A specification was developed to connect a target action with the instructional grounds for recommending it. The passport records the source and target contexts, assessed prerequisites, required level of independence, permitted assistance, assessment task families, indicators of successful transfer, and subsequent support options. It extends a prerequisite list by requiring an observable action and explicit limits on inference: passing one task demonstrates a specific outcome under the stated conditions.",
+    "39": "Three levels are specified for each transition. At the basic level, the student explains a procedure and reproduces it with familiar material. At the intermediate level, the student independently selects and applies the procedure to changed data. At the advanced level, the student justifies its limitations and transfers it to a new disciplinary context. These levels are proposed rubric categories. Their measurement validity requires expert review and empirical investigation; they do not replace the programme's approved indicators.",
+    "40": "Figure 1 shows the learning cycle. The student first records a goal and a hypothesis, then investigates the problem using permitted resources and compares the result with the prediction. Discussion is followed by independent assessment and a transfer task. A generated response may be analysed, but does not by itself constitute evidence of independence. This arrangement is consistent with research on AI-supported knowledge building and the design of initial problem-solving activities (Chen et al., 2023; Sinha, Kapur, 2021).",
+    "42": "Fig. 1. Proposed cycle for obtaining evidence for an interdisciplinary transition",
+    "43": "Across a four-year programme, passports can connect first-year foundations, second-year data analysis methods, third-year specialised methods, and fourth-year project work. The scheduled semester determines the availability of an activity, while corroborating evidence provides the basis for recommending it. When evidence is insufficient, the student receives an explanation and an additional learning opportunity. A teacher reviews borderline cases; an automatic recommendation does not determine administrative progression or final certification.",
+    "44": "The passport specifies the participants' responsibilities. The student formulates a hypothesis, discloses the assistance used, and explains the solution; the teacher defines task families, the rubric, and evidence admissibility. A tutor helps select remedial learning activities when a gap is identified, and a curriculum specialist aligns the transition with programme indicators. An administrator maintains access and data integrity. A researcher analyses de-identified records once the basis for their use has been established. The storage model separately records attempts, artifacts, evidence, assessment decisions, and passport versions. This permits reconsideration under a new rubric while retaining the original grounds for the recommendation.",
+    "45": "Three scenarios for assessing transfer",
+    "46": "The first scenario connects search algorithms, discrete mathematics, and database management systems. The student formulates the conditions for binary search, investigates the number of comparisons, and explains the invariant. In the target context, the student analyses a database query, compares a full scan with index access, and considers the cost of maintaining the index. Successful transfer consists in a justified choice of method and an account of its limitations, rather than the repetition of the phrase 'logarithmic complexity'. The query and data must differ from those used in practice.",
+    "47": "The first passport is operationalised through two prerequisites: maintaining a search invariant and justifying an algorithm's cost. The target action is to explain a query-plan choice in relation to selectivity, result size, and data updates. An independent probe presents two new datasets and execution plans; the student selects a plan, explains the expected effect of the index, and identifies a condition under which the choice would change. The rubric requires a correct decision, a causal explanation, and a stated limit of applicability together. Claiming that every index always accelerates a query fails the explanation criterion even if the choice is correct in one example. The five modelled probes represent five distinct target situations rather than five tests of the same program. The other scenarios require different prerequisite content and rubrics; the numerical parameters in Table 1 remain hypothetical and do not calibrate those scenarios.",
+    "48": "The second scenario connects inversion counting with data processing and ranking comparison. Initial work includes a brute-force method, a merge-based solution, and a counterexample to an incorrect implementation. In a new task, the student determines what a disagreement in ordering means and selects an appropriate counting method. Ties require a separately specified handling rule. Transfer demonstrates the ability to align the mathematical definition, algorithm, and meaning of the data; successfully running code alone does not establish this alignment.",
+    "49": "The third scenario connects calculus, programming, and machine learning. After investigating the derivative and gradient step, the student explains the behaviour of a loss function, tests a hypothesis about step size, and analyses an unsuccessful run. The transfer probe uses a changed function or feature scale. The rubric distinguishes computational correctness, understanding the cause of divergence, and justification for changing parameters. Virtual experimentation can support observation, while the properties of the particular simulator and the independence of the explanation require separate assessment (de Jong et al., 2013).",
+    "50": "Consequences of the recommendation rule",
+    "51": "Table 2 presents progression probabilities for the main configuration. R₀ almost always recommends progression for profile C because its initial prerequisites are the same as those of profile A. Adding independent assessment and transfer probes in R₁ reduces this probability to 25.3165%. The strict R₂ rule reduces it to 2.1844%. For profile A, the corresponding probabilities are 99.9991%, 96.5763%, and 8.3331%. Thus, fewer recommendations for a profile with a difficulty are accompanied by substantially more deferrals for a strong profile.",
+    "52": "Table 2. Probability of a transition recommendation at N=48, r=0.5, and d=1, %",
+    "53": "At k=24, R₂ requires 24 successful independent families for each prerequisite. This explains the low progression probability even at θ=0.95. Table 3 and Figure 2 show the sensitivity for profile A. At k=12, the rule precludes progression even after an error-free history; at k=48, four failures are permitted, and the recommendation probability rises to 80.8203%. These values concern the selected points and do not assert that progression probability increases monotonically whenever k increases: the integer threshold changes discretely.",
+    "54": "Table 3. Sensitivity of recommendations for profile A to the number of independent families",
+    "56": "Fig. 2. Progression probability for the consistently strong profile at three evaluated points",
+    "57": "The total number of independent observations in Table 3 is 2k+5. This describes the amount of evidence for two prerequisites and transfer rather than minutes of teacher work: some checks can be automated, while others require discussion and expert judgement. Greater caution should therefore be accompanied by an assessment of whether such verification is feasible. The values do not recommend assigning 101 tasks to every student for every transition.",
+    "58": "When one family is duplicated into two variants, the number of recorded unassisted attempts remains unchanged, while k in the main configuration falls from 24 to 12. For R₂, this yields zero progression probability. The model distinguishes the volume of the digital trace from the number of independent confirmations. However, the families themselves still require a substantive definition: differently worded versions of one template may not constitute independent checks. Removing duplicates protects against obvious overstatement of data volume, but does not establish statistical independence.",
+    "59": "Profiles A and C have identical distributions for the initial prerequisites. Their progression-probability ratio is therefore the same under R₁ and R₂ and is determined solely by the transfer probes. Tightening the prerequisite assessment reduces recommendations for both profiles without improving their relative separation. This demonstrates the distinct instructional role of selecting a new context and defining transfer criteria. Five probes with four required successes still yield a passing probability of 25.6218% when φ=0.55. Such assessment should not be regarded as error-free.",
+    "60": "The passport is implemented by recording the task version, hypothesis, artifact, assistance mode, simulation parameters, feedback, and grounds for the recommendation. The result of a browser execution is treated as a learning observation; assessment evidence requires verifiable provenance and confirmed performance conditions. The development of coding assistants makes this distinction practically relevant (Gaidamaka et al., 2025). Broader analyses of the digitalisation of educational services concern a different scale of data (Borisova, Fridman, 2026); aggregate indicators do not replace individual transfer assessment.",
+    "61": "4. Discussion",
+    "62": "The findings clarify the object of instructional pathway design. An interdisciplinary link becomes assessable when its target action, independence conditions, and new assessment content are specified. The graph records a possible route, while the passport explains the grounds for a particular step. The contribution lies in connecting this specification with an analysis of assessment-policy consequences. Knowledge graphs, Bayesian updating, and threshold decisions are not themselves claimed as new methods.",
+    "63": "The findings do not identify a universally preferable rule. Under the specified conditions, R₀ retains a high progression probability for the strong profile but does not distinguish transfer readiness; R₁ uses more diagnostically relevant data; R₂ is highly conservative when the number of families is limited. The choice depends on the costs of unjustified progression and deferral, the difficulty of the target action, and the availability of support. A low progression probability may indicate insufficient evidence rather than a lack of ability.",
+    "64": "The model assumes stable probabilities and independent families; actual learning changes knowledge, and tasks differ in difficulty. The assisted-response probability of 0.98 and the profile parameters are stress-test assumptions. The prevalence of the profiles in a real cohort is unknown, so overall accuracy, utility, and the aggregate proportion of erroneous recommendations are not estimated. Enumerating configurations does not produce a participant sample; no significance tests comparing synthetic 'students' were performed.",
+    "65": "The constant γ=0.98 is a separate assumption about assistance success in this simulation. It does not estimate the support coefficient ηᵢ in a dynamic observation model. The Beta assessment of initial prerequisites and a model of proficiency change over time address different questions; a joint statistical estimator is not constructed in this study.",
+    "66": "The limits on transfer inference are particularly important. Success on several probes demonstrates performance under the specified conditions rather than universal transferability of knowledge. Empirical validation requires varying the context, avoiding overlap between practice and assessment templates, and assessing independent explanations. The student's action must also be distinguished from the quality of the resulting artifact. These limitations are consistent with contextual accounts of transfer and research on learning with generative tools (Barnett, Ceci, 2002; Bastani et al., 2025).",
+    "67": "The local prototype supports hypotheses, code versions, simulations, comparisons, and a learning log. The complete transition passport, task-family register, and comparison of the three rules belong to a planned extension. The computational study was performed using a separate script; its findings are not presented as results from operating the target system with student cohorts. Implementation will require instructional approval of the links, assignment of assessors, and evaluation of how students understand recommendation explanations.",
+    "68": "The subsequent experiment should assess independent performance on a new task after AI-supported work, with baseline assessment and a delayed test. A comparison within one course, using the same content and available time, is desirable. The primary outcome will be the quality of independent transfer; explanations, requests for assistance, and teacher workload will provide additional measures. The rubric and analysis plan will be specified before data collection. This article outlines that experiment; results for a study of progression from generated code to independent problem solving are not yet available.",
+    "69": "5. Conclusion",
+    "70": "A passport for interdisciplinary transitions is proposed, connecting an educational goal with assistance conditions, assessment evidence, and support for the next step. Three scenarios demonstrate its application to links between algorithms, mathematics, databases, and machine learning. The practical outcome is a specification of the learning action and grounds for its recommendation that can undergo subsequent instructional review and software implementation.",
+    "71": "Deterministic calculation across 96 synthetic configurations identified a trade-off between cautious progression decisions and the required amount of independent corroboration. Transfer assessment performs a distinct diagnostic function; greater confidence in the initial prerequisites does not replace it. The resulting probabilities describe the adopted model and do not demonstrate improved learning. The next stage is rubric validation and a controlled study of independent knowledge transfer."
+  },
+  "insert_after_14": "Russian higher education research emphasises human responsibility, verification, and explicit constraints in AI-supported tutoring and institutional analytics (Rumyantsev, Polishuk, 2026). Educational recommender architectures also combine data processing, hybrid algorithms, and recommendation explanations (Ovsyannikova, 2026). These contributions inform the design context. The present study specifies the observable evidence and transfer checks that justify a recommendation to move between disciplines.",
+  "tables": [
+    [
+      [
+        "Profile",
+        "θ₁",
+        "θ₂",
+        "φ",
+        "Modelled characteristic"
+      ],
+      [
+        "A",
+        "0.95",
+        "0.95",
+        "0.95",
+        "Consistently strong performance"
+      ],
+      [
+        "B",
+        "0.55",
+        "0.55",
+        "0.55",
+        "Gap between assisted and independent performance"
+      ],
+      [
+        "C",
+        "0.95",
+        "0.95",
+        "0.55",
+        "Transfer difficulty"
+      ],
+      [
+        "D",
+        "0.95",
+        "0.55",
+        "0.55",
+        "Gap in one prerequisite"
+      ]
+    ],
+    [
+      [
+        "Profile",
+        "R₀",
+        "R₁",
+        "R₂"
+      ],
+      [
+        "A",
+        "99.9991",
+        "96.5763",
+        "8.3331"
+      ],
+      [
+        "B",
+        "5.8993",
+        "0.0003",
+        "<0.0001"
+      ],
+      [
+        "C",
+        "99.9991",
+        "25.3165",
+        "2.1844"
+      ],
+      [
+        "D",
+        "24.2883",
+        "0.0908",
+        "<0.0001"
+      ]
+    ],
+    [
+      [
+        "k",
+        "Total observations",
+        "R₁, %",
+        "R₂, %"
+      ],
+      [
+        "12",
+        "29",
+        "93.9529",
+        "0.0000"
+      ],
+      [
+        "24",
+        "53",
+        "96.5763",
+        "8.3331"
+      ],
+      [
+        "48",
+        "101",
+        "97.7191",
+        "80.8203"
+      ]
+    ]
+  ],
+  "new_references": [
+    {
+      "key": "Ovsyannikova, 2026",
+      "text": "Ovsyannikova, 2026 – Ovsyannikova, A.V. (2026). Intellektual'nye rekomendatel'nye sistemy v obrazovanii. Algoritmy podbora individual'nykh traektorii obucheniya [Intelligent Recommender Systems in Education. Algorithms for Personalised Learning Pathways]. Tsifrovye resheniya i tekhnologii iskusstvennogo intellekta. 2(2): 16–24. DOI: https://doi.org/10.26794/3030-7097-2026-2-2-16-24 [in Russian]",
+      "url": "https://www.digitarin.ru/jour/article/view/55",
+      "doi": "10.26794/3030-7097-2026-2-2-16-24"
+    },
+    {
+      "key": "Rumyantsev, Polishuk, 2026",
+      "text": "Rumyantsev, Polishuk, 2026 – Rumyantsev, S.A., Polishuk, Yu.V. (2026). Iskusstvennyi intellekt v vysshem obrazovanii i psikhologicheskom konsul'tirovanii: metodicheskaya ramka vnedreniya [Artificial Intelligence in Higher Education and Psychological Counseling: A Methodological Framework for Implementation]. Tsifrovye resheniya i tekhnologii iskusstvennogo intellekta. 2(2): 6–15. DOI: https://doi.org/10.26794/3030-7097-2026-2-2-6-15 [in Russian]",
+      "url": "https://www.digitarin.ru/jour/article/view/54",
+      "doi": "10.26794/3030-7097-2026-2-2-6-15"
+    }
+  ],
+  "specialty_line": "1.2.2 – Mathematical Modelling, Numerical Methods and Software Systems"
+}

@@ -11,3 +11,4 @@ run('diff_eq','build_draft.py');run('diff_eq','retarget_itvs.py')
 spec=[('sitito','Статья_Никитин_Междисциплинарные_переходы_SITITO'),('ejce','Статья_EJCE_Междисциплинарные_траектории_русская'),('injoit','Статья_INJOIT_Численный_метод_выбора_действий'),('itvs','Статья_ИТВС_Идентификация_динамической_модели_подготовки')]
 for journal,stem in spec:
     finalize(scratch/(stem+'.docx'),B/'articles'/(stem+'_редакция_2026-10-23.docx'),journal)
+subprocess.run([sys.executable,str(B/'research/ejce/build_english.py'),'--output',str(B/'articles/Article_EJCE_Interdisciplinary_Learning_Pathways_EN_2026-10-23.docx')],env=env,check=True)

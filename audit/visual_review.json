@@ -84,5 +84,32 @@
     ],
     "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
     "layout_passed": true
+  },
+  {
+    "journal": "ejce_en",
+    "docx_sha256": "aba5cce6b9234aa848097f8f95d1e005c37a21eb3b162f707c35f414f5224300",
+    "pages": 18,
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
+    "layout_passed": true
   }
 ]

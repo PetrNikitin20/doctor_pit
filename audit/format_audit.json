@@ -42,5 +42,16 @@
     "replaced_em_dashes": 0,
     "sitito_body_paragraphs": 0,
     "sha256": "452f1ca4fef073dc7fc57020fc96c4df1a3049a95f09401180931bfa88acf8e9"
+  },
+  {
+    "file": "Article_EJCE_Interdisciplinary_Learning_Pathways_EN_2026-10-23.docx",
+    "journal": "ejce_en",
+    "native_equations": 8,
+    "tables": 3,
+    "bordered_cells": 61,
+    "active_table_shading": 0,
+    "em_dashes": 0,
+    "sha256": "aba5cce6b9234aa848097f8f95d1e005c37a21eb3b162f707c35f414f5224300",
+    "vector_figures": 2
   }
 ]

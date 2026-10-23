@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://www.digitarin.ru/jour/article/view/54",
+    "verified": "2026-10-23",
+    "authors_publisher_english": [
+      "S. A. Rumyantsev",
+      "Yu. V. Polishuk"
+    ],
+    "titles": [
+      "Artificial Intelligence in Higher Education and Psychological Counseling: A Methodological Framework for Implementation",
+      "Искусственный интеллект в высшем образовании и психологическом консультировании: методическая рамка внедрения"
+    ],
+    "volume": "2",
+    "issue": "2",
+    "pages": "6-15",
+    "doi": "10.26794/3030-7097-2026-2-2-6-15",
+    "publication_date": "2026/06/05"
+  },
+  {
+    "url": "https://www.digitarin.ru/jour/article/view/55",
+    "verified": "2026-10-23",
+    "authors_publisher_english": [
+      "A. V. Ovsyannikova"
+    ],
+    "titles": [
+      "Intelligent Recommender Systems in Education. Algorithms for Personalised Learning Pathways",
+      "Интеллектуальные рекомендательные системы в образовании. Алгоритмы подбора индивидуальных траекторий обучения"
+    ],
+    "volume": "2",
+    "issue": "2",
+    "pages": "16-24",
+    "doi": "10.26794/3030-7097-2026-2-2-16-24",
+    "publication_date": "2026/06/05"
+  }
+]
