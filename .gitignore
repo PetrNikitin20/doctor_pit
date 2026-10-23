@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+**/private/
+**/backups/
+work/
+~$*
+*.log
+research/article/template-reference.docx
+research/injoit/template-reference.docx
+research/diff_eq/deps/

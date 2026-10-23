@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-23",
+  "synthetic_only": true,
+  "checks": [
+    {
+      "check": "beta polynomial vs exact binomial tail",
+      "cases": 120,
+      "passed": true
+    },
+    {
+      "check": "exact optimizer vs exhaustive enumeration",
+      "cases": 30,
+      "passed": true
+    },
+    {
+      "check": "rounded optimizer vs archived objective and resource budgets",
+      "cases": 20,
+      "passed": true
+    },
+    {
+      "check": "additive S epsilon bound",
+      "cases": 3,
+      "passed": true
+    },
+    {
+      "check": "distinct risk policies explicitly documented",
+      "marginal_risks": [
+        0.0281474976710656,
+        0.004722366482869645
+      ],
+      "sum": 0.032869864153935245,
+      "passed": true
+    },
+    {
+      "check": "ODE inverse and independent DOP853 forward solution",
+      "cases": 2,
+      "passed": true
+    }
+  ]
+}

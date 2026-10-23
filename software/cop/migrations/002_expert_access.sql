@@ -1,0 +1,1 @@
+CREATE TABLE expert_assignments(user_id text NOT NULL REFERENCES users, attempt_id text NOT NULL REFERENCES attempts, expires_at timestamptz NOT NULL, assigned_by text NOT NULL REFERENCES users, PRIMARY KEY(user_id,attempt_id));

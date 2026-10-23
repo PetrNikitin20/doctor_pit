@@ -1,0 +1,68 @@
+name: cop-pmo
+services:
+  db:
+    image: postgres:17-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cop
+      POSTGRES_USER: cop
+      POSTGRES_PASSWORD: ${PGPASSWORD:?Set PGPASSWORD}
+    volumes: ["postgres:/var/lib/postgresql/data"]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cop -d cop"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  app:
+    build: { context: .., dockerfile: deploy/Dockerfile }
+    restart: unless-stopped
+    env_file: ../.env
+    environment:
+      DATABASE_URL: postgresql://cop:${PGPASSWORD}@db:5432/cop
+      HOST: 0.0.0.0
+      PORT: 3000
+      NODE_ENV: production
+    depends_on:
+      db: { condition: service_healthy }
+    networks: [backend, frontend]
+    read_only: true
+    tmpfs: ["/tmp:size=32m,noexec,nosuid"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      COP_DOMAIN: ${COP_DOMAIN:-edu.petr-nikitin.ru}
+    volumes:
+      [
+        "./Caddyfile:/etc/caddy/Caddyfile:ro",
+        "caddy_data:/data",
+        "caddy_config:/config",
+      ]
+    networks: [frontend]
+    depends_on: [app]
+  # Optional runner: explicit profile; daemon privilege is outside the web service.
+  runner:
+    profiles: [sandbox]
+    build: { context: .., dockerfile: runner/Dockerfile }
+    restart: unless-stopped
+    environment:
+      RUNNER_TOKEN: ${RUNNER_TOKEN:?Set RUNNER_TOKEN}
+      DOCKER_HOST: unix:///var/run/docker.sock
+    volumes:
+      [
+        "${ROOTLESS_DOCKER_SOCKET:-/run/user/1000/docker.sock}:/var/run/docker.sock",
+      ]
+    networks: [backend]
+    read_only: true
+    tmpfs: ["/tmp:size=32m,noexec,nosuid"]
+volumes:
+  postgres:
+  caddy_data:
+  caddy_config:
+networks:
+  backend: { internal: true }
+  frontend:

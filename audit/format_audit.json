@@ -1,0 +1,46 @@
+[
+  {
+    "file": "Статья_Никитин_Междисциплинарные_переходы_SITITO_редакция_2026-10-23.docx",
+    "journal": "sitito",
+    "native_equations": 11,
+    "tables": 4,
+    "bordered_cells": 78,
+    "active_table_shading": 0,
+    "replaced_em_dashes": 0,
+    "sitito_body_paragraphs": 60,
+    "sha256": "9250b6ea07e484f72c458621a8e76549e2b4c9e2eb3b85c786847adc8a103099"
+  },
+  {
+    "file": "Статья_EJCE_Междисциплинарные_траектории_русская_редакция_2026-10-23.docx",
+    "journal": "ejce",
+    "native_equations": 8,
+    "tables": 3,
+    "bordered_cells": 61,
+    "active_table_shading": 0,
+    "replaced_em_dashes": 0,
+    "sitito_body_paragraphs": 0,
+    "sha256": "aa34917074f7c52282be9a9e14d33154951fe97c03ebc1b4429da5086d1e3fae"
+  },
+  {
+    "file": "Статья_INJOIT_Численный_метод_выбора_действий_редакция_2026-10-23.docx",
+    "journal": "injoit",
+    "native_equations": 21,
+    "tables": 2,
+    "bordered_cells": 41,
+    "active_table_shading": 0,
+    "replaced_em_dashes": 0,
+    "sitito_body_paragraphs": 0,
+    "sha256": "374dd39a2b221f4df343a732ea959db4befad2793ae289c67afcb91f9e449713"
+  },
+  {
+    "file": "Статья_ИТВС_Идентификация_динамической_модели_подготовки_редакция_2026-10-23.docx",
+    "journal": "itvs",
+    "native_equations": 22,
+    "tables": 3,
+    "bordered_cells": 68,
+    "active_table_shading": 0,
+    "replaced_em_dashes": 0,
+    "sitito_body_paragraphs": 0,
+    "sha256": "452f1ca4fef073dc7fc57020fc96c4df1a3049a95f09401180931bfa88acf8e9"
+  }
+]

@@ -1,0 +1,2360 @@
+{
+  "10.1145/3569576": {
+    "issue": "11",
+    "DOI": "10.1145/3569576",
+    "type": "journal-article",
+    "page": "1-37",
+    "title": [
+      "Knowledge Tracing: A Survey"
+    ],
+    "volume": "55",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7470-0494",
+        "authenticated-orcid": false,
+        "given": "Ghodai",
+        "family": "Abdelrahman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Computing, Australian National University, Acton, Canberra, ACT, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9504-4273",
+        "authenticated-orcid": false,
+        "given": "Qing",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computing, Australian National University, Acton, Canberra, ACT, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9764-9401",
+        "authenticated-orcid": false,
+        "given": "Bernardo",
+        "family": "Nunes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computing, Australian National University, Acton, Canberra, ACT, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Computing Surveys"
+    ],
+    "URL": "https://doi.org/10.1145/3569576",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          2,
+          9
+        ]
+      ]
+    }
+  },
+  "10.1109/TLT.2024.3383325": {
+    "DOI": "10.1109/tlt.2024.3383325",
+    "type": "journal-article",
+    "page": "1858-1879",
+    "title": [
+      "A Survey of Knowledge Tracing: Models, Variants, and Applications"
+    ],
+    "volume": "17",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3905-9352",
+        "authenticated-orcid": false,
+        "given": "Shuanghong",
+        "family": "Shen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Data Science, University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6956-5550",
+        "authenticated-orcid": false,
+        "given": "Qi",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1661-0420",
+        "authenticated-orcid": false,
+        "given": "Zhenya",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yonghe",
+        "family": "Zheng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Research Institute of Science Education, Faculty of Education, Beijing Normal University, Haidian, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6226-2394",
+        "authenticated-orcid": false,
+        "given": "Minghao",
+        "family": "Yin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Information Science and Technology, Northeast Normal University, Changchun, Jilin, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2561-3420",
+        "authenticated-orcid": false,
+        "given": "Minjuan",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "The Education University of Hong Kong, SAR, Hong Kong, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4835-4102",
+        "authenticated-orcid": false,
+        "given": "Enhong",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Data Science, University of Science and Technology of China, Hefei, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Learning Technologies"
+    ],
+    "URL": "https://doi.org/10.1109/tlt.2024.3383325",
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  "10.1109/TKDE.2025.3552759": {
+    "issue": "8",
+    "DOI": "10.1109/tkde.2025.3552759",
+    "type": "journal-article",
+    "page": "4512-4536",
+    "title": [
+      "Deep Learning Based Knowledge Tracing: A Review, a Tool and Empirical Studies"
+    ],
+    "volume": "37",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0491-307X",
+        "authenticated-orcid": false,
+        "given": "Zitao",
+        "family": "Liu",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6604-475X",
+        "authenticated-orcid": false,
+        "given": "Teng",
+        "family": "Guo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7558-0431",
+        "authenticated-orcid": false,
+        "given": "Qianru",
+        "family": "Liang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5225-2195",
+        "authenticated-orcid": false,
+        "given": "Mingliang",
+        "family": "Hou",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "TAL Education Group, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bojun",
+        "family": "Zhan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7125-3898",
+        "authenticated-orcid": false,
+        "given": "Jiliang",
+        "family": "Tang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Data Science and Engineering Lab, Michigan State University, East Lansing, MI, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5605-7397",
+        "authenticated-orcid": false,
+        "given": "Weiqi",
+        "family": "Luo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jian",
+        "family": "Weng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Jinan University, Guangzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Knowledge and Data Engineering"
+    ],
+    "URL": "https://doi.org/10.1109/tkde.2025.3552759",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    }
+  },
+  "10.3390/electronics15010238": {
+    "issue": "1",
+    "DOI": "10.3390/electronics15010238",
+    "type": "journal-article",
+    "page": "238",
+    "title": [
+      "Personalized Learning Path Recommendation Based on Knowledge Graphs: A Survey"
+    ],
+    "volume": "15",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0000-6913-2325",
+        "authenticated-orcid": false,
+        "given": "Aili",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "College of Computer Science and Technology, Xinjiang Normal University, Urumqi 830054, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2281-5652",
+        "authenticated-orcid": false,
+        "given": "Yong",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Computer Science and Technology, Xinjiang Normal University, Urumqi 830054, China"
+          },
+          {
+            "name": "Software Division, Xinjiang Institute of Electronics, Urumqi 830013, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiyu",
+        "family": "Gao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Computer Science and Technology, Xinjiang Normal University, Urumqi 830054, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Electronics"
+    ],
+    "URL": "https://doi.org/10.3390/electronics15010238",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          5
+        ]
+      ]
+    }
+  },
+  "10.3390/electronics14020255": {
+    "issue": "2",
+    "DOI": "10.3390/electronics14020255",
+    "type": "journal-article",
+    "page": "255",
+    "title": [
+      "KG-PLPPM: A Knowledge Graph-Based Personal Learning Path Planning Method Used in Online Learning"
+    ],
+    "volume": "14",
+    "author": [
+      {
+        "given": "Bo",
+        "family": "Hou",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Xi’an Institute of High-Tech, Xi’an 710025, China"
+          },
+          {
+            "name": "School of Automation, Northwestern Polytechnical University, Xi’an 710072, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4721-3041",
+        "authenticated-orcid": false,
+        "given": "Yishuai",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi’an 710000, China"
+          },
+          {
+            "name": "Guangzhou Research Institute, Xidian University, Guangzhou 510530, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuechen",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi’an 710000, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chen",
+        "family": "Fang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi’an 710000, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chuang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi’an 710000, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaoying",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Technology, Xidian University, Xi’an 710000, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Electronics"
+    ],
+    "URL": "https://doi.org/10.3390/electronics14020255",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          9
+        ]
+      ]
+    }
+  },
+  "10.1016/j.ipm.2025.104393": {
+    "issue": "2",
+    "DOI": "10.1016/j.ipm.2025.104393",
+    "type": "journal-article",
+    "page": "104393",
+    "title": [
+      "Learning path recommendation based on forgetting factors and knowledge graph awareness"
+    ],
+    "volume": "63",
+    "author": [
+      {
+        "given": "Yunxia",
+        "family": "Fan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0005-3387-6118",
+        "authenticated-orcid": false,
+        "given": "Mingwen",
+        "family": "Tong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2902-7365",
+        "authenticated-orcid": false,
+        "given": "Duantengchuan",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Information Processing &amp; Management"
+    ],
+    "URL": "https://doi.org/10.1016/j.ipm.2025.104393",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    },
+    "article-number": "104393"
+  },
+  "10.31577/cai_2025_4_983": {
+    "issue": "4",
+    "DOI": "10.31577/cai_2025_4_983",
+    "type": "journal-article",
+    "page": "983-1008",
+    "title": [
+      "Personalized Learning Path Recommendation Based on Learner Profile and Knowledge Graph"
+    ],
+    "volume": "44",
+    "author": [
+      {
+        "given": "Xin",
+        "family": "Xie",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Xiangyang",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Computing and Informatics"
+    ],
+    "URL": "https://doi.org/10.31577/cai_2025_4_983",
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  },
+  "10.3390/educsci13070741": {
+    "issue": "7",
+    "DOI": "10.3390/educsci13070741",
+    "type": "journal-article",
+    "page": "741",
+    "title": [
+      "Survey of Personalized Learning Software Systems: A Taxonomy of Environments, Learning Content, and User Models"
+    ],
+    "volume": "13",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7891-9872",
+        "authenticated-orcid": false,
+        "given": "Heba",
+        "family": "Ismail",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Computer Science and Information Technology Department, Abu Dhabi University, Abu Dhabi P.O. Box 15551, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8029-1455",
+        "authenticated-orcid": false,
+        "given": "Nada",
+        "family": "Hussein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computer Science and Information Technology Department, Abu Dhabi University, Abu Dhabi P.O. Box 15551, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Saad",
+        "family": "Harous",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, University of Sharjah, Sharjah P.O. Box 26666, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1584-8525",
+        "authenticated-orcid": false,
+        "given": "Ashraf",
+        "family": "Khalil",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "College of Technological Innovation, Zayed University, Dubai P.O. Box 19282, United Arab Emirates"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Education Sciences"
+    ],
+    "URL": "https://doi.org/10.3390/educsci13070741",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          20
+        ]
+      ]
+    }
+  },
+  "10.1111/ejed.12527": {
+    "issue": "4",
+    "DOI": "10.1111/ejed.12527",
+    "type": "journal-article",
+    "page": "632-645",
+    "title": [
+      "Towards hybrid\n                    <scp>human‐AI</scp>\n                    learning technologies"
+    ],
+    "volume": "57",
+    "author": [
+      {
+        "given": "Inge",
+        "family": "Molenaar",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "National Education Lab AI, Behavioural Science Institute, Faculty of Social Sciences Radboud University  Nijmegen Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "European Journal of Education"
+    ],
+    "URL": "https://doi.org/10.1111/ejed.12527",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          23
+        ]
+      ]
+    }
+  },
+  "10.1016/j.lindif.2023.102274": {
+    "DOI": "10.1016/j.lindif.2023.102274",
+    "type": "journal-article",
+    "page": "102274",
+    "title": [
+      "ChatGPT for good? On opportunities and challenges of large language models for education"
+    ],
+    "volume": "103",
+    "author": [
+      {
+        "given": "Enkelejda",
+        "family": "Kasneci",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kathrin",
+        "family": "Sessler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefan",
+        "family": "Küchemann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "Bannert",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daryna",
+        "family": "Dementieva",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frank",
+        "family": "Fischer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Urs",
+        "family": "Gasser",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Georg",
+        "family": "Groh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephan",
+        "family": "Günnemann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eyke",
+        "family": "Hüllermeier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephan",
+        "family": "Krusche",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gitta",
+        "family": "Kutyniok",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tilman",
+        "family": "Michaeli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Claudia",
+        "family": "Nerdel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jürgen",
+        "family": "Pfeffer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oleksandra",
+        "family": "Poquet",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Sailer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Albrecht",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tina",
+        "family": "Seidel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Stadler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Weller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Kuhn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gjergji",
+        "family": "Kasneci",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Learning and Individual Differences"
+    ],
+    "URL": "https://doi.org/10.1016/j.lindif.2023.102274",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4
+        ]
+      ]
+    },
+    "article-number": "102274"
+  },
+  "10.1073/pnas.2422633122": {
+    "issue": "26",
+    "DOI": "10.1073/pnas.2422633122",
+    "type": "journal-article",
+    "title": [
+      "Generative AI without guardrails can harm learning: Evidence from high school mathematics"
+    ],
+    "volume": "122",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8793-4732",
+        "authenticated-orcid": false,
+        "given": "Hamsa",
+        "family": "Bastani",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Operations, Information, and Decisions",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "Wharton School",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "University of Pennsylvania",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "Wharton AI & Analytics",
+            "place": [
+              "Philadelphia"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Osbert",
+        "family": "Bastani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Information Science",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "School of Engineering and Applied Science",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "University of Pennsylvania",
+            "place": [
+              "Philadelphia"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0002-1130-677X",
+        "authenticated-orcid": false,
+        "given": "Alp",
+        "family": "Sungu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Operations, Information, and Decisions",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "Wharton School",
+            "place": [
+              "Philadelphia"
+            ]
+          },
+          {
+            "name": "University of Pennsylvania",
+            "place": [
+              "Philadelphia"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2443-3949",
+        "authenticated-orcid": false,
+        "given": "Haosen",
+        "family": "Ge",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Wharton AI & Analytics",
+            "place": [
+              "Philadelphia"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Özge",
+        "family": "Kabakcı",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Mathematics",
+            "place": [
+              "Budapest, Hungary"
+            ]
+          },
+          {
+            "name": "Budapest British International School",
+            "place": [
+              "Budapest, Hungary"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rei",
+        "family": "Mariman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Independent",
+            "place": [
+              "Philadelphia"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the National Academy of Sciences"
+    ],
+    "URL": "https://doi.org/10.1073/pnas.2422633122",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          25
+        ]
+      ]
+    },
+    "article-number": "e2422633122"
+  },
+  "10.1038/s41598-025-97652-6": {
+    "issue": "1",
+    "DOI": "10.1038/s41598-025-97652-6",
+    "type": "journal-article",
+    "title": [
+      "AI tutoring outperforms in-class active learning: an RCT introducing a novel research-based design in an authentic educational setting"
+    ],
+    "volume": "15",
+    "author": [
+      {
+        "given": "Greg",
+        "family": "Kestin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kelly",
+        "family": "Miller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anna",
+        "family": "Klales",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy",
+        "family": "Milbourne",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gregorio",
+        "family": "Ponti",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-025-97652-6",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          3
+        ]
+      ]
+    },
+    "article-number": "17458"
+  },
+  "10.1016/j.caeai.2023.100184": {
+    "DOI": "10.1016/j.caeai.2023.100184",
+    "type": "journal-article",
+    "page": "100184",
+    "title": [
+      "Integrating generative AI in knowledge building"
+    ],
+    "volume": "5",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4616-4353",
+        "authenticated-orcid": false,
+        "given": "Bodong",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xinran",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fernando",
+        "family": "Díaz del Castillo H.",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Computers and Education: Artificial Intelligence"
+    ],
+    "URL": "https://doi.org/10.1016/j.caeai.2023.100184",
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "article-number": "100184"
+  },
+  "10.1007/BF01099821": {
+    "issue": "4",
+    "DOI": "10.1007/bf01099821",
+    "type": "journal-article",
+    "page": "253-278",
+    "title": [
+      "Knowledge tracing: Modeling the acquisition of procedural knowledge"
+    ],
+    "volume": "4",
+    "author": [
+      {
+        "given": "Albert T.",
+        "family": "Corbett",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John R.",
+        "family": "Anderson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "User Modelling and User-Adapted Interaction"
+    ],
+    "URL": "https://doi.org/10.1007/bf01099821",
+    "published": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    }
+  },
+  "10.1007/s11257-017-9193-2": {
+    "issue": "3-5",
+    "DOI": "10.1007/s11257-017-9193-2",
+    "type": "journal-article",
+    "page": "313-350",
+    "title": [
+      "Bayesian knowledge tracing, logistic models, and beyond: an overview of learner modeling techniques"
+    ],
+    "volume": "27",
+    "author": [
+      {
+        "given": "Radek",
+        "family": "Pelánek",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "User Modeling and User-Adapted Interaction"
+    ],
+    "URL": "https://doi.org/10.1007/s11257-017-9193-2",
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          16
+        ]
+      ]
+    }
+  },
+  "10.1016/j.eswa.2024.124797": {
+    "DOI": "10.1016/j.eswa.2024.124797",
+    "type": "journal-article",
+    "page": "124797",
+    "title": [
+      "Knowledge tracing via multiple-state diffusion representation"
+    ],
+    "volume": "255",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1347-0373",
+        "authenticated-orcid": false,
+        "given": "Kai",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-3001-1925",
+        "authenticated-orcid": false,
+        "given": "Tao",
+        "family": "Ji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0009-2241-1410",
+        "authenticated-orcid": false,
+        "given": "Huiling",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Expert Systems with Applications"
+    ],
+    "URL": "https://doi.org/10.1016/j.eswa.2024.124797",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "article-number": "124797"
+  },
+  "10.17513/spno.34235": {
+    "issue": "№4 2025",
+    "DOI": "10.17513/spno.34235",
+    "type": "journal-article",
+    "page": "86-86",
+    "title": [
+      "ADAPTIVE TESTS AS A TOOL FOR INDIVIDUALIZED AND PERSONALIZED LEARNING"
+    ],
+    "author": [
+      {
+        "given": "T.N.",
+        "family": "Gureva",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "L.Y.",
+        "family": "Sharabaeva",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Современные проблемы науки и образования (Modern Problems of Science and Education)"
+    ],
+    "URL": "https://doi.org/10.17513/spno.34235",
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  },
+  "10.1109/TLT.2023.3348690": {
+    "DOI": "10.1109/tlt.2023.3348690",
+    "type": "journal-article",
+    "page": "1021-1036",
+    "title": [
+      "Hybrid Models for Knowledge Tracing: A Systematic Literature Review"
+    ],
+    "volume": "17",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6171-0397",
+        "authenticated-orcid": false,
+        "given": "Andrea",
+        "family": "Zanellati",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, University of Bologna, Bologna, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9331-6893",
+        "authenticated-orcid": false,
+        "given": "Daniele Di",
+        "family": "Mitri",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "DIPF Insitute, Frankfurt, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0609-8662",
+        "authenticated-orcid": false,
+        "given": "Maurizio",
+        "family": "Gabbrielli",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, University of Bologna, Bologna, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4267-3989",
+        "authenticated-orcid": false,
+        "given": "Olivia",
+        "family": "Levrini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physics and Astronomy, University of Bologna, Bologna, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Learning Technologies"
+    ],
+    "URL": "https://doi.org/10.1109/tlt.2023.3348690",
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  "10.1037/bul0000151": {
+    "issue": "7",
+    "DOI": "10.1037/bul0000151",
+    "type": "journal-article",
+    "page": "710-756",
+    "title": [
+      "Transfer of test-enhanced learning: Meta-analytic review and synthesis."
+    ],
+    "volume": "144",
+    "author": [
+      {
+        "given": "Steven C.",
+        "family": "Pan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy C.",
+        "family": "Rickard",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Psychological Bulletin"
+    ],
+    "URL": "https://doi.org/10.1037/bul0000151",
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    }
+  },
+  "10.1007/s10489-024-05509-8": {
+    "issue": "8",
+    "DOI": "10.1007/s10489-024-05509-8",
+    "type": "journal-article",
+    "page": "6483-6514",
+    "title": [
+      "A survey of explainable knowledge tracing"
+    ],
+    "volume": "54",
+    "author": [
+      {
+        "given": "Yanhong",
+        "family": "Bai",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiabao",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tingjiang",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Qing",
+        "family": "Cai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Liang",
+        "family": "He",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Applied Intelligence"
+    ],
+    "URL": "https://doi.org/10.1007/s10489-024-05509-8",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    }
+  },
+  "10.19181/smtp.2026.8.3.5": {
+    "issue": "3",
+    "DOI": "10.19181/smtp.2026.8.3.5",
+    "type": "journal-article",
+    "page": "74-88",
+    "title": [
+      "Some Aspects of Artificial Intelligence Application in Science and Education: Pro et Contra"
+    ],
+    "volume": "8",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-4007-8879",
+        "authenticated-orcid": false,
+        "given": "Boris",
+        "family": "Gaydin",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Sociology of FCTAS RAS, Moscow, Russia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Science Management: Theory and Practice"
+    ],
+    "URL": "https://doi.org/10.19181/smtp.2026.8.3.5",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          25
+        ]
+      ]
+    }
+  },
+  "10.1145/131766.131776": {
+    "issue": "3",
+    "DOI": "10.1145/131766.131776",
+    "type": "journal-article",
+    "page": "360-373",
+    "title": [
+      "Algorithm 708: Significant digit computation of the incomplete beta function ratios"
+    ],
+    "volume": "18",
+    "author": [
+      {
+        "given": "Armido R.",
+        "family": "Didonato",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "U.S. Naval Surface Warfare Center"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "suffix": "Jr.",
+        "given": "Alfred H.",
+        "family": "Morris",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "U.S. Naval Surface Warfare Center"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Mathematical Software"
+    ],
+    "URL": "https://doi.org/10.1145/131766.131776",
+    "published": {
+      "date-parts": [
+        [
+          1992,
+          9
+        ]
+      ]
+    }
+  },
+  "10.1111/j.1745-3992.2006.00075.x": {
+    "issue": "4",
+    "DOI": "10.1111/j.1745-3992.2006.00075.x",
+    "type": "journal-article",
+    "page": "6-20",
+    "title": [
+      "Implications of Evidence‐Centered Design for Educational Testing"
+    ],
+    "volume": "25",
+    "author": [
+      {
+        "given": "Robert J.",
+        "family": "Mislevy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Geneva D.",
+        "family": "Haertel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Educational Measurement: Issues and Practice"
+    ],
+    "URL": "https://doi.org/10.1111/j.1745-3992.2006.00075.x",
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          12
+        ]
+      ]
+    }
+  },
+  "10.1037/0033-2909.128.4.612": {
+    "issue": "4",
+    "DOI": "10.1037/0033-2909.128.4.612",
+    "type": "journal-article",
+    "page": "612-637",
+    "title": [
+      "When and where do we apply what we learn?: A taxonomy for far transfer."
+    ],
+    "volume": "128",
+    "author": [
+      {
+        "given": "Susan M.",
+        "family": "Barnett",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen J.",
+        "family": "Ceci",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Psychological Bulletin"
+    ],
+    "URL": "https://doi.org/10.1037/0033-2909.128.4.612",
+    "published": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    }
+  },
+  "10.1207/s15430421tip4102_2": {
+    "issue": "2",
+    "DOI": "10.1207/s15430421tip4102_2",
+    "type": "journal-article",
+    "page": "64-70",
+    "title": [
+      "Becoming a Self-Regulated Learner: An Overview"
+    ],
+    "volume": "41",
+    "author": [
+      {
+        "given": "Barry J.",
+        "family": "Zimmerman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Theory Into Practice"
+    ],
+    "URL": "https://doi.org/10.1207/s15430421tip4102_2",
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          5
+        ]
+      ]
+    }
+  },
+  "10.3102/00346543211019105": {
+    "issue": "5",
+    "DOI": "10.3102/00346543211019105",
+    "type": "journal-article",
+    "page": "761-798",
+    "title": [
+      "When Problem Solving Followed by Instruction Works: Evidence for Productive Failure"
+    ],
+    "volume": "91",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3069-2899",
+        "authenticated-orcid": false,
+        "given": "Tanmay",
+        "family": "Sinha",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "ETH Zürich"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manu",
+        "family": "Kapur",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "ETH Zürich"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Review of Educational Research"
+    ],
+    "URL": "https://doi.org/10.3102/00346543211019105",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          18
+        ]
+      ]
+    }
+  },
+  "10.1126/science.1230579": {
+    "issue": "6130",
+    "DOI": "10.1126/science.1230579",
+    "type": "journal-article",
+    "page": "305-308",
+    "title": [
+      "Physical and Virtual Laboratories in Science and Engineering Education"
+    ],
+    "volume": "340",
+    "author": [
+      {
+        "given": "Ton",
+        "family": "de Jong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Instructional Technology, Faculty of Behavioral Sciences, University of Twente, 7500 AE Enschede, Netherlands."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marcia C.",
+        "family": "Linn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Education in Mathematics, Science, and Technology, University of California, Berkeley, Berkeley, CA 94720, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zacharias C.",
+        "family": "Zacharia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Educational Sciences, University of Cyprus, Nicosia 1678, Cyprus."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "URL": "https://doi.org/10.1126/science.1230579",
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          4,
+          19
+        ]
+      ]
+    }
+  },
+  "10.13187/ejced.2024.3.589": {
+    "issue": "3",
+    "DOI": "10.13187/ejced.2024.3.589",
+    "type": "journal-article",
+    "title": [
+      "Possibilities of Application of Adaptive Knowledge Testing Using Artificial Neural Networks in Training Economics Students"
+    ],
+    "volume": "13",
+    "container-title": [
+      "European Journal of Contemporary Education"
+    ],
+    "URL": "https://doi.org/10.13187/ejced.2024.3.589",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          25
+        ]
+      ]
+    }
+  },
+  "10.13187/ejced.2025.4.524": {
+    "issue": "4",
+    "DOI": "10.13187/ejced.2025.4.524",
+    "type": "journal-article",
+    "title": [
+      "Methodological and Procedural Aspects of Student’s Research Skills Formation by Artificial Intelligence Using"
+    ],
+    "volume": "14",
+    "container-title": [
+      "European Journal of Contemporary Education"
+    ],
+    "URL": "https://doi.org/10.13187/ejced.2025.4.524",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          29
+        ]
+      ]
+    }
+  },
+  "10.13187/ejced.2026.1.139": {
+    "issue": "1",
+    "DOI": "10.13187/ejced.2026.1.139",
+    "type": "journal-article",
+    "title": [
+      "Development of Self-Regulated Learning Skills in University Students Through Intelligent AI Agents"
+    ],
+    "volume": "15",
+    "container-title": [
+      "European Journal of Contemporary Education"
+    ],
+    "URL": "https://doi.org/10.13187/ejced.2026.1.139",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          31
+        ]
+      ]
+    }
+  },
+  "10.13187/ejced.2026.3.427": {
+    "issue": "3",
+    "DOI": "10.13187/ejced.2026.3.427",
+    "type": "journal-article",
+    "title": [
+      "Flipped and Blended Learning in Present-Day Russian History Education: A Two-Group Design and Simulation of Historical Learning and Motivational Outcomes across a University and a School"
+    ],
+    "volume": "15",
+    "container-title": [
+      "European Journal of Contemporary Education"
+    ],
+    "URL": "https://doi.org/10.13187/ejced.2026.3.427",
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          29
+        ]
+      ]
+    }
+  }
+}

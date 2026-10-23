@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+private/
+data/
+backups/
+*.log
+*.xlsx
+*.csv
+*.db
+*.sqlite*
+credentials*
+snapshots/

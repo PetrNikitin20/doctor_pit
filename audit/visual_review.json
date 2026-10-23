@@ -1,0 +1,87 @@
+[
+  {
+    "journal": "ejce",
+    "docx_sha256": "aa34917074f7c52282be9a9e14d33154951fe97c03ebc1b4429da5086d1e3fae",
+    "pages": 18,
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
+    "layout_passed": true
+  },
+  {
+    "journal": "injoit",
+    "docx_sha256": "374dd39a2b221f4df343a732ea959db4befad2793ae289c67afcb91f9e449713",
+    "pages": 6,
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
+    "layout_passed": true
+  },
+  {
+    "journal": "itvs",
+    "docx_sha256": "452f1ca4fef073dc7fc57020fc96c4df1a3049a95f09401180931bfa88acf8e9",
+    "pages": 13,
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
+    "layout_passed": true
+  },
+  {
+    "journal": "sitito",
+    "docx_sha256": "9250b6ea07e484f72c458621a8e76549e2b4c9e2eb3b85c786847adc8a103099",
+    "pages": 12,
+    "pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
+    "layout_passed": true
+  }
+]

@@ -1,0 +1,10 @@
+.git
+node_modules
+.env*
+private
+data
+backups
+test
+*.xlsx
+*.csv
+*.log

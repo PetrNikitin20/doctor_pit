@@ -1,0 +1,206 @@
+{
+  "source": "https://github.com/PetrNikitin20/MKRmodel",
+  "commit": "992f964e82e30d678a73965bd29daeec18a04bf0",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "298700278297d462bacd09200f8e50e3f95f232c111005f347ee477b58e2dbc1"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "faafddd2f1dab674de128eea7321b65508457c12d06c72997a0999b7bd05de5b"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "861f6dd42613b49fb92a2a4467050a00f396443f00cc435a929cb678e3be455a"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e1ff23d493641ddec0cfb4b476868a4be48502c54d07187037da9a800818ba81"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b643624c5a0b289add1938159fa4928bb44be15b906f778615d0290b38666068"
+    },
+    {
+      "path": "content/competencies.json",
+      "sha256": "fafc5fa1c27b0df586e3f7273bd43a2a4025e8c3e5a0b9a5ba753bb4c44a8cb3"
+    },
+    {
+      "path": "content/courses.json",
+      "sha256": "dadfc5cf24d3c051a2d052c4bb2e610c4b5882eda2b09b6cbf172572be2df7d6"
+    },
+    {
+      "path": "content/tasks.mjs",
+      "sha256": "b1be0434ce04449b8f350625d94d21341b5b728334cf967324acb5328ac97da8"
+    },
+    {
+      "path": "content/units.json",
+      "sha256": "5278b2d5810224fd2cbc94d486b3384f4d744b27f6c03019c41e91fdee2f9da1"
+    },
+    {
+      "path": "deploy/Caddyfile",
+      "sha256": "9def016ccaf306644117bffa99eb6a0c97d8edf2785b4b97315765bef614a3d8"
+    },
+    {
+      "path": "deploy/Dockerfile",
+      "sha256": "dd77815024251dbf498c6e0e951ebefbebc4b25b94c1714b9404aa785c3cebd9"
+    },
+    {
+      "path": "deploy/backup.sh",
+      "sha256": "ae68bb1542d528ddcb8ba5ac8220e95781fd550c714e5e13a0b3917327b1699b"
+    },
+    {
+      "path": "deploy/compose.yaml",
+      "sha256": "216893c6b71bb6ee878756dd47d35489dacc509ab89ef75938c1fcaedd3ec844"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "sha256": "773d9e4011aff146127fc836db5f75832ceea5c491c583a6ae0556adf9c3cb3e"
+    },
+    {
+      "path": "docs/API.md",
+      "sha256": "539f0ee8ae9c25320beda993333ad2a65cf19d3257f5ef750bca7ca15a0fb179"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "56d1f5bfebd624f69483c1d23314ad15643f58b19e22bbe89f69ad82c61cb79c"
+    },
+    {
+      "path": "docs/DEPLOY_RU.md",
+      "sha256": "6baedd73e0197c7c4609ff5d882dc8e5b7b3a4db43dc679bd505f576bba5ab71"
+    },
+    {
+      "path": "docs/LLM.md",
+      "sha256": "408e1ab80b153424ffd504b7070854327a56e0948f44148ee39b2e7f8031a6b1"
+    },
+    {
+      "path": "docs/LOCAL.md",
+      "sha256": "6dc9b0444bd7606f4cd636834b7018f8d5d2bf9ca9cc6a56578eb770f689bb3c"
+    },
+    {
+      "path": "docs/TZ.md",
+      "sha256": "476732b51b2456aa487c99ce68fed3467f94cf8d81275d19934ab07f8505f4c6"
+    },
+    {
+      "path": "docs/ТЗ_ЦОП_1_0.docx",
+      "sha256": "8553bd041747d238c16fcbad4b888cfb7db555aff7ad94e5637e8b77c7a032da"
+    },
+    {
+      "path": "migrations/001_core.sql",
+      "sha256": "288d84e4d3a5c74f9ae63ad54878a5c4ea1a4c351a26a94698e564370b5a339b"
+    },
+    {
+      "path": "migrations/002_expert_access.sql",
+      "sha256": "4039e3f0aee0ce8b11646d96035814882c76e3485f11b9e11acf4baa35b0608d"
+    },
+    {
+      "path": "migrations/003_task_versions.sql",
+      "sha256": "3f54c92fc45752dcb835a716c233839bafca3a4217106ce64573ba569c248561"
+    },
+    {
+      "path": "package.json",
+      "sha256": "5a9fb4adfeeaaece341b2dcb1b6b63878017566a5cfdcc783514a9aa140297c7"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "4b0387eaf1697f4deed3a854ab58b4868697874bd8a82d25811b66361ccba84d"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "e909ca5cf1ab06acc5b53139519ba0f209766ba20e666f4c5df30bcb59695f13"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "09441d21cca116f87866485ccbcadb13630c33ede4a2de250c09d02d6f00aa71"
+    },
+    {
+      "path": "public/python-worker.js",
+      "sha256": "d5ae5031b855d633776f61e68fbd759dc46a8e36e23028072a74112c1c725d87"
+    },
+    {
+      "path": "public/style.css",
+      "sha256": "8f0674366bcdee115c9196c97853c82f49c28695ae27c211478321fad4589e59"
+    },
+    {
+      "path": "runner/Dockerfile",
+      "sha256": "e2ae7ddc2318ed83056f741e3028abdf0ea5e9e35669a2917e2cac5db7558a2c"
+    },
+    {
+      "path": "runner/Dockerfile.sandbox",
+      "sha256": "02849db570e2e3b0438dd1804651da7308f25deb641170b2cc84e3220fc26e53"
+    },
+    {
+      "path": "runner/harness.py",
+      "sha256": "a1511bc76abc97d30b7ac572c0827cdd21ae79fb838cad9d6775d246a55ae998"
+    },
+    {
+      "path": "runner/service.py",
+      "sha256": "00aaedfec448ad5f3ff1730f62a0e96607f85dee897b716f5e938f23489f7387"
+    },
+    {
+      "path": "scripts/Start-Local.ps1",
+      "sha256": "fb0cd4b52d1f2d7716c174f46972bb091dc415c77ee368d5b4de4202a71d47ef"
+    },
+    {
+      "path": "scripts/Stop-Local.ps1",
+      "sha256": "17ae1fe2dbd2b96e495c6273da4f575289a61c98e8ddb518dc17f3610193e7f9"
+    },
+    {
+      "path": "scripts/export-snapshot.mjs",
+      "sha256": "d1ee315aeed8837db6997b5fc930e94c55a4aeb67a8b9c8474d08e1653c888c8"
+    },
+    {
+      "path": "scripts/import-private.mjs",
+      "sha256": "0f5f70b36b90611cf61dd267f2c640e35123837bccb794638eba420dc2d2eec8"
+    },
+    {
+      "path": "scripts/migrate.mjs",
+      "sha256": "27abea8ac9a02aa860b66bf8d4dae14b002f4761fff0673222845a52ae938680"
+    },
+    {
+      "path": "scripts/seed.mjs",
+      "sha256": "0fc232987169f4b139b34720fec2a2d7dfc5ae31019ef8213fcc63a4e36943be"
+    },
+    {
+      "path": "scripts/verify-snapshot.mjs",
+      "sha256": "8adccd310fa77b8ab44231c05ccf8b1056caf91d9ad105ddc8209c056947a0dc"
+    },
+    {
+      "path": "src/db.mjs",
+      "sha256": "3d384e075279035be7155dfa62386d4ecd063180efcaa211c630b31dc30390b4"
+    },
+    {
+      "path": "src/llm.mjs",
+      "sha256": "76afa2d48a712f4ef14d403681e93dd0b59a2dd7cd2fd8f72a003566d7d09a6b"
+    },
+    {
+      "path": "src/model.mjs",
+      "sha256": "4bf879eead0b446ef932a97eb292d5f7b64aa8df3a2cc75a6c3e89bd5092d88a"
+    },
+    {
+      "path": "src/routes-browser.mjs",
+      "sha256": "16c1f1c4648788f226bf1e77c34a1030a79469be92f6f06e1c3dfbd23370b34e"
+    },
+    {
+      "path": "src/routes-learning.mjs",
+      "sha256": "5ce60bd28ef7f08feee6c627a44bc954aace02d141514e2340222321d5572d3d"
+    },
+    {
+      "path": "src/routes-management.mjs",
+      "sha256": "467b017e636997cfb39a16de45c35509814203d4378dbd513867918595c75472"
+    },
+    {
+      "path": "src/security.mjs",
+      "sha256": "cde938e4675d655f8dc9db027556c372d70f0a48f641fd535a3b86168e864227"
+    },
+    {
+      "path": "src/server.mjs",
+      "sha256": "a97264259d51c285dd0e38c5634cf09f95c8d72f3405e180753c5b1ba5b6d9a1"
+    },
+    {
+      "path": "test/pilot.test.mjs",
+      "sha256": "b1d454c221fb22a6b4d44f50f31e607ccb79cfd74d6c1389ec526f9a482384a1"
+    }
+  ]
+}
