@@ -48,6 +48,16 @@ def check():
         if key=='injoit':
             assert root.find('.//w:sectPr/w:cols',NS).get(q('w:num'))=='2'
             meta=json.loads((B/'research/injoit/manuscript.json').read_text(encoding='utf8'))
+            assert len(meta['references'])==25
+            seen=[]
+            for block in meta['blocks']:
+                if block['type']!='paragraph':continue
+                for match in re.finditer(r'\[(\d+)\](?:[–-]\[(\d+)\])?',block['text']):
+                    ids=range(int(match[1]),int(match[2])+1) if match[2] else [int(match[1])]
+                    for number in ids:
+                        if number not in seen:seen.append(number)
+            assert seen==list(range(1,26))
+            assert sum('Цифровые решения и технологии искусственного интеллекта' in r for r in meta['references'])==2
             abstract=meta.get('abstract_en',meta.get('abstractEN',''))
             assert 180<=len(abstract.split())<=200
             assert 'погрешности ε₀' in text and 'ℬ' in text and 'ν' in text

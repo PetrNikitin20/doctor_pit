@@ -1,0 +1,114 @@
+[
+  {
+    "id": 12,
+    "reference": "R. Pelánek, “Bayesian knowledge tracing, logistic models, and beyond: An overview of learner modeling techniques,” User Modeling and User-Adapted Interaction, vol. 27, no. 3–5, pp. 313–350, 2017. doi: https://doi.org/10.1007/s11257-017-9193-2.",
+    "doi": "10.1007/s11257-017-9193-2",
+    "url": "https://doi.org/10.1007/s11257-017-9193-2",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 4
+  },
+  {
+    "id": 13,
+    "reference": "Y. Bai, J. Zhao, T. Wei, Q. Cai, and L. He, “A survey of explainable knowledge tracing,” Applied Intelligence, vol. 54, no. 8, pp. 6483–6514, 2024. doi: https://doi.org/10.1007/s10489-024-05509-8.",
+    "doi": "10.1007/s10489-024-05509-8",
+    "url": "https://doi.org/10.1007/s10489-024-05509-8",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 5
+  },
+  {
+    "id": 14,
+    "reference": "A. Zanellati, D. Di Mitri, M. Gabbrielli, and O. Levrini, “Hybrid models for knowledge tracing: A systematic literature review,” IEEE Transactions on Learning Technologies, vol. 17, pp. 1021–1036, 2024. doi: https://doi.org/10.1109/TLT.2023.3348690.",
+    "doi": "10.1109/TLT.2023.3348690",
+    "url": "https://doi.org/10.1109/TLT.2023.3348690",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 6
+  },
+  {
+    "id": 15,
+    "reference": "B. Hou, Y. Lin, Y. Li, C. Fang, C. Li, and X. Wang, “KG-PLPPM: A knowledge graph-based personal learning path planning method used in online learning,” Electronics, vol. 14, no. 2, art. 255, 2025. doi: https://doi.org/10.3390/electronics14020255.",
+    "doi": "10.3390/electronics14020255",
+    "url": "https://doi.org/10.3390/electronics14020255",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 7
+  },
+  {
+    "id": 16,
+    "reference": "I. Molenaar, “Towards hybrid human-AI learning technologies,” European Journal of Education, vol. 57, no. 4, pp. 632–645, 2022. doi: https://doi.org/10.1111/ejed.12527.",
+    "doi": "10.1111/ejed.12527",
+    "url": "https://doi.org/10.1111/ejed.12527",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 8
+  },
+  {
+    "id": 17,
+    "reference": "H. Bastani, O. Bastani, A. Sungu, H. Ge, Ö. Kabakcı, and R. Mariman, “Generative AI without guardrails can harm learning: Evidence from high school mathematics,” Proceedings of the National Academy of Sciences, vol. 122, no. 26, art. e2422633122, 2025. doi: https://doi.org/10.1073/pnas.2422633122.",
+    "doi": "10.1073/pnas.2422633122",
+    "url": "https://doi.org/10.1073/pnas.2422633122",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 9
+  },
+  {
+    "id": 18,
+    "reference": "G. Kestin, K. Miller, A. Klales, T. Milbourne, and G. Ponti, “AI tutoring outperforms in-class active learning: An RCT introducing a novel research-based design in an authentic educational setting,” Scientific Reports, vol. 15, art. 17458, 2025. doi: https://doi.org/10.1038/s41598-025-97652-6.",
+    "doi": "10.1038/s41598-025-97652-6",
+    "url": "https://doi.org/10.1038/s41598-025-97652-6",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 10
+  },
+  {
+    "id": 19,
+    "reference": "R. J. Mislevy and G. D. Haertel, “Implications of evidence-centered design for educational testing,” Educational Measurement: Issues and Practice, vol. 25, no. 4, pp. 6–20, 2006. doi: https://doi.org/10.1111/j.1745-3992.2006.00075.x.",
+    "doi": "10.1111/j.1745-3992.2006.00075.x",
+    "url": "https://doi.org/10.1111/j.1745-3992.2006.00075.x",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 20
+  },
+  {
+    "id": 20,
+    "reference": "T. Rainforth, A. Foster, D. R. Ivanova, and F. Bickford Smith, “Modern Bayesian experimental design,” Statistical Science, vol. 39, no. 1, pp. 100–114, 2024. doi: https://doi.org/10.1214/23-STS915.",
+    "doi": "10.1214/23-STS915",
+    "url": "https://www.imstat.org/publications/sts/sts_39_1/sts_39_1.pdf",
+    "verification": "Institute of Mathematical Statistics issue record and author manuscript.",
+    "reference_number": 18
+  },
+  {
+    "id": 21,
+    "reference": "X. Huan, J. Jagalur, and Y. Marzouk, “Optimal experimental design: Formulations and computations,” Acta Numerica, vol. 33, pp. 715–840, 2024. doi: https://doi.org/10.1017/S0962492924000023.",
+    "doi": "10.1017/S0962492924000023",
+    "url": "https://www.cambridge.org/core/journals/acta-numerica/article/optimal-experimental-design-formulations-and-computations/38BBD0DC1A0386FDF306B6C0167DF7D9",
+    "verification": "Cambridge publisher page and Crossref metadata read on 2026-10-23.",
+    "reference_number": 19
+  },
+  {
+    "id": 22,
+    "reference": "V. Cacchiani, M. Iori, A. Locatelli, and S. Martello, “Knapsack problems – An overview of recent advances. Part I: Single knapsack problems,” Computers & Operations Research, vol. 143, art. 105692, 2022. doi: https://doi.org/10.1016/j.cor.2021.105692.",
+    "doi": "10.1016/j.cor.2021.105692",
+    "url": "https://doi.org/10.1016/j.cor.2021.105692",
+    "verification": "Publisher-deposited Crossref metadata read on 2026-10-23.",
+    "reference_number": 16
+  },
+  {
+    "id": 23,
+    "reference": "A. R. DiDonato and A. H. Morris, Jr., “Algorithm 708: Significant digit computation of the incomplete beta function ratios,” ACM Transactions on Mathematical Software, vol. 18, no. 3, pp. 360–373, 1992. doi: https://doi.org/10.1145/131766.131776.",
+    "doi": "10.1145/131766.131776",
+    "url": "https://doi.org/10.1145/131766.131776",
+    "verification": "Publisher metadata retained from the previously verified companion manuscript.",
+    "reference_number": 23
+  },
+  {
+    "id": 24,
+    "reference": "Л. Р. Борисова и М. Н. Фридман, «Анализ некоторых аспектов цифровизации в области оказания образовательных услуг населению методами статистического анализа и машинного обучения», Цифровые решения и технологии искусственного интеллекта, т. 2, № 3, с. 67–78, 2026. doi: https://doi.org/10.26794/3030-7097-2026-2-3-67-78.",
+    "doi": "10.26794/3030-7097-2026-2-3-67-78",
+    "url": "https://www.digitarin.ru/jour/article/view/77",
+    "verification": "DigiTarin publisher article metadata read on 2026-10-23; volume, issue, pages and DOI confirmed.",
+    "reference_number": 25
+  },
+  {
+    "id": 25,
+    "reference": "А. И. Гайдамака, С. Р. Муминова и А. В. Куприянов, «Использование GigaCode в деятельности IT-компаний», Цифровые решения и технологии искусственного интеллекта, т. 1, № 2, с. 18–25, 2025. [Электронный ресурс]. URL: https://www.digitarin.ru/jour/article/view/9 (дата обращения: 23.10.2026).",
+    "doi": null,
+    "url": "https://www.digitarin.ru/jour/article/view/9",
+    "verification": "DigiTarin publisher article metadata read on 2026-10-23; no DOI supplied by publisher.",
+    "reference_number": 11
+  }
+]

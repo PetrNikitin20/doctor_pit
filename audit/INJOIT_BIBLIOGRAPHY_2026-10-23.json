@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-23",
+  "baseline_commit": "8be7b4767d4f16176f0716d14437d0081d5c90cd",
+  "baseline_docx_sha256": "374dd39a2b221f4df343a732ea959db4befad2793ae289c67afcb91f9e449713",
+  "docx_sha256": "256f65f0c9acf6849062559a4084c3f32a18629cc3802afe32b3ea641352476d",
+  "references": 25,
+  "all_references_cited": true,
+  "citation_order_by_first_appearance": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "digitarin_reference_numbers": [
+    11,
+    25
+  ],
+  "digitarin_publisher_pages": [
+    {
+      "reference": 11,
+      "url": "https://www.digitarin.ru/jour/article/view/9",
+      "publisher_metadata": "Гайдамака А. И., Муминова С. Р., Куприянов А. В. Использование GigaCode в деятельности IT-компаний. 2025;1(2):18–25.",
+      "doi": null
+    },
+    {
+      "reference": 25,
+      "url": "https://www.digitarin.ru/jour/article/view/77",
+      "publisher_metadata": "Борисова Л. Р., Фридман М. Н. Анализ некоторых аспектов цифровизации в области оказания образовательных услуг населению методами статистического анализа и машинного обучения. 2026;2(3):67–78.",
+      "doi": "10.26794/3030-7097-2026-2-3-67-78"
+    }
+  ],
+  "native_equation_objects_unchanged": 21,
+  "equation_groups_unchanged": 9,
+  "tables_exact_canonical_xml_unchanged": 2,
+  "unchanged_equations_c14n_sha256": [
+    "8a01126c5834d8fe3f0e001b506b2fc8ec39eb866863e7565ffea96577b32ad9",
+    "1213631914ca09a3f2a67bac1928c64054231da9e70dd0f9751e7842460aa4e8",
+    "9b9127dfa697cb06aea41b328bdecf6a3ec1820fa8e21c3a999ac4c64607925b",
+    "5a4f5cda1eea94ceb3894c48e2d5d9e6f23e834ec308b2d6479c889bc428b657",
+    "6ca6c83fc35177d6fc3a1f63b021c1883f9bdadd7d6786eea25b790749746862",
+    "6ca6c83fc35177d6fc3a1f63b021c1883f9bdadd7d6786eea25b790749746862",
+    "f164df259e92894f824c4fb3358bd1869bf24b3b66e2da0336c15d70e15e74da",
+    "ab974d415951787305d8cc5ccf2aa7917abbbf798526a385d88822b3ef4bd779",
+    "78604835d833b473977fb0203c9ebf56de4a7e3bfb6010740915817e0ff134ea",
+    "86b88846cd7e9d31cdd59768bf7fd3a7ea5825f05e0c57fb491a990dfa5fd640",
+    "3916302522c1f59147127b6b613f7a74b281133a27702fa03f6eb735dd93ac34",
+    "9190f31c354e458c9513475547d10aef937e9683c33b49c2134e5325402ab62f",
+    "02946454cf3e6d6b6952bacad9bb431c32cd6a90158ca2ce4604f399b79f9b74",
+    "ff3496e9a92dda132bc765e3a38549297a7da144336871aeb7b26e54b3392b4b",
+    "8f145a7789f22c8597c9b4b42074570f572a01543e88cbc79e538c9db8fe38db",
+    "91f70294139869e12406aaceeb092bedfdd679903b99cbd5028810a93ecc1d16",
+    "0f33e1f7f28b246c40c31e1543765222daa0079ced1e31f117d27351dfbd1da3",
+    "e69bd87b7c397b42ce957c5380a2eb5d3b84ccae86ca36bfd85254a17b54e1b1",
+    "010f2b7ded5a4685a0a0368246d9e14aa47486e10ee435e5b2a011709b7e6216",
+    "c2e54ae02860e69c4ce52a1d78a8ac33ada23ae5543d0de963e1f8bfe0b23e3f",
+    "6ca6c83fc35177d6fc3a1f63b021c1883f9bdadd7d6786eea25b790749746862"
+  ],
+  "unchanged_tables_c14n_sha256": [
+    "bf5c6a2d0ec0f767ee55129479ba1205216f9b1e078f8ae445eba9eff75eac05",
+    "2c49a264aa290ad19e8c5039560f82272bdf7ff588a22c28cfc7d03874c9d4b1"
+  ],
+  "protected_files_sha256_unchanged": {
+    "experiment.py": "afc23ad79aeea2da7fa940984c72273e72ef063c87f56b8c90ae4324996d9c44",
+    "numerical_results.json": "8e2fd5a416a37fc62fd3dcc5e61108e3495dd6f4ac1a8fb263bc3bc6bd664c6b",
+    "numerical_runs.csv": "6017c2057d7dd225cbc47cfc180ff3cc129f03b285c398bc9e028f3d15a610f2",
+    "budget.png": "ceead1dfed15db95b28ee6f8c16400efa4ea4f768d2002609e28526e02cc8d05",
+    "build_article.py": "d80aa9de3ef5a7265ef62ce2881ff178999df395c3b9efed5b4daea2b11d1322"
+  },
+  "non_prose_blocks_unchanged": true,
+  "titles_abstracts_keywords_unchanged": true,
+  "english_abstract_words": 195,
+  "pages": 7,
+  "pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "render": "Microsoft Word read-only PDF export + Poppler 120 dpi; bundled renderer unavailable because LibreOffice is not installed",
+  "layout_passed": true,
+  "numerical_experiment_rerun": false,
+  "reason": "Bibliographic update only; formula/table XML and saved computation inputs, code, outputs and figure verified unchanged. Original measurements retained.",
+  "numerical_experiment_prose_unchanged_except_citation_labels": true
+}

@@ -28,15 +28,16 @@
   },
   {
     "journal": "injoit",
-    "docx_sha256": "374dd39a2b221f4df343a732ea959db4befad2793ae289c67afcb91f9e449713",
-    "pages": 6,
+    "docx_sha256": "256f65f0c9acf6849062559a4084c3f32a18629cc3802afe32b3ea641352476d",
+    "pages": 7,
     "pages_visually_reviewed": [
       1,
       2,
       3,
       4,
       5,
-      6
+      6,
+      7
     ],
     "render": "Microsoft Word read-only PDF export + Poppler 120 dpi",
     "layout_passed": true
