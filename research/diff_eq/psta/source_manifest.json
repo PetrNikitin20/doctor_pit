@@ -1,0 +1,21 @@
+{
+  "source": "manuscript_tusur.json",
+  "source_sha256": "2f451a6d5051c6c240c5b9b76c80be258f13afac66f08c073e66163c01436e4d",
+  "display_equations": 22,
+  "numbered_equations": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "10": 4,
+    "19": 5,
+    "20": 6
+  },
+  "tables": 3,
+  "figures": 1,
+  "references": 15,
+  "rubric": 6,
+  "specialty": "1.2.2 (technical sciences)",
+  "date": "2026-10-24",
+  "anonymous": true,
+  "class_sha256": "f0fdb7c786dd54fb5f066a58630a7b67235a01871457f5dcd26c48b6d476ea1b"
+}

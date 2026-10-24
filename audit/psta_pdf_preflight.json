@@ -1,0 +1,151 @@
+{
+  "pages": 17,
+  "selectable_text_each_page": true,
+  "anonymous_text_metadata_links": true,
+  "font_count": 35,
+  "fonts_all_embedded": true,
+  "type3_fonts": false,
+  "doi_links": 14,
+  "fonts": {
+    "/KHZDZB+SFRM1000": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/XFZGTP+SFTI0600": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ASCSSX+SFCC0600": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/OFTIYB+SFRM0600": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/VVKOCM+SFBX1200": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/NDTTVE+SFRM0900": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/GXWDYU+SFSS0900": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/CZTSQA+SFTI0900": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/XWHGOP+SFRM0700": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ZGVTTO+SFCC0700": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/QOMSJA+SFSX1000": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/BECWYZ+SFBX1000": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/WRZDJN+CMMI10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/LPLHJL+CMR7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/DYHZDS+CMR10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/YKHIOA+CMSY10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ZIMUMJ+CMMI7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/GXDERR+SFCC0900": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/QFLZHD+SFBX0900": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/JOJZBR+CMSY9": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/HSNFME+CMMI9": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/DBKAEP+CMR6": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/NZPTBS+CMSY7": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/HMIOVH+CMEX10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/RHUHOI+CMR5": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/QDTWCG+MSBM10": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/HBIEHQ+CMSY6": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/FQMXKA+DejaVuSans-Oblique": {
+      "subtype": "/Type0",
+      "embedded": true
+    },
+    "/BXVGUH+DejaVuSans": {
+      "subtype": "/Type0",
+      "embedded": true
+    },
+    "/GRUKHR+DejaVuSerif": {
+      "subtype": "/Type0",
+      "embedded": true
+    },
+    "/TRPYGA+SFTI1000": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/TAEVZG+SFTT1000": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/JMEKMR+SFRM0800": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/WAUYYJ+SFSS0800": {
+      "subtype": "/Type1",
+      "embedded": true
+    },
+    "/ODZBAK+SFTI0700": {
+      "subtype": "/Type1",
+      "embedded": true
+    }
+  }
+}

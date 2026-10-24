@@ -3,3 +3,6 @@
 *.png binary
 *.jpg binary
 *.pdf binary
+research/diff_eq/psta/psta.cls -text -whitespace
+research/diff_eq/psta/psta/*.sty -text -whitespace
+research/diff_eq/psta/figures/*.svg -whitespace

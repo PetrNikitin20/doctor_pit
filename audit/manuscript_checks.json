@@ -28,6 +28,17 @@
     ]
   },
   {
+    "journal": "psta",
+    "file": "ПСТА_Статья_Никитин_2026-10-24.docx",
+    "sha256": "8a4a1dcd827b0b9e0e22a0ef0faf343fe1feb5036123de32bc93ee4f43c188f3",
+    "native_equations": 22,
+    "tables": 3,
+    "bordered_cells": 68,
+    "em_dashes": 0,
+    "table_shading": 0,
+    "checks": "passed"
+  },
+  {
     "journal": "ejce",
     "file": "Статья_EJCE_Междисциплинарные_траектории_русская_редакция_2026-10-23.docx",
     "sha256": "aa34917074f7c52282be9a9e14d33154951fe97c03ebc1b4429da5086d1e3fae",

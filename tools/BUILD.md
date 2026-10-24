@@ -37,3 +37,14 @@ python tools/check_manuscripts.py
 ```
 
 Источник шаблона и его SHA-256 приведены в `research/diff_eq/README_TUSUR.md`. Неизменяемые части шаблона сохраняются побайтно; меняются содержимое, авторские колонтитулы и свойства. Исходники 22 формул доступны в TeX и MathML, рисунок – также в SVG. Сборщик создаёт редактируемые Word Equation, которые не заменяют требуемый журналом MathType. Он не объявляет рукопись готовой к отправке.
+
+
+## Редакция ПСТА
+
+Основной источник: research/diff_eq/psta/article.tex. Сборка тремя запусками pdflatex в этом каталоге; Windows-обертка build.ps1 включена. Требуются amscls, amsfonts, hyperref, textcase, cyrillic, lh, cm-super, babel-russian, babel-english, hyphen-russian, hyphen-english, enumitem, floatrow, caption, ncctools, pdflscape, colortbl, placeins и cmap. Издательский класс не изменен.
+
+Первоначальная генерация: python research/diff_eq/retarget_psta.py. Она требует научные зависимости из research/diff_eq/requirements.txt и перезаписывает article.tex. После ручной правки TeX генерацию выполняют только после переноса правок в источник. Word и TeX не синхронизируются автоматически. Перед передачей требуется просмотреть окончательный PDF и проверить анонимность.
+
+В преамбуле статьи определен отсутствующий в издательском классе макрос HideFromPeer@; анонимные колонтитулы заданы через pstamarkboth. Сам класс сохранен без изменений. После установки языковых пакетов TeX должен содержать актуальные русские шаблоны переносов.
+
+Авторский Word и сопроводительные документы воспроизводятся программой research/diff_eq/retarget_psta_word.py --output OUTPUT_DIR --author-form Avtorspravka.docx --consent-form Consent_personal_data.pdf. Нужен python-docx. Оригинальные бланки доступны на официальной странице журнала; подпись не генерируется.

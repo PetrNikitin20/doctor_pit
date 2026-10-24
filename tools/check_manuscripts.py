@@ -11,7 +11,7 @@ def q(s):a,b=s.split(':');return '{'+NS[a]+'}'+b
 def check():
     report=[]
     for file in sorted((B/'articles').glob('*.docx')):
-        key='tusur' if 'ТУСУР' in file.name else 'ejce_en' if 'EJCE' in file.name and '_EN_' in file.name else 'sitito' if 'SITITO' in file.name else 'ejce' if 'EJCE' in file.name else 'injoit' if 'INJOIT' in file.name else 'itvs'
+        key='psta' if file.name.startswith('ПСТА_') else 'tusur' if 'ТУСУР' in file.name else 'ejce_en' if 'EJCE' in file.name and '_EN_' in file.name else 'sitito' if 'SITITO' in file.name else 'ejce' if 'EJCE' in file.name else 'injoit' if 'INJOIT' in file.name else 'itvs'
         with ZipFile(file) as z:
             for name in z.namelist():
                 if name.endswith('.xml'):assert '—' not in z.read(name).decode('utf8'),(file.name,name)
@@ -23,7 +23,7 @@ def check():
             for edge in ['top','bottom','left','right']:
                 bd=cell.find('w:tcPr/w:tcBorders/w:'+edge,NS)
                 assert bd is not None and bd.get(q('w:val'))=='single'
-        eq=len(root.findall('.//m:oMath',NS));assert eq=={'sitito':11,'ejce':8,'ejce_en':8,'injoit':21,'itvs':22,'tusur':22}[key]
+        eq=len(root.findall('.//m:oMath',NS));assert eq=={'sitito':11,'ejce':8,'ejce_en':8,'injoit':21,'itvs':22,'tusur':22,'psta':22}[key]
         doc=Document(file);sec=doc.sections[0]
         assert abs(sec.page_width-Cm(21))<1300 and abs(sec.page_height-Cm(29.7))<1300
         if key=='sitito':
@@ -88,10 +88,19 @@ def check():
             assert '700-86-00' in text and '1.2.2 (технические науки)' in text
             # Structural conformance is not a claim of submission readiness:
             # native Word equations still require conversion to MathType.
+        if key=='psta':
+            assert doc.styles['Normal'].font.size==Pt(11)
+            assert abs(doc.styles['Normal'].paragraph_format.line_spacing-1.12)<0.005
+            for edge in ['top','bottom','left','right']:assert abs(getattr(sec,edge+'_margin')-Cm(2))<650
+            assert len(root.findall('.//w:tbl',NS))==3
+            previous=Document(B/'articles/Никитин_Доклады_ТУСУР_Идентификация_динамической_модели_2026-10-23.docx')
+            def math_texts(d):
+                return [''.join(m.itertext()) for m in d.element.iter(q('m:oMath'))]
+            assert math_texts(doc)==math_texts(previous)
         assert not any(v in text for v in ['TODO','TBD','[вставить','<source_ref>'])
         report.append({'journal':key,'file':file.name,'sha256':hashlib.sha256(file.read_bytes()).hexdigest(),'native_equations':eq,'tables':len(root.findall('.//w:tbl',NS)),'bordered_cells':len(cells),'em_dashes':0,'table_shading':0,'checks':'passed'})
         if key=='tusur':report[-1].update(submission_ready=False,open_requirements=['MathType conversion','author compliance with AI policy','signed author documents'])
-    assert len(report)==6 and {r['journal'] for r in report}=={'sitito','ejce','ejce_en','injoit','itvs','tusur'}
+    assert len(report)==7 and {r['journal'] for r in report}=={'sitito','ejce','ejce_en','injoit','itvs','tusur','psta'}
     return report
 if __name__=='__main__':
     r=check();(B/'audit/manuscript_checks.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(r,ensure_ascii=False,indent=2))
