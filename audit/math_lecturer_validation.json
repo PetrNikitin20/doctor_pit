@@ -69,5 +69,20 @@
     "observed_error": "The local model reversed the direction of the lower quantile after more successes.",
     "response": "Computed success/failure comparison is shown and passed to the model; the known reversed claim receives a visible numerical correction.",
     "universal_proof_checker": false
+  },
+  "live_simulator_ui": {
+    "input": {
+      "n": 3,
+      "successes": 3,
+      "m": 2,
+      "delta": 0.05
+    },
+    "lower": 0.3976353643835254,
+    "after_success_lower": 0.47817624989501795,
+    "after_failure_lower": 0.2835820638819103,
+    "model_named_correct_values_and_direction": true,
+    "answer_voice_wav_seconds": 68.337687,
+    "voice_stop_checked": true,
+    "screenshot": "outputs/ИИ-лектор_Симулятор.jpg"
   }
 }
