@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#213e39"><title>Лектор · Математика исследований</title>
+ <link rel="stylesheet" href="/vendor/katex.css"><link rel="stylesheet" href="/style.css">
+ <script defer src="/vendor/katex.js"></script><script defer src="/vendor/auto-render.js"></script>
+ <script defer src="/vendor/marked.js"></script><script defer src="/vendor/purify.js"></script><script defer src="/app.js"></script>
+</head>
+<body>
+ <header class="topbar">
+  <button class="icon-button mobile-nav" id="nav-toggle" aria-label="Открыть программу">☰</button>
+  <a href="#" class="brand" id="home-link"><span class="brand-icon">∑</span><span>Лектор<small>Математика исследований</small></span></a>
+  <span class="top-note">От первой формулы до эксперимента</span>
+  <button class="model-status" id="model-status" title="Проверить подключение локальной модели"><i></i><span>Проверяем модель</span></button>
+  <button class="button subtle mobile-chat" id="chat-toggle">Спросить лектора</button>
+ </header>
+ <div class="workspace">
+  <aside class="sidebar" id="sidebar">
+   <div class="sidebar-heading"><span class="eyebrow">Ваша программа</span><span id="progress-label">0 / 0</span></div>
+   <div class="progress-track"><span id="progress-bar"></span></div>
+   <nav id="syllabus" aria-label="Занятия"></nav>
+   <div class="sidebar-foot"><span class="local-dot"></span>Локальный кабинет<small>Прогресс и диалог хранятся на этом устройстве.</small></div>
+  </aside>
+  <main id="main">
+   <nav class="tabs" aria-label="Рабочие разделы">
+    <button class="tab active" data-tab="lesson">Занятие</button><button class="tab" data-tab="formulas">Формулы</button>
+    <button class="tab" data-tab="lab">Лаборатория</button><button class="tab" data-tab="library">Библиотека <span id="library-count">4</span></button>
+   </nav>
+   <div id="content" tabindex="-1"><div class="loading">Открываем программу…</div></div>
+  </main>
+  <aside class="chat-panel" id="chat-panel">
+   <div class="chat-header"><div><span class="eyebrow">Личный разбор</span><h2>Спросить лектора</h2></div><button id="clear-chat" class="icon-button" aria-label="Очистить диалог текущего занятия" title="Очистить диалог">↺</button></div>
+   <p class="chat-context" id="chat-context">Вопросы по выбранному занятию</p>
+   <label class="voice-row">Разбор <select id="answer-detail"><option value="detail">Подробно</option><option value="brief">Кратко и быстрее</option></select></label>
+   <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+   <div class="chat-prompts" id="chat-prompts"></div>
+   <form id="chat-form" class="chat-form"><label class="sr-only" for="question">Ваш вопрос</label><textarea id="question" rows="3" maxlength="6000" placeholder="Например: почему при делении меняется знак неравенства?"></textarea><div class="chat-form-bottom"><span id="chat-state">Ответы опираются на материалы</span><button class="button primary" id="send-question" type="submit" aria-label="Задать вопрос">Спросить ↗</button><button class="button danger hidden" id="stop-answer" type="button">Стоп</button></div></form>
+  </aside>
+ </div>
+ <section class="audio-dock hidden" id="audio-dock" aria-label="Озвучка">
+  <div><span class="eyebrow">Слушать объяснение</span><strong id="audio-title">Лекция</strong></div>
+  <audio id="audio" controls preload="metadata"></audio>
+  <span id="browser-voice-controls" class="hidden"><button class="icon-button" id="pause-voice" aria-label="Пауза озвучки">⏸</button><button class="icon-button" id="resume-voice" aria-label="Продолжить озвучку">▶</button></span>
+  <label>Скорость <select id="audio-speed"><option value=".85">0,85×</option><option value="1" selected>1×</option><option value="1.15">1,15×</option><option value="1.3">1,3×</option></select></label>
+  <button class="icon-button" id="close-audio" aria-label="Остановить озвучку">×</button>
+ </section>
+ <dialog id="source-dialog"><div class="dialog-head"><h2>Источник</h2><button id="close-source" class="icon-button" aria-label="Закрыть">×</button></div><div id="source-content"></div></dialog>
+ <div class="toast hidden" id="toast" role="status"></div>
+</body></html>

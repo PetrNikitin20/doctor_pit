@@ -1,0 +1,9 @@
+{
+  "name": "doctor-pit-math-lecturer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {"start": "node src/server.mjs", "test": "node --test test/*.test.mjs", "check": "node scripts/check-content.mjs"},
+  "dependencies": {"dompurify": "3.4.17", "katex": "0.19.1", "marked": "18.1.1"}
+}
