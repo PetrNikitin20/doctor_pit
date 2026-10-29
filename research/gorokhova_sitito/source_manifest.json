@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "stage": "title_and_outline_for_author_review",
+  "stage": "complete_author_review_draft",
   "pedagogical_experiment": "next_stage_requested_by_user",
   "sources": {
     "sitito_template": {
@@ -19,5 +19,8 @@
       "filename": "competencies.json",
       "sha256": "fafc5fa1c27b0df586e3f7273bd43a2a4025e8c3e5a0b9a5ba753bb4c44a8cb3"
     }
-  }
+  },
+  "titleApproved": true,
+  "orcidStatus": "unknown_confirmed_by_user",
+  "softwareSnapshotCommit": "e988a1ed1ff89ebca950ea522d4fad9fdc6181df"
 }

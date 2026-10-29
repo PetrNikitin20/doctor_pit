@@ -1,0 +1,2472 @@
+[
+  {
+    "DOI": "10.1145/3077618",
+    "title": [
+      "Students’ Misconceptions and Other Difficulties in Introductory Programming"
+    ],
+    "author": [
+      {
+        "given": "Yizhou",
+        "family": "Qian",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Lehman",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Computing Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ]
+    },
+    "volume": "18",
+    "issue": "1",
+    "page": "1-24",
+    "URL": "https://doi.org/10.1145/3077618",
+    "type": "journal-article",
+    "key": "qian",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2017,
+    "subtitle": [
+      "A Literature Review"
+    ]
+  },
+  {
+    "DOI": "10.1145/2483710.2483713",
+    "title": [
+      "Notional machines and introductory programming education"
+    ],
+    "author": [
+      {
+        "given": "Juha",
+        "family": "Sorva",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Computing Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          6
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          6
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "2",
+    "page": "1-31",
+    "URL": "https://doi.org/10.1145/2483710.2483713",
+    "type": "journal-article",
+    "key": "sorva",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2013
+  },
+  {
+    "DOI": "10.3389/fpsyg.2019.02366",
+    "title": [
+      "Differentiated Instruction in Secondary Education: A Systematic Review of Research Evidence"
+    ],
+    "author": [
+      {
+        "given": "Annemieke E.",
+        "family": "Smale-Jacobse",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anna",
+        "family": "Meijer",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michelle",
+        "family": "Helms-Lorenz",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ridwan",
+        "family": "Maulana",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Frontiers in Psychology"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          22
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          22
+        ]
+      ]
+    },
+    "volume": "10",
+    "article-number": "2366",
+    "URL": "https://doi.org/10.3389/fpsyg.2019.02366",
+    "type": "journal-article",
+    "key": "smale",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2019
+  },
+  {
+    "DOI": "10.1007/bf00138871",
+    "title": [
+      "Enhancing teaching through constructive alignment"
+    ],
+    "author": [
+      {
+        "given": "John",
+        "family": "Biggs",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Higher Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1996,
+          10
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          1996,
+          10
+        ]
+      ]
+    },
+    "volume": "32",
+    "issue": "3",
+    "page": "347-364",
+    "URL": "https://doi.org/10.1007/bf00138871",
+    "type": "journal-article",
+    "key": "biggs",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 1996
+  },
+  {
+    "DOI": "10.15388/infedu.2024.11",
+    "title": [
+      "Active Learning Methodologies for Teaching Programming in Undergraduate Courses: A Systematic Mapping Study"
+    ],
+    "author": [
+      {
+        "given": "Ivanilse",
+        "family": "Calderon",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Williamson",
+        "family": "Silva",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eduardo",
+        "family": "Feitosa",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Informatics in Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          27
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          27
+        ]
+      ]
+    },
+    "URL": "https://doi.org/10.15388/infedu.2024.11",
+    "type": "journal-article",
+    "key": "calderon",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024,
+    "volume": "23",
+    "issue": "2",
+    "page": "279-322",
+    "issueYearEvidence": "Publisher PDF: Informatics in Education 2024, 23(2), 279-322"
+  },
+  {
+    "DOI": "10.1006/jvlc.2002.0237",
+    "title": [
+      "A Meta-Study of Algorithm Visualization Effectiveness"
+    ],
+    "author": [
+      {
+        "given": "CHRISTOPHER D.",
+        "family": "HUNDHAUSEN",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "SARAH A.",
+        "family": "DOUGLAS",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "JOHN T.",
+        "family": "STASKO",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Visual Languages &amp; Computing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          6
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2002,
+          6
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "3",
+    "page": "259-290",
+    "URL": "https://doi.org/10.1006/jvlc.2002.0237",
+    "type": "journal-article",
+    "key": "visual",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2002
+  },
+  {
+    "DOI": "10.1080/08993408.2019.1608781",
+    "title": [
+      "Teaching computer programming with PRIMM: a sociocultural perspective"
+    ],
+    "author": [
+      {
+        "given": "Sue",
+        "family": "Sentance",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jane",
+        "family": "Waite",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "Kallia",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Computer Science Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          26
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          26
+        ]
+      ]
+    },
+    "volume": "29",
+    "issue": "2-3",
+    "page": "136-176",
+    "URL": "https://doi.org/10.1080/08993408.2019.1608781",
+    "type": "journal-article",
+    "key": "primm",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2019
+  },
+  {
+    "DOI": "10.3102/0034654307313795",
+    "title": [
+      "Focus on Formative Feedback"
+    ],
+    "author": [
+      {
+        "given": "Valerie J.",
+        "family": "Shute",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Review of Educational Research"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          3
+        ]
+      ]
+    },
+    "volume": "78",
+    "issue": "1",
+    "page": "153-189",
+    "URL": "https://doi.org/10.3102/0034654307313795",
+    "type": "journal-article",
+    "key": "shute",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2008
+  },
+  {
+    "DOI": "10.1007/s10648-010-9127-6",
+    "title": [
+      "Scaffolding in Teacher–Student Interaction: A Decade of Research"
+    ],
+    "author": [
+      {
+        "given": "Janneke",
+        "family": "van de Pol",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Monique",
+        "family": "Volman",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jos",
+        "family": "Beishuizen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Educational Psychology Review"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          4,
+          29
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          4,
+          29
+        ]
+      ]
+    },
+    "volume": "22",
+    "issue": "3",
+    "page": "271-296",
+    "URL": "https://doi.org/10.1007/s10648-010-9127-6",
+    "type": "journal-article",
+    "key": "scaffolding",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2010
+  },
+  {
+    "DOI": "10.1016/j.lindif.2023.102274",
+    "title": [
+      "ChatGPT for good? On opportunities and challenges of large language models for education"
+    ],
+    "author": [
+      {
+        "given": "Enkelejda",
+        "family": "Kasneci",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kathrin",
+        "family": "Sessler",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefan",
+        "family": "Küchemann",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "Bannert",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daryna",
+        "family": "Dementieva",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frank",
+        "family": "Fischer",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Urs",
+        "family": "Gasser",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Georg",
+        "family": "Groh",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephan",
+        "family": "Günnemann",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eyke",
+        "family": "Hüllermeier",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephan",
+        "family": "Krusche",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gitta",
+        "family": "Kutyniok",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tilman",
+        "family": "Michaeli",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Claudia",
+        "family": "Nerdel",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jürgen",
+        "family": "Pfeffer",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oleksandra",
+        "family": "Poquet",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Sailer",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Albrecht",
+        "family": "Schmidt",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tina",
+        "family": "Seidel",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthias",
+        "family": "Stadler",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Weller",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jochen",
+        "family": "Kuhn",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gjergji",
+        "family": "Kasneci",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Learning and Individual Differences"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4
+        ]
+      ]
+    },
+    "volume": "103",
+    "page": "102274",
+    "article-number": "102274",
+    "URL": "https://doi.org/10.1016/j.lindif.2023.102274",
+    "type": "journal-article",
+    "key": "kasneci",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "DOI": "10.1007/s10639-022-10925-9",
+    "title": [
+      "Artificial intelligence in online higher education: A systematic review of empirical research from 2011 to 2020"
+    ],
+    "author": [
+      {
+        "given": "Fan",
+        "family": "Ouyang",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luyi",
+        "family": "Zheng",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pengcheng",
+        "family": "Jiao",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Education and Information Technologies"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          26
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          26
+        ]
+      ]
+    },
+    "volume": "27",
+    "issue": "6",
+    "page": "7893-7925",
+    "URL": "https://doi.org/10.1007/s10639-022-10925-9",
+    "type": "journal-article",
+    "key": "ouyang",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2022
+  },
+  {
+    "DOI": "10.1186/s41239-023-00392-8",
+    "title": [
+      "Artificial intelligence in higher education: the state of the field"
+    ],
+    "author": [
+      {
+        "given": "Helen",
+        "family": "Crompton",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Diane",
+        "family": "Burke",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "International Journal of Educational Technology in Higher Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          24
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          24
+        ]
+      ]
+    },
+    "volume": "20",
+    "issue": "1",
+    "article-number": "22",
+    "URL": "https://doi.org/10.1186/s41239-023-00392-8",
+    "type": "journal-article",
+    "key": "crompton",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "DOI": "10.3390/educsci13040410",
+    "title": [
+      "What Is the Impact of ChatGPT on Education? A Rapid Review of the Literature"
+    ],
+    "author": [
+      {
+        "given": "Chung Kwan",
+        "family": "Lo",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Education Sciences"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ]
+    },
+    "volume": "13",
+    "issue": "4",
+    "page": "410",
+    "URL": "https://doi.org/10.3390/educsci13040410",
+    "type": "journal-article",
+    "key": "lo",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "DOI": "10.1016/j.caeai.2022.100074",
+    "title": [
+      "Explainable Artificial Intelligence in education"
+    ],
+    "author": [
+      {
+        "given": "Hassan",
+        "family": "Khosravi",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simon Buckingham",
+        "family": "Shum",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guanliang",
+        "family": "Chen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cristina",
+        "family": "Conati",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yi-Shan",
+        "family": "Tsai",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Judy",
+        "family": "Kay",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simon",
+        "family": "Knight",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roberto",
+        "family": "Martinez-Maldonado",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shazia",
+        "family": "Sadiq",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dragan",
+        "family": "Gašević",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Computers and Education: Artificial Intelligence"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "volume": "3",
+    "page": "100074",
+    "article-number": "100074",
+    "URL": "https://doi.org/10.1016/j.caeai.2022.100074",
+    "type": "journal-article",
+    "key": "khosravi",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2022
+  },
+  {
+    "DOI": "10.1111/bjet.13370",
+    "title": [
+      "Practical and ethical challenges of large language models in education: A systematic scoping review"
+    ],
+    "author": [
+      {
+        "given": "Lixiang",
+        "family": "Yan",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lele",
+        "family": "Sha",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Linxuan",
+        "family": "Zhao",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yuheng",
+        "family": "Li",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roberto",
+        "family": "Martinez‐Maldonado",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guanliang",
+        "family": "Chen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xinyu",
+        "family": "Li",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yueqiao",
+        "family": "Jin",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dragan",
+        "family": "Gašević",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "British Journal of Educational Technology"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          6
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          6
+        ]
+      ]
+    },
+    "volume": "55",
+    "issue": "1",
+    "page": "90-112",
+    "URL": "https://doi.org/10.1111/bjet.13370",
+    "type": "journal-article",
+    "key": "yan",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024,
+    "issueYearEvidence": "Publisher: British Journal of Educational Technology 55(1), 90-112"
+  },
+  {
+    "DOI": "10.1145/3636515",
+    "title": [
+      "Automated Grading and Feedback Tools for Programming Education: A Systematic Review"
+    ],
+    "author": [
+      {
+        "given": "Marcus",
+        "family": "Messer",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Neil C. C.",
+        "family": "Brown",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Kölling",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Miaojing",
+        "family": "Shi",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Computing Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          19
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          19
+        ]
+      ]
+    },
+    "volume": "24",
+    "issue": "1",
+    "page": "1-43",
+    "URL": "https://doi.org/10.1145/3636515",
+    "type": "journal-article",
+    "key": "messer",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024
+  },
+  {
+    "DOI": "10.1145/3764593",
+    "title": [
+      "Navigating the Landscape of Automated Feedback Generation Techniques for Programming Exercises"
+    ],
+    "author": [
+      {
+        "given": "Smitha S.",
+        "family": "Kumar",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael A.",
+        "family": "Lones",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manuel",
+        "family": "Maarek",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hind",
+        "family": "Zantout",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Computing Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          22
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          22
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "4",
+    "page": "1-29",
+    "URL": "https://doi.org/10.1145/3764593",
+    "type": "journal-article",
+    "key": "navigate",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2025
+  },
+  {
+    "DOI": "10.1145/3828727",
+    "title": [
+      "Formal Autograding in a Classroom (Extended Version)"
+    ],
+    "author": [
+      {
+        "given": "Dragana",
+        "family": "Milovančević",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samuel",
+        "family": "Chassot",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mario",
+        "family": "Bucev",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marcin",
+        "family": "Wojnarowski",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Viktor",
+        "family": "Kunčak",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "ACM Transactions on Programming Languages and Systems"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          8
+        ]
+      ]
+    },
+    "volume": "48",
+    "issue": "3",
+    "page": "1-26",
+    "URL": "https://doi.org/10.1145/3828727",
+    "type": "journal-article",
+    "key": "formal",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2026
+  },
+  {
+    "DOI": "10.1145/3544548.3580919",
+    "title": [
+      "Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming"
+    ],
+    "author": [
+      {
+        "given": "Majeed",
+        "family": "Kazemitabaar",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Justin",
+        "family": "Chow",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carl Ka To",
+        "family": "Ma",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Barbara J.",
+        "family": "Ericson",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Weintrop",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tovi",
+        "family": "Grossman",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          19
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          19
+        ]
+      ]
+    },
+    "page": "1-23",
+    "URL": "https://doi.org/10.1145/3544548.3580919",
+    "type": "proceedings-article",
+    "key": "kazemi",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "DOI": "10.1145/3632620.3671116",
+    "title": [
+      "The Widening Gap: The Benefits and Harms of Generative AI for Novice Programmers"
+    ],
+    "author": [
+      {
+        "given": "James",
+        "family": "Prather",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brent N",
+        "family": "Reeves",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juho",
+        "family": "Leinonen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "MacNeil",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arisoa S",
+        "family": "Randrianasolo",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brett A.",
+        "family": "Becker",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bailey",
+        "family": "Kimmel",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jared",
+        "family": "Wright",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ben",
+        "family": "Briggs",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 2024 ACM Conference on International Computing Education Research - Volume 1"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          12
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          12
+        ]
+      ]
+    },
+    "page": "469-486",
+    "URL": "https://doi.org/10.1145/3632620.3671116",
+    "type": "proceedings-article",
+    "key": "gap",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024
+  },
+  {
+    "DOI": "10.1145/3613904.3642773",
+    "title": [
+      "CodeAid: Evaluating a Classroom Deployment of an LLM-based Programming Assistant that Balances Student and Educator Needs"
+    ],
+    "author": [
+      {
+        "given": "Majeed",
+        "family": "Kazemitabaar",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Runlong",
+        "family": "Ye",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiaoning",
+        "family": "Wang",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Austin Zachary",
+        "family": "Henley",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Denny",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michelle",
+        "family": "Craig",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tovi",
+        "family": "Grossman",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the CHI Conference on Human Factors in Computing Systems"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          11
+        ]
+      ]
+    },
+    "page": "1-20",
+    "URL": "https://doi.org/10.1145/3613904.3642773",
+    "type": "proceedings-article",
+    "key": "codeaid",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024
+  },
+  {
+    "DOI": "10.1145/3545945.3569823",
+    "title": [
+      "Conversing with Copilot: Exploring Prompt Engineering for Solving CS1 Problems Using Natural Language"
+    ],
+    "author": [
+      {
+        "given": "Paul",
+        "family": "Denny",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Viraj",
+        "family": "Kumar",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nasser",
+        "family": "Giacaman",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 1"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          2
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          2
+        ]
+      ]
+    },
+    "page": "1136-1142",
+    "URL": "https://doi.org/10.1145/3545945.3569823",
+    "type": "proceedings-article",
+    "key": "copilot",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "DOI": "10.1145/3626252.3630909",
+    "title": [
+      "Prompt Problems: A New Programming Exercise for the Generative AI Era"
+    ],
+    "author": [
+      {
+        "given": "Paul",
+        "family": "Denny",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juho",
+        "family": "Leinonen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Prather",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Luxton-Reilly",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thezyrie",
+        "family": "Amarouche",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brett A.",
+        "family": "Becker",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brent N.",
+        "family": "Reeves",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 1"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          7
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          7
+        ]
+      ]
+    },
+    "page": "296-302",
+    "URL": "https://doi.org/10.1145/3626252.3630909",
+    "type": "proceedings-article",
+    "key": "prompt",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2024
+  },
+  {
+    "DOI": "10.1145/3545945.3569759",
+    "title": [
+      "Programming Is Hard - Or at Least It Used to Be"
+    ],
+    "author": [
+      {
+        "given": "Brett A.",
+        "family": "Becker",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Denny",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Finnie-Ansley",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Luxton-Reilly",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Prather",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eddie Antonio",
+        "family": "Santos",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 1"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          2
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          2
+        ]
+      ]
+    },
+    "page": "500-506",
+    "URL": "https://doi.org/10.1145/3545945.3569759",
+    "type": "proceedings-article",
+    "key": "hard",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023,
+    "subtitle": [
+      "Educational Opportunities and Challenges of AI Code Generation"
+    ]
+  },
+  {
+    "DOI": "10.1145/3623762.3633499",
+    "title": [
+      "The Robots Are Here: Navigating the Generative AI Revolution in Computing Education"
+    ],
+    "author": [
+      {
+        "given": "James",
+        "family": "Prather",
+        "sequence": "first",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Denny",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Juho",
+        "family": "Leinonen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brett A.",
+        "family": "Becker",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ibrahim",
+        "family": "Albluwi",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michelle",
+        "family": "Craig",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hieke",
+        "family": "Keuning",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Natalie",
+        "family": "Kiesler",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tobias",
+        "family": "Kohn",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Luxton-Reilly",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "MacNeil",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Petersen",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Raymond",
+        "family": "Pettit",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Brent N.",
+        "family": "Reeves",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jaromir",
+        "family": "Savelka",
+        "sequence": "additional",
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Proceedings of the 2023 Working Group Reports on Innovation and Technology in Computer Science Education"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          22
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          22
+        ]
+      ]
+    },
+    "page": "108-159",
+    "URL": "https://doi.org/10.1145/3623762.3633499",
+    "type": "proceedings-article",
+    "key": "robots",
+    "verified": "2026-10-29",
+    "verification": "Crossref DOI registration; article titles and publication venues reviewed",
+    "year": 2023
+  },
+  {
+    "key": "dig54",
+    "author": [
+      {
+        "family": "Румянцев",
+        "given": "С. А."
+      },
+      {
+        "family": "Полищук",
+        "given": "Ю. В."
+      }
+    ],
+    "title": [
+      "Искусственный интеллект в высшем образовании и психологическом консультировании: методическая рамка внедрения"
+    ],
+    "title_en": "Artificial Intelligence in Higher Education and Psychological Counseling: A Methodological Framework for Implementation",
+    "container-title": [
+      "Цифровые решения и технологии искусственного интеллекта"
+    ],
+    "journal_en": "Digital Solutions and Artificial Intelligence Technologies",
+    "year": 2026,
+    "volume": "2",
+    "issue": "2",
+    "page": "6-15",
+    "DOI": "10.26794/3030-7097-2026-2-2-6-15",
+    "URL": "https://www.digitarin.ru/jour/article/view/54",
+    "type": "journal-article",
+    "verified": "2026-10-29",
+    "verification": "Publisher HTML citation metadata and abstract read"
+  },
+  {
+    "key": "dig55",
+    "author": [
+      {
+        "family": "Овсянникова",
+        "given": "А. В."
+      }
+    ],
+    "title": [
+      "Интеллектуальные рекомендательные системы в образовании. Алгоритмы подбора индивидуальных траекторий обучения"
+    ],
+    "title_en": "Intelligent Recommender Systems in Education. Algorithms for Personalised Learning Pathways",
+    "container-title": [
+      "Цифровые решения и технологии искусственного интеллекта"
+    ],
+    "journal_en": "Digital Solutions and Artificial Intelligence Technologies",
+    "year": 2026,
+    "volume": "2",
+    "issue": "2",
+    "page": "16-24",
+    "DOI": "10.26794/3030-7097-2026-2-2-16-24",
+    "URL": "https://www.digitarin.ru/jour/article/view/55",
+    "type": "journal-article",
+    "verified": "2026-10-29",
+    "verification": "Publisher HTML citation metadata and abstract read"
+  }
+]

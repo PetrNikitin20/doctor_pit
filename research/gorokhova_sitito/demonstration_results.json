@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-29",
+  "type": "reproducible_algorithm_demonstrations_not_student_learning_data",
+  "sourceCommit": "e988a1ed1ff89ebca950ea522d4fad9fdc6181df",
+  "sourceFiles": {
+    "model.mjs": "4bf879eead0b446ef932a97eb292d5f7b64aa8df3a2cc75a6c3e89bd5092d88a",
+    "ai-simulators.mjs": "2c09e26fac65ea4cf511e1dc741614ae0af584bbbeb53b6300d9993d5f7941b1"
+  },
+  "sorting": [
+    {
+      "n": 16,
+      "seed": 42,
+      "insertion": 86,
+      "merge": 45,
+      "mergeNormalized": 0.7031,
+      "insertionNormalized": 0.3359
+    },
+    {
+      "n": 32,
+      "seed": 42,
+      "insertion": 312,
+      "merge": 125,
+      "mergeNormalized": 0.7813,
+      "insertionNormalized": 0.3047
+    },
+    {
+      "n": 64,
+      "seed": 42,
+      "insertion": 1188,
+      "merge": 299,
+      "mergeNormalized": 0.7786,
+      "insertionNormalized": 0.29
+    },
+    {
+      "n": 128,
+      "seed": 42,
+      "insertion": 4239,
+      "merge": 732,
+      "mergeNormalized": 0.817,
+      "insertionNormalized": 0.2587
+    },
+    {
+      "n": 256,
+      "seed": 42,
+      "insertion": 16513,
+      "merge": 1725,
+      "mergeNormalized": 0.8423,
+      "insertionNormalized": 0.252
+    }
+  ],
+  "boundary": {
+    "values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "target": 10,
+    "result": {
+      "index": -1,
+      "trace": [
+        {
+          "left": 0,
+          "right": 4,
+          "middle": 2,
+          "value": 6
+        },
+        {
+          "left": 3,
+          "right": 4,
+          "middle": 3,
+          "value": 8
+        }
+      ],
+      "left": 4,
+      "right": 4
+    }
+  },
+  "inversionCases": [
+    {
+      "values": [
+        3,
+        1,
+        2,
+        1
+      ],
+      "expected": 4
+    },
+    {
+      "values": [
+        2,
+        2,
+        1
+      ],
+      "expected": 2
+    }
+  ],
+  "aiFixture": {
+    "size": 32,
+    "checked": 32,
+    "errors": 16,
+    "externalModelCalled": false
+  },
+  "notes": [
+    "Same size and seed give the same initial permutation for both sorting algorithms.",
+    "The metric counts key comparisons, not runtime or student performance.",
+    "Finite observations do not prove an asymptotic complexity bound."
+  ]
+}

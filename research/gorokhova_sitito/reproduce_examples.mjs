@@ -1,0 +1,16 @@
+import {simulate} from '../../software/cop/src/model.mjs';
+import {runAiLab} from '../../software/cop/src/ai-simulators.mjs';
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const source=JSON.parse(await readFile(new URL('../../software/cop/SOURCE_SNAPSHOT.json',import.meta.url)));
+assert.equal(source.commit,'e988a1ed1ff89ebca950ea522d4fad9fdc6181df','Review changes before updating the article examples');
+const sorting=[16,32,64,128,256].map(n=>{const insertion=simulate({algorithm:'insertion',n,seed:42}),merge=simulate({algorithm:'merge',n,seed:42});return {n,seed:42,insertion:insertion.comparisons,merge:merge.comparisons,mergeNormalized:Number((merge.comparisons/(n*Math.log2(n))).toFixed(4)),insertionNormalized:Number((insertion.comparisons/(n*n)).toFixed(4))};});
+const badSearch=(a,target)=>{let left=0,right=a.length-1,trace=[];while(left<right){const middle=(left+right)>>1;trace.push({left,right,middle,value:a[middle]});if(a[middle]===target)return {index:middle,trace};if(a[middle]<target)left=middle+1;else right=middle-1;}return {index:-1,trace,left,right};};
+const boundary={values:[2,4,6,8,10],target:10,result:badSearch([2,4,6,8,10],10)};assert.equal(boundary.result.index,-1);assert.equal(boundary.result.left,4);
+const lab=runAiLab({labId:'algorithms',parameter:32,n:32,seed:42});assert.equal(lab.metrics[1].value,16);
+const countInversions=a=>a.reduce((s,x,i)=>s+a.slice(i+1).filter(y=>x>y).length,0);
+const inversionCases=[[3,1,2,1],[2,2,1]].map(values=>({values,expected:countInversions(values)}));assert.deepEqual(inversionCases.map(x=>x.expected),[4,2]);
+const files={};for(const name of ['model.mjs','ai-simulators.mjs'])files[name]=createHash('sha256').update(await readFile(new URL('../../software/cop/src/'+name,import.meta.url))).digest('hex');
+const result={date:'2026-10-29',type:'reproducible_algorithm_demonstrations_not_student_learning_data',sourceCommit:source.commit,sourceFiles:files,sorting,boundary,inversionCases,aiFixture:{size:32,checked:lab.metrics[0].value,errors:lab.metrics[1].value,externalModelCalled:false},notes:['Same size and seed give the same initial permutation for both sorting algorithms.','The metric counts key comparisons, not runtime or student performance.','Finite observations do not prove an asymptotic complexity bound.']};
+await writeFile(new URL('./demonstration_results.json',import.meta.url),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({sorting,aiFixture:result.aiFixture,inversionCases},null,2));

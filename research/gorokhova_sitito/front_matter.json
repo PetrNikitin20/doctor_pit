@@ -1,0 +1,25 @@
+{
+  "title": "Дифференцированное обучение алгоритмам и структурам данных на основе компетентностной модели и цифрового симулятора",
+  "title_en": "Differentiated Instruction in Algorithms and Data Structures Based on a Competency Model and a Digital Simulator",
+  "author_ru": "Горохова Р. И.",
+  "author_en": "Gorokhova R. I.",
+  "name_ru": "Горохова Римма Ивановна",
+  "name_en": "Rimma I. Gorokhova",
+  "email": "rigorokhova@fa.ru",
+  "orcid": null,
+  "udc": "378.147:004.42",
+  "abstract_ru": [
+    ["Введение.", "Различия в опыте программирования требуют гибкой организации практики при общем целевом результате. Доступность готового кода усложняет оценку самостоятельности. Цель работы – разработать методику обучения алгоритмам и структурам данных, связывающую требования компетентностной модели с заданиями разной сложности, характером помощи и проверяемыми действиями студента."],
+    ["Материалы и методы.", "Использованы рабочая программа дисциплины на Python, целевая модель выпускника, материалы КРМ и действующий программный пилот. Применены содержательное сопоставление требований, педагогическое проектирование, анализ учебных действий и воспроизводимая проверка демонстрационных сценариев. Дифференциация рассматривается по двум осям: сложность задания и объём поддержки. Единицей анализа служит решение задачи вместе с объяснением, условиями его получения и проверкой переноса."],
+    ["Результаты исследования.", "Предложена методическая модель, включающая диагностику, выбор задания и помощи, формулирование гипотезы, реализацию, опыт в симуляторе и обратную связь. Разработаны матрица согласования требований, рубрика наблюдаемых действий и правила изменения поддержки. На примерах поиска, сортировки и подсчёта инверсий раскрыто использование банка из 48 заданий по 16 темам. Показано, как журнал связывает версии кода, параметры опыта, контрпримеры и выводы. Разделены автоматическая проверка примеров и преподавательская оценка объяснения алгоритма."],
+    ["Обсуждение и заключение.", "Результатом является методика с программной поддержкой и воспроизводимыми примерами её применения. Сопоставление кодов разных документов требует содержательной экспертизы. Успешное выполнение тестов не подтверждает всей компетенции. Педагогическая эффективность и возможное сокращение разрыва в подготовке студентов подлежат проверке на следующем этапе. Для него необходимы общий самостоятельный контроль, учёт исходной подготовки и проверка сохранения результата без помощи."]
+  ],
+  "abstract_en": [
+    ["Introduction.", "Differences in prior programming experience require flexible learning activities without lowering common educational goals. Ready-made code also makes independent performance harder to assess. This paper develops a teaching methodology that connects competency requirements with task complexity, instructional support and observable student actions."],
+    ["Materials and Methods.", "The study draws on a Python algorithms and data structures syllabus, a graduate competency model, KRM materials and an operational software prototype. Methods include content-based alignment, instructional design, analysis of learning actions and reproducible demonstration checks. Differentiation is organised along two dimensions: task complexity and support intensity. The unit of analysis comprises a solution, its explanation, its provenance and a transfer check."],
+    ["Results.", "The proposed model links diagnosis, task and support selection, prediction, implementation, simulation and teacher feedback. Its outputs include an alignment matrix, an observational rubric and rules for adjusting support. Search, sorting and inversion-counting scenarios illustrate a bank of 48 tasks covering 16 syllabus topics. A learning journal connects code versions with experimental parameters, counterexamples and conclusions. Automated example checks are distinguished from teacher assessment of reasoning and complexity."],
+    ["Discussion and Conclusion.", "The contribution is a teaching methodology supported by reproducible software demonstrations. Competency codes from different documents require substantive alignment rather than automatic equivalence. Passing tests does not establish complete competence. Learning gains and any reduction in preparation gaps remain hypotheses for a subsequent pedagogical study using common unaided assessments and baseline adjustment."]
+  ],
+  "keywords_ru": "дифференцированное обучение, алгоритмы и структуры данных, компетентностная модель, обучение программированию, цифровой симулятор, педагогическая поддержка, формирующее оценивание, самостоятельность",
+  "keywords_en": "differentiated instruction, algorithms and data structures, competency model, programming education, digital simulator, scaffolding, formative assessment, independent performance"
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-29",
+  "docxSha256": "6c76977b6c5557a90d4f59490c7a3a5e4f19f9eedb0f5edced8d03b358ded0a3",
+  "pages": 11,
+  "abstracts": {
+    "ru": {
+      "words": 223,
+      "characters": 1942
+    },
+    "en": {
+      "words": 232,
+      "characters": 1842
+    }
+  },
+  "scientificSources": 27,
+  "digitarinSources": 2,
+  "foreignJournalPapers2022to2026": 10,
+  "recentForeignJournalKeys": [
+    "calderon",
+    "kasneci",
+    "ouyang",
+    "crompton",
+    "lo",
+    "khosravi",
+    "yan",
+    "messer",
+    "navigate",
+    "formal"
+  ],
+  "scientificTables": 5,
+  "tableShading": false,
+  "allScientificTableBorders": true,
+  "emDashes": 0,
+  "independentNumericalChecksPassed": true,
+  "sortingRowsChecked": 5,
+  "pedagogicalExperimentPerformed": false,
+  "orcidKnown": false,
+  "authorApprovalPending": true,
+  "originalScientificExperimentsChanged": false,
+  "visualQA": {
+    "date": "2026-10-29",
+    "reviewedDocxSha256": "6c76977b6c5557a90d4f59490c7a3a5e4f19f9eedb0f5edced8d03b358ded0a3",
+    "pages": 11,
+    "pagesInspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "finalChangedPagesInspected": [
+      1,
+      2,
+      5,
+      7,
+      9,
+      10,
+      11
+    ],
+    "otherFinalPagesPixelIdenticalToInspectedVersion": [
+      3,
+      4,
+      6,
+      8
+    ],
+    "renderer": "Microsoft Word read-only export and packaged render_docx.py rasterizer using Poppler",
+    "layoutPassed": true,
+    "pagePngSha256": {
+      "1": "29132dca62d397fdf1977182969d6f08073834d6bcf1e02e571d95210970b3b1",
+      "2": "dd8c460e8ed172c8e5dd21493decbb675b8d66e72b5fe8c4bc890f46bf38573a",
+      "3": "4b6d468c1028eb95d19d47dea15a69055efd2923be184ff9914965e3beb19405",
+      "4": "f58616b050b503ac30b2003c2cf93ec4ba0927d9171b92b468c89c46c5446009",
+      "5": "2db44df15f01567716712ee66bf7112b1b21845dd4f19908ff319568c2bab341",
+      "6": "4b1d8574cd3840e849ce846ff43b725cba11f751be75e76e430397b0076b7718",
+      "7": "b27b5b39c073df6c3bc0e5948b2d52989437a7943b65fe3228a23645776be29e",
+      "8": "097e7fdb133f8255b7ee0caf61a4d2b63997fd02205eda9272893ebf54c88600",
+      "9": "37a14a6432b85ab73fe23fc094ebd7f5a531cc76982572910ab9dd36baa67e9c",
+      "10": "d0f7c0eab0bffc2a2a6e25e936d9b44361a273264796ff202a7c8b24326d94d2",
+      "11": "b508090ad3fce7b908509d81637ce25f6885c6625d527f8289f6f7be13826727"
+    }
+  }
+}
