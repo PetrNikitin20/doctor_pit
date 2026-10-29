@@ -7,12 +7,18 @@ def extract(plan_path,krm_path,registry_path):
     registry=json.loads(Path(registry_path).read_text(encoding='utf-8-sig'))
     target={x['code'] for x in registry['competencies']}
     krm=openpyxl.load_workbook(krm_path,read_only=True,data_only=True)
-    cells={code:[] for code in target}
+    cells={code:[] for code in sorted(target)}
+    # Verified spelling variant in the supplied KRM, not a new semantic crosswalk.
+    aliases={'AI S -1':'AI-S-1'}
     for sheet in krm:
         for row in sheet:
             for cell in row:
                 value=str(cell.value or '').strip()
-                if value in cells and len(cells[value])<3:cells[value].append({'sheet':sheet.title,'cell':cell.coordinate})
+                canonical=aliases.get(value,value)
+                if canonical in cells and len(cells[canonical])<3:
+                    record={'sheet':sheet.title,'cell':cell.coordinate}
+                    if canonical!=value:record.update(rawCode=value,canonicalCode=canonical,normalization='Verified spelling variant; plan and graduate registry use AI-S-1')
+                    cells[canonical].append(record)
     krm.close()
     plan=openpyxl.load_workbook(plan_path,read_only=False,data_only=True)
     sheet=plan['Дисциплины'];courses=[];modules=[]
@@ -24,6 +30,8 @@ def extract(plan_path,krm_path,registry_path):
         if not code or not title or not raw:continue
         codes=re.findall(r'[A-ZА-Я]+(?:-[A-ZА-Я]+)*-\d+',str(raw))
         known=[c for c in codes if c in target and cells.get(c)]
+        # Keep previously authored task proposals stable when a spelling alias is resolved.
+        known.sort(key=lambda c:any('rawCode' in x for x in cells[c]))
         semesters=[]
         for semester,cols in enumerate(columns,1):
             if any(isinstance(sheet[f'{col}{row}'].value,(int,float)) and sheet[f'{col}{row}'].value>0 for col in cols):semesters.append(semester)

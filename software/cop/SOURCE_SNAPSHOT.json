@@ -1,6 +1,6 @@
 {
   "source": "https://github.com/PetrNikitin20/MKRmodel",
-  "commit": "6e8cb5d4452ab3493c53929649db10a66296e766",
+  "commit": "e988a1ed1ff89ebca950ea522d4fad9fdc6181df",
   "hashBasis": "canonical committed Git blob bytes",
   "files": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "source_file_sha256": "a8aeff04116f11e6163fa9eb65db09f6426bc816a691177a88535ea19a709692",
-      "repository_file_sha256": "a8aeff04116f11e6163fa9eb65db09f6426bc816a691177a88535ea19a709692"
+      "source_file_sha256": "1792ff6b5335f57ea503c7d2e4ff9858a93cdf4fc03067d3ac15e137b9a83d62",
+      "repository_file_sha256": "1792ff6b5335f57ea503c7d2e4ff9858a93cdf4fc03067d3ac15e137b9a83d62"
     },
     {
       "path": "content/competencies.json",
@@ -40,8 +40,8 @@
     },
     {
       "path": "content/curriculum-source.json",
-      "source_file_sha256": "40740423268b3b4ae1cdccdfd46b8c4a491a16f0c67eb43e6daa5a972295d809",
-      "repository_file_sha256": "40740423268b3b4ae1cdccdfd46b8c4a491a16f0c67eb43e6daa5a972295d809"
+      "source_file_sha256": "2df2d7e31f4bb557e4a92950e7de950247e6d61d4dc112049e5f0a176dffdc89",
+      "repository_file_sha256": "2df2d7e31f4bb557e4a92950e7de950247e6d61d4dc112049e5f0a176dffdc89"
     },
     {
       "path": "content/program.mjs",
@@ -85,8 +85,8 @@
     },
     {
       "path": "docs/ACCEPTANCE.md",
-      "source_file_sha256": "27bce8ab71ea68cc3c7e6231c4c6f46d1158004620197ed07ca2f1ca41a0b978",
-      "repository_file_sha256": "27bce8ab71ea68cc3c7e6231c4c6f46d1158004620197ed07ca2f1ca41a0b978"
+      "source_file_sha256": "79de8f0e3f1d9944127698758068739a0032a991cca5f170d0d03517a6e08a7a",
+      "repository_file_sha256": "79de8f0e3f1d9944127698758068739a0032a991cca5f170d0d03517a6e08a7a"
     },
     {
       "path": "docs/API.md",
@@ -100,8 +100,8 @@
     },
     {
       "path": "docs/ARTICLE_IMPACT_2026-10-29.md",
-      "source_file_sha256": "3d48fbfc0bfc4ebcd2d1091dedad5bb98ca299a95dab3cb23670829c7e6ce554",
-      "repository_file_sha256": "3d48fbfc0bfc4ebcd2d1091dedad5bb98ca299a95dab3cb23670829c7e6ce554"
+      "source_file_sha256": "c7823308fd6002c661d3a2899d0d41d755b2a70b66ba18651cbf76592414ef98",
+      "repository_file_sha256": "c7823308fd6002c661d3a2899d0d41d755b2a70b66ba18651cbf76592414ef98"
     },
     {
       "path": "docs/DEPLOY_RU.md",
@@ -120,13 +120,18 @@
     },
     {
       "path": "docs/PROGRAM.md",
-      "source_file_sha256": "9ea9083aa57a0d58492ff92fb72501fec81959e0a6ddab8d0138ae61b894d434",
-      "repository_file_sha256": "9ea9083aa57a0d58492ff92fb72501fec81959e0a6ddab8d0138ae61b894d434"
+      "source_file_sha256": "551e3797a5e8fc998e6559c983ea911708491f42dcad98181949e622b55fa463",
+      "repository_file_sha256": "551e3797a5e8fc998e6559c983ea911708491f42dcad98181949e622b55fa463"
     },
     {
       "path": "docs/TZ.md",
       "source_file_sha256": "191005fc2f08ed2aec0fdc659089c0302a2ca68ede1576f803e8004329eb5748",
       "repository_file_sha256": "191005fc2f08ed2aec0fdc659089c0302a2ca68ede1576f803e8004329eb5748"
+    },
+    {
+      "path": "docs/curriculum-coverage-2026-10-29.json",
+      "source_file_sha256": "f4398d30202178a49d66de0b3439b8716f05b96592636e66379bdfd67a464c5e",
+      "repository_file_sha256": "f4398d30202178a49d66de0b3439b8716f05b96592636e66379bdfd67a464c5e"
     },
     {
       "path": "docs/validation-program-2026-10-29.json",
@@ -170,8 +175,8 @@
     },
     {
       "path": "public/app.js",
-      "source_file_sha256": "6900b43bc8fa916b799957c3747aed4e1ff210ab927c279b522ce1f41164f4d7",
-      "repository_file_sha256": "6900b43bc8fa916b799957c3747aed4e1ff210ab927c279b522ce1f41164f4d7"
+      "source_file_sha256": "18d735639dc32898eb27184a61da3932972d1ce286a567176699b3699c3f32ff",
+      "repository_file_sha256": "18d735639dc32898eb27184a61da3932972d1ce286a567176699b3699c3f32ff"
     },
     {
       "path": "public/index.html",
@@ -180,8 +185,8 @@
     },
     {
       "path": "public/program-ui.js",
-      "source_file_sha256": "eab936950e54c404b9d84f710e23f13e917479a90cae093bf800524896ec54e5",
-      "repository_file_sha256": "eab936950e54c404b9d84f710e23f13e917479a90cae093bf800524896ec54e5"
+      "source_file_sha256": "93ce11ab061bc1912970dd084b3f91d290aca622ec864d23f90e135ecd45f256",
+      "repository_file_sha256": "93ce11ab061bc1912970dd084b3f91d290aca622ec864d23f90e135ecd45f256"
     },
     {
       "path": "public/python-worker.js",
@@ -224,6 +229,11 @@
       "repository_file_sha256": "ff05100609d32789270e6f5e56c54c98c29eb6b6f37c204cb44a215814febbbe"
     },
     {
+      "path": "scripts/audit-curriculum.mjs",
+      "source_file_sha256": "aa6914b6bd0698d5635c3c9808fd7bc9c1d323c045259821b192c7a10307c80b",
+      "repository_file_sha256": "aa6914b6bd0698d5635c3c9808fd7bc9c1d323c045259821b192c7a10307c80b"
+    },
+    {
       "path": "scripts/check-teaching-contracts.mjs",
       "source_file_sha256": "8d94cd6ccbc496efee9cfef88d8b513a336babfba30d5fef11859eedce532662",
       "repository_file_sha256": "8d94cd6ccbc496efee9cfef88d8b513a336babfba30d5fef11859eedce532662"
@@ -240,8 +250,8 @@
     },
     {
       "path": "scripts/extract-curriculum.py",
-      "source_file_sha256": "710f01f366960f97f91f0ee324fe054841fc5837668ee3d31422e5bfc4092e86",
-      "repository_file_sha256": "710f01f366960f97f91f0ee324fe054841fc5837668ee3d31422e5bfc4092e86"
+      "source_file_sha256": "f028d5e2ac56199f404c9a158cf7c4ce2fa14da36b1b94a9fa86b050590338b1",
+      "repository_file_sha256": "f028d5e2ac56199f404c9a158cf7c4ce2fa14da36b1b94a9fa86b050590338b1"
     },
     {
       "path": "scripts/import-private.mjs",
@@ -340,8 +350,8 @@
     },
     {
       "path": "test/program.test.mjs",
-      "source_file_sha256": "e9212837fd52961542672061adcf37bbfa42b19ea7577605494a60f3d5fd8608",
-      "repository_file_sha256": "e9212837fd52961542672061adcf37bbfa42b19ea7577605494a60f3d5fd8608"
+      "source_file_sha256": "0c88d69e83a58b29f15abfdd34247e4c680ebeca1038ebd6852f1eb28e64c2a1",
+      "repository_file_sha256": "0c88d69e83a58b29f15abfdd34247e4c680ebeca1038ebd6852f1eb28e64c2a1"
     }
   ]
 }

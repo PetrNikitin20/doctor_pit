@@ -15,6 +15,9 @@ test('all requested subjects and plan/KRM subjects have versioned tasks at three
  for(const id of ['ai-math','data-processing','algebra','seminar','recommenders','nlp','applied-ml']){const units=programUnits.filter(u=>u.course_id===id);assert.equal(units.length,3);for(const u of units)assert.deepEqual(programTasks.filter(t=>t.unit_id===u.id).map(t=>t.level),[1,2,3]);}
  for(const row of curriculumSource.courses.filter(r=>r.krmCompetencies.length&&(r.semesters.length||[115,119,120,121].includes(r.row))))assert(programCourses.some(c=>c.metadata.planRow===row.row));
  assert.equal(programCourses.find(c=>c.id==='algebra').year,2);assert.equal(programCourses.find(c=>c.id==='ai-math').metadata.scheduling,'proposed');assert.equal(electiveModules.length,7);
+ assert.equal(new Set(programCourses.flatMap(c=>c.metadata.krmCompetencies)).size,38);
+ assert(curriculumSource.krmCompetencySources['AI-S-1'].some(x=>x.rawCode==='AI S -1'));
+ assert(!programCourses.find(c=>c.id==='programming').metadata.krmCompetencies.includes('PL-3'));
 });
 test('AI labs are deterministic, bounded, explicitly synthetic, and expose actual counterexamples',()=>{
  for(const labId of Object.keys(AI_LABS)){const a=runAiLab({labId,seed:42});assert.deepEqual(a,runAiLab({labId,seed:42}));assert.equal(a.origin,'curated_ai_error_fixture');assert(a.rows.length>0);assert(!JSON.stringify(a).includes('null'));}
