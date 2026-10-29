@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-29",
+  "stage": "title_and_outline_for_author_review",
+  "pedagogical_experiment": "next_stage_requested_by_user",
+  "sources": {
+    "sitito_template": {
+      "filename": "sitito_template.docx",
+      "sha256": "d708cba024080d6422dd81270b88f9eb2a5743a9fa1dc310c8bb49040d1e49b8"
+    },
+    "rpd_algorithms": {
+      "filename": "Алгоритмы и структура данных 21.05.2026.docx",
+      "sha256": "e6a87f5b7cc193eaa2928571645edd60e3c03efc6c9c456317d6c5b74d86b819"
+    },
+    "krm": {
+      "filename": "КРМ-версия3.0.xlsx",
+      "sha256": "2e96489da6603e99bab0a476f990d4e2090941b4a104abbcb48464796506e1fb"
+    },
+    "target_registry": {
+      "filename": "competencies.json",
+      "sha256": "fafc5fa1c27b0df586e3f7273bd43a2a4025e8c3e5a0b9a5ba753bb4c44a8cb3"
+    }
+  }
+}
