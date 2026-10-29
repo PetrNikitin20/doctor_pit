@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "version": "pmo-program-2026-10-29",
+  "catalog": {"courses": 43, "units": 72, "tasks": 216, "candidateTransitions": 208, "aiLabs": 9, "tables": 44, "competencies": 38, "indicators": 116},
+  "automatedTests": {"passed": 37, "failed": 0, "command": "node --test --test-concurrency=1 test/*.test.mjs"},
+  "authoredPythonBank": {"tasks": 216, "casesPassed": 498, "failed": 0, "studentCodeExecutedOnHost": false},
+  "browserQA": {"syntheticOnly": true, "ownPythonPassed": true, "curatedWrongAiFailedSameTests": true, "hypothesisAndExperimentSaved": true, "artifactSavedWithHash": true, "teacherReviewSaved": true, "automaticBinaryOutcomeFromOrdinaryGrade": false},
+  "workUpgrade": {"backupRestored": true, "protectedRecordsUnchanged": true, "protectedTables": 24, "users": 310, "studentsYear1": 149, "studentsYear2": 154, "rawJournalObservations": 1833},
+  "demoUpgrade": {"backupRestored": true, "protectedRecordsUnchanged": true, "previousAttemptsPreserved": 4, "previousCodeRunsPreserved": 6},
+  "deployment": {"localWork": "http://127.0.0.1:3001", "localDemo": "http://127.0.0.1:3000", "cloudStarted": false, "externalLlmEnabled": false},
+  "limits": ["Author-created starter modules outside the algorithms RPD", "Candidate mappings and transition rules require expert review", "PM25 group numbers need confirmation", "No real year-3 or year-4 students created", "Independent calibrated control families and a prespecified protocol are still needed", "No measured pedagogical effect or whole-trajectory risk guarantee"]
+}

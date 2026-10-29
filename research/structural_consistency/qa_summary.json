@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25",
+  "pages": 10,
+  "renderer": "Microsoft Word export and packaged render_docx.py rasterize with Poppler",
+  "visual_inspection": "All ten pages inspected at original resolution; after a padding-only figure revision page 5 re-inspected and the other nine page PNGs were byte-identical.",
+  "changed_page_after_final_figure_revision": [
+    5
+  ],
+  "native_numbered_equations": 8,
+  "native_math_objects_total": 10,
+  "tables": 3,
+  "table_shading": false,
+  "all_table_borders": true,
+  "title_borders": false,
+  "em_dashes": 0,
+  "autohyphenation": true,
+  "synthetic_checks_passed": true,
+  "pedagogical_experiment_performed": false,
+  "docx_sha256": "93533663623488e41203f116c5029081e7db00e59e50c226c8350cde9871c9f6"
+}

@@ -1,0 +1,230 @@
+{
+  "scope": "Illustrative compilation of six actual discipline rows, with ten author-proposed rules; not an expert audit of the programme.",
+  "seed_facts": [
+    "entry_assumption",
+    "scheduled_course_row_35",
+    "scheduled_course_row_36",
+    "scheduled_course_row_45",
+    "scheduled_course_row_46",
+    "scheduled_course_row_48",
+    "scheduled_course_row_54"
+  ],
+  "atoms": [
+    {
+      "id": 7,
+      "indicator": "MF-1_MF-1.1",
+      "level": 1,
+      "kind": "teach",
+      "semester": 1,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 8,
+      "indicator": "MF-1_MF-1.1",
+      "level": 1,
+      "kind": "assess",
+      "semester": 1,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 9,
+      "indicator": "PL-1_PL-1.1",
+      "level": 1,
+      "kind": "teach",
+      "semester": 1,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 10,
+      "indicator": "PL-1_PL-1.1",
+      "level": 1,
+      "kind": "assess",
+      "semester": 1,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 11,
+      "indicator": "PL-1_PL-1.1",
+      "level": 2,
+      "kind": "teach",
+      "semester": 2,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 12,
+      "indicator": "PL-1_PL-1.1",
+      "level": 2,
+      "kind": "assess",
+      "semester": 2,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 13,
+      "indicator": "BD-3_BD-3.1",
+      "level": 2,
+      "kind": "teach",
+      "semester": 4,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 14,
+      "indicator": "BD-3_BD-3.1",
+      "level": 2,
+      "kind": "assess",
+      "semester": 4,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 15,
+      "indicator": "ML-2_ML-2.2",
+      "level": 2,
+      "kind": "teach",
+      "semester": 4,
+      "version": "author_scenario_v1"
+    },
+    {
+      "id": 16,
+      "indicator": "ML-2_ML-2.2",
+      "level": 2,
+      "kind": "assess",
+      "semester": 4,
+      "version": "author_scenario_v1"
+    }
+  ],
+  "candidate_rules": [
+    {
+      "id": 0,
+      "tail": [
+        1,
+        2
+      ],
+      "head": 7,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": false
+    },
+    {
+      "id": 1,
+      "tail": [
+        7
+      ],
+      "head": 8,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": true,
+      "assessment_id": "author_assessment_1",
+      "rubric_id": "author_rubric_1_v1",
+      "planned_assessment": "Применение математического метода с обоснованием предпосылок",
+      "rubric_status": "proposed_not_expert_approved"
+    },
+    {
+      "id": 2,
+      "tail": [
+        3
+      ],
+      "head": 9,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": false
+    },
+    {
+      "id": 3,
+      "tail": [
+        9
+      ],
+      "head": 10,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": true,
+      "assessment_id": "author_assessment_3",
+      "rubric_id": "author_rubric_3_v1",
+      "planned_assessment": "Поиск на Python с проверкой граничных случаев",
+      "rubric_status": "proposed_not_expert_approved"
+    },
+    {
+      "id": 4,
+      "tail": [
+        4,
+        10
+      ],
+      "head": 11,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": false
+    },
+    {
+      "id": 5,
+      "tail": [
+        11
+      ],
+      "head": 12,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": true,
+      "assessment_id": "author_assessment_5",
+      "rubric_id": "author_rubric_5_v1",
+      "planned_assessment": "Сравнение сложности линейного и двоичного поиска",
+      "rubric_status": "proposed_not_expert_approved"
+    },
+    {
+      "id": 6,
+      "tail": [
+        5,
+        12
+      ],
+      "head": 13,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": false
+    },
+    {
+      "id": 7,
+      "tail": [
+        13
+      ],
+      "head": 14,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": true,
+      "assessment_id": "author_assessment_7",
+      "rubric_id": "author_rubric_7_v1",
+      "planned_assessment": "Индексирование структурированных данных и проверка результата запроса",
+      "rubric_status": "proposed_not_expert_approved"
+    },
+    {
+      "id": 8,
+      "tail": [
+        6,
+        8,
+        12
+      ],
+      "head": 15,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": false
+    },
+    {
+      "id": 9,
+      "tail": [
+        15
+      ],
+      "head": 16,
+      "annotation_status": "author_proposed_not_in_source_documents",
+      "diagnostic_required": true,
+      "assessment_id": "author_assessment_9",
+      "rubric_id": "author_rubric_9_v1",
+      "planned_assessment": "Подготовка признаков без утечки между обучающей и контрольной выборками",
+      "rubric_status": "proposed_not_expert_approved"
+    }
+  ],
+  "targets": [
+    8,
+    12,
+    14,
+    16
+  ],
+  "lower_rule_count": 0,
+  "upper_rule_count": 10,
+  "lower_reached": 7,
+  "upper_reached": 17,
+  "actual_documentary_status": "undetermined",
+  "target_statuses": {
+    "8": "undetermined",
+    "12": "undetermined",
+    "14": "undetermined",
+    "16": "undetermined"
+  },
+  "hypothetical_all_annotations_approved": "ensured",
+  "counterfactual_remove_database_diagnostic": "not_ensured"
+}

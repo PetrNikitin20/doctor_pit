@@ -41,7 +41,7 @@ after(async () => {
 });
 test("migrations and versioned content are idempotent", async () => {
   await seed(db);
-  assert.equal(Number((await db.one("SELECT count(*) n FROM tasks")).n), 48);
+  assert.equal(Number((await db.one("SELECT count(*) n FROM tasks")).n), 216);
   assert.equal(
     Number((await db.one("SELECT count(*) n FROM indicators")).n),
     116,
@@ -460,5 +460,5 @@ test("only admin can export a consistent private backup without sessions", async
   assert.equal(result.status, 200);
   assert(result.data.sql.includes("INSERT INTO users"));
   assert(!result.data.sql.includes("INSERT INTO sessions"));
-  assert.equal(Object.keys(result.data.counts).length, 38);
+  assert.equal(Object.keys(result.data.counts).length, 44);
 });

@@ -18,6 +18,7 @@ import { generateCode } from "./llm.mjs";
 import { handleLearning } from "./routes-learning.mjs";
 import { handleManagement } from "./routes-management.mjs";
 import { handleBrowser } from "./routes-browser.mjs";
+import { handleProgram } from "./routes-program.mjs";
 export const fail = (status, message) => {
   throw Object.assign(new Error(message), { status });
 };
@@ -47,17 +48,17 @@ export function createApp(
     });
     res.end(JSON.stringify(value));
   };
-  const event = async (tx, user, kind, object, payload = {}) =>
+  const event = async (tx, user, kind, object, payload = {}, courseId = null) =>
     tx.query(
       "INSERT INTO learning_events(id,user_id,course_id,kind,object_id,payload) VALUES($1,$2,$3,$4,$5,$6)",
-      [uuid(), user.id, "algorithms", kind, object, JSON.stringify(payload)],
+      [uuid(), user.id, courseId, kind, object, JSON.stringify(payload)],
     );
   const audit = async (tx, user, action, object, detail = {}) =>
     tx.query(
       "INSERT INTO audit_log(id,actor_id,action,object_id,detail) VALUES($1,$2,$3,$4,$5)",
       [uuid(), user.id, action, object, JSON.stringify(detail)],
     );
-  const courseAccess = async (user, course) => {
+  const courseAccess = async (user, course, write = false) => {
     if (
       user.roles.some((x) =>
         ["admin", "methodist", "program_manager"].includes(x),
@@ -67,8 +68,8 @@ export function createApp(
     if (
       user.roles.includes("student") &&
       (await db.one(
-        "SELECT 1 FROM enrollments WHERE user_id=$1 AND course_id=$2",
-        [user.id, course],
+        "SELECT 1 FROM enrollments WHERE user_id=$1 AND course_id=$2 AND ($3::boolean=false OR kind<>'preview')",
+        [user.id, course, write],
       ))
     )
       return true;
@@ -90,13 +91,13 @@ export function createApp(
       [id],
     );
     if (!task) fail(404, "Задание не найдено");
-    if (!(await courseAccess(user, task.course_id)))
+    if (!(await courseAccess(user, task.course_id, true)))
       fail(403, "Нет доступа к дисциплине");
     return task;
   };
   const getAttempt = async (user, id) => {
     const a = await db.one(
-      "SELECT a.*,r.code,r.explanation,r.assistance,v.tests,v.reference_code,t.unit_id,t.level,u.course_id FROM attempts a JOIN artifact_revisions r ON r.id=a.revision_id JOIN tasks t ON t.id=a.task_id JOIN task_versions v ON v.task_id=a.task_id AND v.version=a.task_version JOIN learning_units u ON u.id=t.unit_id WHERE a.id=$1",
+      "SELECT a.*,r.code,r.explanation,r.assistance,v.tests,v.reference_code,v.ai_fixture,t.unit_id,t.level,t.assessment_family,u.course_id FROM attempts a JOIN artifact_revisions r ON r.id=a.revision_id JOIN tasks t ON t.id=a.task_id JOIN task_versions v ON v.task_id=a.task_id AND v.version=a.task_version JOIN learning_units u ON u.id=t.unit_id WHERE a.id=$1",
       [id],
     );
     if (!a) fail(404, "Работа не найдена");
@@ -153,7 +154,7 @@ export function createApp(
         "UPDATE code_runs SET status=$2,result=$3,finished_at=now() WHERE id=$1",
         [id, status, JSON.stringify(result)],
       );
-      await event(db, user, "code.checked", a.id, { runId: id, status });
+      await event(db, user, "code.checked", a.id, { runId: id, status }, a.course_id);
       return { id, status, ...result };
     } catch {
       await db.query(
@@ -218,6 +219,7 @@ export function createApp(
         const files = {
           "/": "index.html",
           "/app.js": "app.js",
+          "/program-ui.js": "program-ui.js",
           "/style.css": "style.css",
           "/python-worker.js": "python-worker.js",
         };
@@ -389,6 +391,7 @@ export function createApp(
         getAttempt,
         runAttempt,
       };
+      if (await handleProgram(ctx)) return;
       if (await handleLearning(ctx)) return;
       if (await handleBrowser(ctx)) return;
       if (await handleManagement(ctx)) return;

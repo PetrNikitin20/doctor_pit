@@ -1,0 +1,1919 @@
+{
+  "version": "pmo-curriculum-2026-10-29",
+  "sources": {
+    "plan": {
+      "filename": "Учебный план ПМО актуализированный.xlsx",
+      "sha256": "fa822d4472c92665bc0589bf7746647ad8f872a5ccf886e948f791d99025f168"
+    },
+    "krm": {
+      "filename": "КРМ-версия3.0.xlsx",
+      "sha256": "2e96489da6603e99bab0a476f990d4e2090941b4a104abbcb48464796506e1fb"
+    },
+    "targetModelRegistry": {
+      "filename": "competencies.json",
+      "sha256": "fafc5fa1c27b0df586e3f7273bd43a2a4025e8c3e5a0b9a5ba753bb4c44a8cb3"
+    }
+  },
+  "krmCompetencySources": {
+    "ML-8": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C20"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C61"
+      }
+    ],
+    "SS-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C75"
+      }
+    ],
+    "DL-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C24"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C84"
+      }
+    ],
+    "LC-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C34"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C118"
+      }
+    ],
+    "LLM-1": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C44"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C143"
+      }
+    ],
+    "LLM-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C45"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C150"
+      }
+    ],
+    "DL-5": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C25"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C88"
+      }
+    ],
+    "LC-8": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C40"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C133"
+      }
+    ],
+    "LC-5": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C37"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C124"
+      }
+    ],
+    "SS-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C76"
+      }
+    ],
+    "ML-5": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C17"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C52"
+      }
+    ],
+    "MF-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C5"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C12"
+      }
+    ],
+    "LLM-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C46"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C157"
+      }
+    ],
+    "DL-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C22"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C77"
+      }
+    ],
+    "PL-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C32"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C112"
+      }
+    ],
+    "FC-1": [
+      {
+        "sheet": "Опережающие профессиональные",
+        "cell": "C3"
+      }
+    ],
+    "BD-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C11"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C34"
+      }
+    ],
+    "LLM-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C47"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C162"
+      }
+    ],
+    "SS-1": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C74"
+      }
+    ],
+    "BD-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C10"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C31"
+      }
+    ],
+    "AI-S-1": [],
+    "FC-2": [
+      {
+        "sheet": "Опережающие профессиональные",
+        "cell": "C19"
+      }
+    ],
+    "FC-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C59"
+      },
+      {
+        "sheet": "Опережающие профессиональные",
+        "cell": "C24"
+      }
+    ],
+    "ML-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C16"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C49"
+      }
+    ],
+    "ML-6": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C18"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C55"
+      }
+    ],
+    "PL-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C30"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C108"
+      }
+    ],
+    "DL-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C23"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C80"
+      }
+    ],
+    "ML-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C14"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C42"
+      }
+    ],
+    "MF-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C4"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C8"
+      }
+    ],
+    "BD-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C12"
+      }
+    ],
+    "MF-1": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C3"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C3"
+      }
+    ],
+    "BD-1": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C9"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C27"
+      }
+    ],
+    "MF-4": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C6"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C16"
+      }
+    ],
+    "ML-7": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C19"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C58"
+      }
+    ],
+    "ML-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C15"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C45"
+      }
+    ],
+    "O-2": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C27"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C96"
+      }
+    ],
+    "PL-1": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C29"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C104"
+      }
+    ],
+    "LC-3": [
+      {
+        "sheet": "Роли-компетенции наглядно",
+        "cell": "C35"
+      },
+      {
+        "sheet": "Профессиональные",
+        "cell": "C120"
+      }
+    ]
+  },
+  "electiveModules": [
+    {
+      "id": "1",
+      "title": "Модуль \"Прикладное программирование\"",
+      "sourceCell": "B71"
+    },
+    {
+      "id": "2",
+      "title": "Модуль \"ERP-системы\"",
+      "sourceCell": "B75"
+    },
+    {
+      "id": "3",
+      "title": "Модуль \"Системное программирование\"",
+      "sourceCell": "B79"
+    },
+    {
+      "id": "4",
+      "title": "Модуль \"Архитектура программного обеспечения\"",
+      "sourceCell": "B83"
+    },
+    {
+      "id": "5",
+      "title": "Модуль \"Машинное обучение на графах\"",
+      "sourceCell": "B87"
+    },
+    {
+      "id": "6",
+      "title": "Модуль \"Разработка распределенных приложений\"",
+      "sourceCell": "B91"
+    },
+    {
+      "id": "7",
+      "title": "Модуль \"Data Science для бизнеса\"",
+      "sourceCell": "B95"
+    }
+  ],
+  "electiveRequired": 2,
+  "courses": [
+    {
+      "planCode": "Б.1.1.1.1",
+      "title": "Финансовый университет: история и современность",
+      "row": 23,
+      "competencyCell": "D23",
+      "planCompetencies": [
+        "УК-1"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-1"
+      ],
+      "semesters": [
+        1
+      ],
+      "credits": 1
+    },
+    {
+      "planCode": "Б.1.1.1.2",
+      "title": "История России",
+      "row": 24,
+      "competencyCell": "D24",
+      "planCompetencies": [
+        "УК-1",
+        "УК-15"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-1",
+        "УК-15"
+      ],
+      "semesters": [
+        2
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.1.3",
+      "title": "Безопасность жизнедеятельности",
+      "row": 25,
+      "competencyCell": "D25",
+      "planCompetencies": [
+        "УК-7"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-7"
+      ],
+      "semesters": [
+        1
+      ],
+      "credits": 2
+    },
+    {
+      "planCode": "Б.1.1.1.4",
+      "title": "Физическая культура и спорт",
+      "row": 26,
+      "competencyCell": "D26",
+      "planCompetencies": [
+        "УК-6"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-6"
+      ],
+      "semesters": [
+        1
+      ],
+      "credits": 2
+    },
+    {
+      "planCode": "Б.1.1.1.5",
+      "title": "Иностранный язык",
+      "row": 27,
+      "competencyCell": "D27",
+      "planCompetencies": [
+        "УК-3"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-3"
+      ],
+      "semesters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.1.1.6",
+      "title": "Иностранный язык в профессиональной сфере",
+      "row": 28,
+      "competencyCell": "D28",
+      "planCompetencies": [
+        "УК-3"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-3"
+      ],
+      "semesters": [
+        5,
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.1.7",
+      "title": "Философия",
+      "row": 29,
+      "competencyCell": "D29",
+      "planCompetencies": [
+        "УК-1",
+        "УК-9"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-1",
+        "УК-9"
+      ],
+      "semesters": [
+        5
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.1.8",
+      "title": "Информационное право",
+      "row": 30,
+      "competencyCell": "D30",
+      "planCompetencies": [
+        "УК-5",
+        "УК-14"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-5",
+        "УК-14"
+      ],
+      "semesters": [
+        5
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.1.9",
+      "title": "Экономическая теория",
+      "row": 31,
+      "competencyCell": "D31",
+      "planCompetencies": [
+        "УК-13"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-13"
+      ],
+      "semesters": [
+        1
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.1.10",
+      "title": "Основы российской государственности",
+      "row": 32,
+      "competencyCell": "D32",
+      "planCompetencies": [
+        "УК-1"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-1"
+      ],
+      "semesters": [
+        2
+      ],
+      "credits": 2
+    },
+    {
+      "planCode": "Б.1.1.1.11",
+      "title": "Основы военной подготовки",
+      "row": 33,
+      "competencyCell": "D33",
+      "planCompetencies": [
+        "УК-7"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-7"
+      ],
+      "semesters": [
+        5
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.1.2.1",
+      "title": "Математический анализ",
+      "row": 35,
+      "competencyCell": "D35",
+      "planCompetencies": [
+        "MF-1",
+        "MF-3",
+        "MF-4",
+        "ML-3"
+      ],
+      "krmCompetencies": [
+        "MF-1",
+        "MF-3",
+        "MF-4",
+        "ML-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        1,
+        2
+      ],
+      "credits": 9
+    },
+    {
+      "planCode": "Б.1.1.2.2",
+      "title": "Дискретная математика",
+      "row": 36,
+      "competencyCell": "D36",
+      "planCompetencies": [
+        "MF-1"
+      ],
+      "krmCompetencies": [
+        "MF-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        1,
+        2
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.1.2.3",
+      "title": "Теория вероятностей и математическая статистика",
+      "row": 37,
+      "competencyCell": "D37",
+      "planCompetencies": [
+        "MF-1",
+        "MF-2",
+        "MF-4",
+        "ML-3"
+      ],
+      "krmCompetencies": [
+        "MF-1",
+        "MF-2",
+        "MF-4",
+        "ML-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        2,
+        3
+      ],
+      "credits": 9
+    },
+    {
+      "planCode": "Б.1.1.2.4",
+      "title": "Алгебра и геометрия",
+      "row": 38,
+      "competencyCell": "D38",
+      "planCompetencies": [
+        "ПКН-2",
+        "ПКН-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-2",
+        "ПКН-4"
+      ],
+      "semesters": [
+        3
+      ],
+      "credits": 5
+    },
+    {
+      "planCode": "Б.1.1.2.5",
+      "title": "Дифференциальные уравнения",
+      "row": 39,
+      "competencyCell": "D39",
+      "planCompetencies": [
+        "ПКН-2"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-2"
+      ],
+      "semesters": [
+        3
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.2.6",
+      "title": "Финансовая математика и ее приложения",
+      "row": 40,
+      "competencyCell": "D40",
+      "planCompetencies": [
+        "УК-12"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-12"
+      ],
+      "semesters": [
+        4
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.2.7",
+      "title": "Математические модели микро- и макроэкономики",
+      "row": 41,
+      "competencyCell": "D41",
+      "planCompetencies": [
+        "ПКН-1",
+        "УК-11",
+        "УК-13"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-1",
+        "УК-11",
+        "УК-13"
+      ],
+      "semesters": [
+        4
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.1.2.8",
+      "title": "Функциональный анализ",
+      "row": 42,
+      "competencyCell": "D42",
+      "planCompetencies": [
+        "ПКН-1"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-1"
+      ],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.1.3.4",
+      "title": "Введение в специальность",
+      "row": 44,
+      "competencyCell": "D44",
+      "planCompetencies": [
+        "LC-8",
+        "SS-1",
+        "SS-2"
+      ],
+      "krmCompetencies": [
+        "LC-8",
+        "SS-1",
+        "SS-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        1
+      ],
+      "credits": 1
+    },
+    {
+      "planCode": "Б.1.1.3.5",
+      "title": "Алгоритмы и структуры данных в языке Python",
+      "row": 45,
+      "competencyCell": "D45",
+      "planCompetencies": [
+        "PL-1"
+      ],
+      "krmCompetencies": [
+        "PL-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        1,
+        2
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.1.3.6",
+      "title": "Практикум по программированию",
+      "row": 46,
+      "competencyCell": "D46",
+      "planCompetencies": [
+        "PL-1",
+        "PL-3",
+        "SS-2"
+      ],
+      "krmCompetencies": [
+        "PL-1",
+        "SS-2"
+      ],
+      "unresolvedPlanCodes": [
+        "PL-3"
+      ],
+      "semesters": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.1.3.7",
+      "title": "Обработка данных и моделирование в табличном редакторе",
+      "row": 47,
+      "competencyCell": "D47",
+      "planCompetencies": [
+        "ПКН-1"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-1"
+      ],
+      "semesters": [
+        4
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.1.3.8",
+      "title": "Системы управления базами данных",
+      "row": 48,
+      "competencyCell": "D48",
+      "planCompetencies": [
+        "BD-2",
+        "BD-3"
+      ],
+      "krmCompetencies": [
+        "BD-2",
+        "BD-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        3,
+        4
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.1.3.9",
+      "title": "Современные банковские продукты и услуги",
+      "row": 49,
+      "competencyCell": "D49",
+      "planCompetencies": [
+        "ПКН-6"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-6"
+      ],
+      "semesters": [
+        4
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.1.3.10",
+      "title": "Электронные деньги",
+      "row": 50,
+      "competencyCell": "D50",
+      "planCompetencies": [
+        "ПКН-5"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-5"
+      ],
+      "semesters": [
+        5
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.1.1",
+      "title": "Технологии обработки данных",
+      "row": 53,
+      "competencyCell": "D53",
+      "planCompetencies": [
+        "BD-1",
+        "BD-2",
+        "PL-1"
+      ],
+      "krmCompetencies": [
+        "BD-1",
+        "BD-2",
+        "PL-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        2
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.1.2",
+      "title": "Машинное обучение",
+      "row": 54,
+      "competencyCell": "D54",
+      "planCompetencies": [
+        "MF-2",
+        "MF-4",
+        "ML-2",
+        "ML-3",
+        "ML-4",
+        "ML-5",
+        "ML-6",
+        "ML-7",
+        "ML-8"
+      ],
+      "krmCompetencies": [
+        "MF-2",
+        "MF-4",
+        "ML-2",
+        "ML-3",
+        "ML-4",
+        "ML-5",
+        "ML-6",
+        "ML-7",
+        "ML-8"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        3,
+        4
+      ],
+      "credits": 8
+    },
+    {
+      "planCode": "Б.1.2.1.3",
+      "title": "Численные методы",
+      "row": 55,
+      "competencyCell": "D55",
+      "planCompetencies": [
+        "ПКН-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-4"
+      ],
+      "semesters": [
+        4
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.1.4",
+      "title": "Математическое и имитационное моделирование",
+      "row": 56,
+      "competencyCell": "D56",
+      "planCompetencies": [
+        "ПКН-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-4"
+      ],
+      "semesters": [
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.1.5",
+      "title": "Эконометрика",
+      "row": 57,
+      "competencyCell": "D57",
+      "planCompetencies": [
+        "УК-12"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-12"
+      ],
+      "semesters": [
+        3,
+        4
+      ],
+      "credits": 7
+    },
+    {
+      "planCode": "Б.1.2.1.6",
+      "title": "Технологии обработки больших данных",
+      "row": 58,
+      "competencyCell": "D58",
+      "planCompetencies": [
+        "BD-3",
+        "BD-4",
+        "ML-8"
+      ],
+      "krmCompetencies": [
+        "BD-3",
+        "BD-4",
+        "ML-8"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        5
+      ],
+      "credits": 5
+    },
+    {
+      "planCode": "Б.1.2.2.1.1",
+      "title": "Глубокое обучение",
+      "row": 61,
+      "competencyCell": "D61",
+      "planCompetencies": [
+        "ML-5",
+        "DL-2",
+        "DL-3",
+        "DL-4",
+        "DL-5"
+      ],
+      "krmCompetencies": [
+        "ML-5",
+        "DL-2",
+        "DL-3",
+        "DL-4",
+        "DL-5"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        5
+      ],
+      "credits": 5
+    },
+    {
+      "planCode": "Б.1.2.2.1.2",
+      "title": "Методы оптимизации",
+      "row": 62,
+      "competencyCell": "D62",
+      "planCompetencies": [
+        "MF-1",
+        "MF-3",
+        "ML-3",
+        "ML-7",
+        "FC-1"
+      ],
+      "krmCompetencies": [
+        "MF-1",
+        "MF-3",
+        "ML-3",
+        "ML-7",
+        "FC-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        5
+      ],
+      "credits": 5
+    },
+    {
+      "planCode": "Б.1.2.2.1.3",
+      "title": "Обработка текстов на естественных языках",
+      "row": 63,
+      "competencyCell": "D63",
+      "planCompetencies": [
+        "DL-4",
+        "DL-5",
+        "LLM-1",
+        "LLM-2",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "DL-4",
+        "DL-5",
+        "LLM-1",
+        "LLM-2",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.4",
+      "title": "Машинное зрение",
+      "row": 64,
+      "competencyCell": "D64",
+      "planCompetencies": [
+        "DL-3"
+      ],
+      "krmCompetencies": [
+        "DL-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.5",
+      "title": "Рекомендательные системы и коллаборативная фильтрация",
+      "row": 65,
+      "competencyCell": "D65",
+      "planCompetencies": [
+        "DL-2",
+        "FC-1"
+      ],
+      "krmCompetencies": [
+        "DL-2",
+        "FC-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.6",
+      "title": "Методы визуализации данных",
+      "row": 66,
+      "competencyCell": "D66",
+      "planCompetencies": [
+        "BD-1"
+      ],
+      "krmCompetencies": [
+        "BD-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.7",
+      "title": "Семантические технологии",
+      "row": 67,
+      "competencyCell": "D67",
+      "planCompetencies": [
+        "ML-3",
+        "DL-4"
+      ],
+      "krmCompetencies": [
+        "ML-3",
+        "DL-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.8",
+      "title": "Прикладные задачи машинного обучения",
+      "row": 68,
+      "competencyCell": "D68",
+      "planCompetencies": [
+        "ML-3",
+        "ML-4",
+        "ML-5",
+        "ML-6",
+        "ML-7",
+        "ML-8",
+        "DL-2",
+        "DL-3",
+        "LC-2",
+        "FC-1",
+        "FC-3"
+      ],
+      "krmCompetencies": [
+        "ML-3",
+        "ML-4",
+        "ML-5",
+        "ML-6",
+        "ML-7",
+        "ML-8",
+        "DL-2",
+        "DL-3",
+        "LC-2",
+        "FC-1",
+        "FC-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.1.9",
+      "title": "Технологии работы с открытыми данными",
+      "row": 69,
+      "competencyCell": "D69",
+      "planCompetencies": [
+        "BD-1",
+        "BD-2",
+        "BD-4"
+      ],
+      "krmCompetencies": [
+        "BD-1",
+        "BD-2",
+        "BD-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 4
+    },
+    {
+      "planCode": "Б.1.2.2.2.1.1",
+      "title": "Основы веб-разработки",
+      "row": 72,
+      "competencyCell": "D72",
+      "planCompetencies": [
+        "LC-2",
+        "LC-5"
+      ],
+      "krmCompetencies": [
+        "LC-2",
+        "LC-5"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.1.2",
+      "title": "Объектно-ориентированное программирование",
+      "row": 73,
+      "competencyCell": "D73",
+      "planCompetencies": [
+        "ПКН-4",
+        "PL-4"
+      ],
+      "krmCompetencies": [
+        "PL-4"
+      ],
+      "unresolvedPlanCodes": [
+        "ПКН-4"
+      ],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.1.3",
+      "title": "Основы мобильной разработки",
+      "row": 74,
+      "competencyCell": "D74",
+      "planCompetencies": [
+        "PL-2",
+        "PL-4"
+      ],
+      "krmCompetencies": [
+        "PL-2",
+        "PL-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.2.1",
+      "title": "Основы корпоративных информационных систем",
+      "row": 76,
+      "competencyCell": "D76",
+      "planCompetencies": [
+        "УК-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-4"
+      ],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.2.2",
+      "title": "Основы бухгалтерских информационных систем",
+      "row": 77,
+      "competencyCell": "D77",
+      "planCompetencies": [
+        "УК-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-4"
+      ],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.2.3",
+      "title": "Разработка приложений в системе 1С Предприятие",
+      "row": 78,
+      "competencyCell": "D78",
+      "planCompetencies": [
+        "УК-4"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-4"
+      ],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.3.1",
+      "title": "Разработка эффективных вычислительных алгоритмов",
+      "row": 80,
+      "competencyCell": "D80",
+      "planCompetencies": [
+        "PL-4"
+      ],
+      "krmCompetencies": [
+        "PL-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.3.2",
+      "title": "Низкоуровневое программирование",
+      "row": 81,
+      "competencyCell": "D81",
+      "planCompetencies": [
+        "PL-4"
+      ],
+      "krmCompetencies": [
+        "PL-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.3.3",
+      "title": "Программирование для встраиваемых систем",
+      "row": 82,
+      "competencyCell": "D82",
+      "planCompetencies": [
+        "PL-4"
+      ],
+      "krmCompetencies": [
+        "PL-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.4.1",
+      "title": "Основы проектирования информационных систем",
+      "row": 84,
+      "competencyCell": "D84",
+      "planCompetencies": [
+        "LC-2",
+        "LC-3"
+      ],
+      "krmCompetencies": [
+        "LC-2",
+        "LC-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.4.2",
+      "title": "Архитектура и дизайн программного обеспечения",
+      "row": 85,
+      "competencyCell": "D85",
+      "planCompetencies": [
+        "PL-2",
+        "LC-2",
+        "LC-3",
+        "LC-5",
+        "LC-8",
+        "AI-S-1"
+      ],
+      "krmCompetencies": [
+        "PL-2",
+        "LC-2",
+        "LC-3",
+        "LC-5",
+        "LC-8"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.4.3",
+      "title": "Тестирование программного обеспечения",
+      "row": 86,
+      "competencyCell": "D86",
+      "planCompetencies": [
+        "LC-2",
+        "LC-5",
+        "AI-S-1"
+      ],
+      "krmCompetencies": [
+        "LC-2",
+        "LC-5"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.5.1",
+      "title": "Прикладная теория графов",
+      "row": 88,
+      "competencyCell": "D88",
+      "planCompetencies": [
+        "FC-1"
+      ],
+      "krmCompetencies": [
+        "FC-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.5.2",
+      "title": "Технологии и алгоритмы анализа сетевых моделей",
+      "row": 89,
+      "competencyCell": "D89",
+      "planCompetencies": [
+        "DL-2",
+        "O-2"
+      ],
+      "krmCompetencies": [
+        "DL-2",
+        "O-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.5.3",
+      "title": "Машинное обучение в семантическом и сетевом анализе",
+      "row": 90,
+      "competencyCell": "D90",
+      "planCompetencies": [
+        "ML-3",
+        "DL-2",
+        "LLM-1"
+      ],
+      "krmCompetencies": [
+        "ML-3",
+        "DL-2",
+        "LLM-1"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.6.1",
+      "title": "Методы высокопроизводительных вычислений в искусственном интеллекте",
+      "row": 92,
+      "competencyCell": "D92",
+      "planCompetencies": [
+        "BD-4"
+      ],
+      "krmCompetencies": [
+        "BD-4"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.6.2",
+      "title": "Основы технологий интернета вещей",
+      "row": 93,
+      "competencyCell": "D93",
+      "planCompetencies": [
+        "SS-1",
+        "SS-3"
+      ],
+      "krmCompetencies": [
+        "SS-1",
+        "SS-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.6.3",
+      "title": "Микросервисная архитектура",
+      "row": 94,
+      "competencyCell": "D94",
+      "planCompetencies": [
+        "LC-2",
+        "LC-3"
+      ],
+      "krmCompetencies": [
+        "LC-2",
+        "LC-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.7.1",
+      "title": "Большие языковые модели и их применение в бизнесе",
+      "row": 96,
+      "competencyCell": "D96",
+      "planCompetencies": [
+        "LLM-1",
+        "LLM-2",
+        "LLM-3",
+        "LLM-4",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "LLM-1",
+        "LLM-2",
+        "LLM-3",
+        "LLM-4",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.7.2",
+      "title": "Прикладной Data Science в финтехе",
+      "row": 97,
+      "competencyCell": "D97",
+      "planCompetencies": [
+        "AI-S-1",
+        "LLM-1",
+        "LLM-3",
+        "FC-2",
+        "SS-3"
+      ],
+      "krmCompetencies": [
+        "LLM-1",
+        "LLM-3",
+        "FC-2",
+        "SS-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.1.2.2.2.7.3",
+      "title": "ИИ-агенты и RAG-системы в управлении бизнесом",
+      "row": 98,
+      "competencyCell": "D98",
+      "planCompetencies": [
+        "O-2",
+        "LLM-2",
+        "LLM-3",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "O-2",
+        "LLM-2",
+        "LLM-3",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [
+        7
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.2.1.1",
+      "title": "Учебная практика: технологическая (проектно-технологическая) практика",
+      "row": 102,
+      "competencyCell": "D102",
+      "planCompetencies": [
+        "LC-3",
+        "LC-4",
+        "S-1"
+      ],
+      "krmCompetencies": [
+        "LC-3"
+      ],
+      "unresolvedPlanCodes": [
+        "LC-4",
+        "S-1"
+      ],
+      "semesters": [],
+      "credits": 6
+    },
+    {
+      "planCode": "Б.2.2.1",
+      "title": "Производственная практика: технологическая (проектно-технологическая) практика",
+      "row": 104,
+      "competencyCell": "D104",
+      "planCompetencies": [
+        "DL-4",
+        "DL-5",
+        "PL-3",
+        "LLM-3",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "DL-4",
+        "DL-5",
+        "LLM-3",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [
+        "PL-3"
+      ],
+      "semesters": [],
+      "credits": 12
+    },
+    {
+      "planCode": "Б.2.2.2",
+      "title": "Производственная практика: преддипломная практика",
+      "row": 105,
+      "competencyCell": "D105",
+      "planCompetencies": [
+        "SS-1",
+        "SS-2",
+        "SS-3",
+        "ПКН-3"
+      ],
+      "krmCompetencies": [
+        "SS-1",
+        "SS-2",
+        "SS-3"
+      ],
+      "unresolvedPlanCodes": [
+        "ПКН-3"
+      ],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.2.3.1",
+      "title": "Учебно-научный семинар",
+      "row": 107,
+      "competencyCell": "D107",
+      "planCompetencies": [
+        "ПКН-3",
+        "ПКН-1"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "ПКН-3",
+        "ПКН-1"
+      ],
+      "semesters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.3.1",
+      "title": "Подготовка к сдаче и сдача государственного экзамена",
+      "row": 109,
+      "competencyCell": "D109",
+      "planCompetencies": [],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.3.2",
+      "title": "Подготовка к процедуре защиты и процедура защиты выпускной квалификационной работы",
+      "row": 110,
+      "competencyCell": "D110",
+      "planCompetencies": [],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 6
+    },
+    {
+      "planCode": "Б.4.1",
+      "title": "Элективные дисциплины по физической культуре и спорту",
+      "row": 113,
+      "competencyCell": "D113",
+      "planCompetencies": [
+        "УК-6"
+      ],
+      "krmCompetencies": [],
+      "unresolvedPlanCodes": [
+        "УК-6"
+      ],
+      "semesters": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "credits": null
+    },
+    {
+      "planCode": "Б.5.1",
+      "title": "Введение в искусственный интеллект",
+      "row": 115,
+      "competencyCell": "D115",
+      "planCompetencies": [
+        "LC-8",
+        "AI-S-1",
+        "SS-1",
+        "SS-3"
+      ],
+      "krmCompetencies": [
+        "LC-8",
+        "SS-1",
+        "SS-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.2",
+      "title": "Практическая подготовка (1 курс)",
+      "row": 116,
+      "competencyCell": "D116",
+      "planCompetencies": [
+        "MF-1",
+        "BD-4",
+        "SS-1",
+        "SS-2"
+      ],
+      "krmCompetencies": [
+        "MF-1",
+        "BD-4",
+        "SS-1",
+        "SS-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.3",
+      "title": "Практическая подготовка (2 курс)",
+      "row": 117,
+      "competencyCell": "D117",
+      "planCompetencies": [
+        "BD-4",
+        "ML-3",
+        "SS-1",
+        "SS-2"
+      ],
+      "krmCompetencies": [
+        "BD-4",
+        "ML-3",
+        "SS-1",
+        "SS-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.4",
+      "title": "Практическая подготовка (3 курс)",
+      "row": 118,
+      "competencyCell": "D118",
+      "planCompetencies": [
+        "BD-4",
+        "ML-3",
+        "SS-1",
+        "SS-2"
+      ],
+      "krmCompetencies": [
+        "BD-4",
+        "ML-3",
+        "SS-1",
+        "SS-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.5",
+      "title": "Математика искусственного интеллекта",
+      "row": 119,
+      "competencyCell": "D119",
+      "planCompetencies": [
+        "MF-1",
+        "MF-2",
+        "MF-3",
+        "MF-4",
+        "ML-3"
+      ],
+      "krmCompetencies": [
+        "MF-1",
+        "MF-2",
+        "MF-3",
+        "MF-4",
+        "ML-3"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.6",
+      "title": "Фундаментальные и генеративные модели",
+      "row": 120,
+      "competencyCell": "D120",
+      "planCompetencies": [
+        "DL-2",
+        "DL-5",
+        "LLM-1",
+        "LLM-2",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "DL-2",
+        "DL-5",
+        "LLM-1",
+        "LLM-2",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    },
+    {
+      "planCode": "Б.5.7",
+      "title": "Разработка алгоритмов обучения с подкреплением",
+      "row": 121,
+      "competencyCell": "D121",
+      "planCompetencies": [
+        "ML-6",
+        "O-2",
+        "FC-2"
+      ],
+      "krmCompetencies": [
+        "ML-6",
+        "O-2",
+        "FC-2"
+      ],
+      "unresolvedPlanCodes": [],
+      "semesters": [],
+      "credits": 3
+    }
+  ],
+  "note": "КРМ подтверждает наличие компетенций, а учебный план – их связь с дисциплиной. Связь конкретного задания с индикатором является отдельным методическим предложением."
+}

@@ -1,3 +1,4 @@
+import {createProgramUI} from './program-ui.js';
 const $ = (s) => document.querySelector(s),
   esc = (x) =>
     String(x ?? "").replace(
@@ -45,6 +46,7 @@ const eventNames = {
   "code.browser_checked": "Код проверен в браузере",
 };
 const levels = ["", "Базовый", "Средний", "Продвинутый"];
+let programUI=null;
 let user,
   home,
   course,
@@ -70,14 +72,14 @@ function toast(message, error = false) {
   toast.timer = setTimeout(() => (el.className = ""), 6500);
 }
 const brand = () =>
-  '<div class="brand"><div class="brandmark">∑</div><div><strong>ЦОП</strong><small>Прикладное машинное обучение</small></div></div>';
+  '<div class="brand"><div class="brandmark">∑</div><div><strong>ИМО</strong><small>Прикладное машинное обучение</small></div></div>';
 function login(reset = false) {
   user = null;
   $("#app").innerHTML =
-    `<div class="login"><section class="login-story">${brand()}<div class="eyebrow">Образовательное пространство</div><h1>Ваш путь<br>от гипотезы<br>к результату.</h1><p>Изучайте алгоритмы, проверяйте решения и собирайте доказательства своего прогресса в едином пространстве.</p><div class="login-points"><span>01 · Индивидуальный маршрут</span><span>02 · Практика и исследование</span></div></section><section class="login-form"><div class="login-box"><div class="eyebrow">Личный кабинет</div><h2>${reset ? "Обновите пароль" : "Добро пожаловать"}</h2><p class="muted">${reset ? "Временный пароль нужно заменить перед началом работы." : "Войдите с учетной записью, выданной администратором."}</p><form id="${reset ? "password-form" : "login-form"}">${reset ? '<label for="current">Текущий пароль</label><input id="current" name="current" type="password" autocomplete="current-password" required>' : '<label for="login">Логин</label><input id="login" name="login" autocomplete="username" required>'}<label for="password">${reset ? "Новый пароль" : "Пароль"}</label><input id="password" name="password" type="password" autocomplete="${reset ? "new-password" : "current-password"}" ${reset ? 'minlength="12"' : ""} required><button>${reset ? "Сохранить новый пароль" : "Войти в пространство"} →</button></form><small>Образовательный пилот · 1–2 курс<br>Доступ к результатам зависит от роли и назначенной учебной группы.</small></div></section></div>`;
+    `<div class="login"><section class="login-story">${brand()}<div class="eyebrow">Образовательное пространство</div><h1>Ваш путь<br>от гипотезы<br>к результату.</h1><p>Изучайте дисциплины программы, проверяйте решения и собирайте доказательства своего прогресса в едином пространстве.</p><div class="login-points"><span>01 · Индивидуальный маршрут</span><span>02 · Практика и исследование</span></div></section><section class="login-form"><div class="login-box"><div class="eyebrow">Личный кабинет</div><h2>${reset ? "Обновите пароль" : "Добро пожаловать"}</h2><p class="muted">${reset ? "Временный пароль нужно заменить перед началом работы." : "Войдите с учетной записью, выданной администратором."}</p><form id="${reset ? "password-form" : "login-form"}">${reset ? '<label for="current">Текущий пароль</label><input id="current" name="current" type="password" autocomplete="current-password" required>' : '<label for="login">Логин</label><input id="login" name="login" autocomplete="username" required>'}<label for="password">${reset ? "Новый пароль" : "Пароль"}</label><input id="password" name="password" type="password" autocomplete="${reset ? "new-password" : "current-password"}" ${reset ? 'minlength="12"' : ""} required><button>${reset ? "Сохранить новый пароль" : "Войти в пространство"} →</button></form><small>Междисциплинарный пилот · 1–4 курс<br>Доступ к результатам зависит от роли и назначенной учебной группы.</small></div></section></div>`;
 }
 function navItems() {
-  const all = [["home", "Обзор пространства"]];
+  const all = [["home", "Обзор пространства"],["catalog","Каталог 1–4 курса"],["transitions","Междисциплинарные переходы"]];
   if (user.roles.includes("student"))
     all.push(
       ["courses", "Мои дисциплины"],
@@ -116,7 +118,7 @@ function shell(content) {
       )
       .join(
         "",
-      )}</nav><div class="aside-note"><span class="live-dot"></span> Пилот ЦОП · 0.1<br>Алгоритмы и структуры данных<br><br>Проверяем гипотезы.<br>Сохраняем ход исследования.</div></aside><main><div class="breadcrumb">ЦОП / ${esc(navItems().find((x) => x[0] === page)?.[1] || "Учебная лаборатория")}</div>${user.login.startsWith("demo-") ? '<div class="notice">Демонстрационный контур. Все учетные записи и результаты здесь вымышлены.</div>' : ""}${content}</main></div>`;
+      )}</nav><div class="aside-note"><span class="live-dot"></span> Пилот ИМО · 0.2<br>Программа 1–4 курса<br><br>Проверяем гипотезы.<br>Сохраняем ход исследования.</div></aside><main><div class="breadcrumb">ИМО / ${esc(navItems().find((x) => x[0] === page)?.[1] || "Учебная лаборатория")}</div>${user.login.startsWith("demo-") ? '<div class="notice">Демонстрационный контур. Все учетные записи и результаты здесь вымышлены.</div>' : ""}${content}</main></div>`;
   document.querySelectorAll("label:not([for])").forEach((label, index) => {
     const control = label.nextElementSibling;
     if (control && ["INPUT", "SELECT", "TEXTAREA"].includes(control.tagName)) {
@@ -143,6 +145,7 @@ function landing() {
 async function show(next = landing()) {
   page = next;
   try {
+    if(programUI && await programUI.show(next)) return;
     if (next === "home") {
       home = await api("home");
       const student = user.roles.includes("student");
@@ -182,62 +185,20 @@ async function show(next = landing()) {
     toast(e.message, true);
   }
 }
-async function openCourse(id) {
-  page = "courses";
-  course = await api("course?id=" + encodeURIComponent(id));
-  if (!course.units.length) {
-    shell(
-      head(
-        home?.courses.find((x) => x.id === id)?.title || "Дисциплина",
-        "Карточка создана. Учебные материалы и связи с компетенциями будут опубликованы после методической проверки.",
-      ) +
-        '<div class="empty"><h3>Содержание готовится</h3>Рабочий цикл можно проверить на дисциплине «Алгоритмы и структуры данных».</div>',
-    );
-    return;
-  }
-  shell(
-    head(
-      "Алгоритмы и структуры данных",
-      "Выберите тему и уровень. Перед решением задачи сформулируйте проверяемую гипотезу.",
-      "Python · 1 курс",
-    ) +
-      `<div class="notice">Темы взяты из РПД от 21.05.2026. Уровни открыты для диагностики; рекомендательные связи пока не ограничивают доступ.</div><div class="unit-list">${course.units
-        .map(
-          (u) =>
-            `<article class="unit"><div class="unit-title"><span class="unit-number">${String(u.position).padStart(2, "0")}</span><div><h3>${esc(u.title)}</h3><small>${u.semester} семестр · 3 задания</small></div></div><div class="levels">${course.tasks
-              .filter((t) => t.unit_id === u.id)
-              .map(
-                (t) =>
-                  `<button data-task="${t.id}" class="${course.attempts.some((a) => a.task_id === t.id) ? "done" : ""}">${levels[t.level]} ${course.attempts.some((a) => a.task_id === t.id) ? "✓" : "→"}</button>`,
-              )
-              .join("")}</div></article>`,
-        )
-        .join("")}</div>`,
-  );
-}
+async function openCourse(id){return programUI.openCourse(id);}
 function openTask(id) {
   currentTask = course.tasks.find((t) => t.id === id);
   hypothesisId = null;
   lastAttempt = course.attempts.find((a) => a.task_id === id);
   const t = currentTask;
   page = "courses";
+  if(course.preview||!user.roles.includes("student"))return programUI.previewTask(t);
   shell(
     head(esc(t.title), esc(t.statement), levels[t.level]) +
-      `<div class="workspace"><div class="stack"><section class="card"><div class="step"><span>1</span>Гипотеза перед решением</div><form id="hypothesis"><label for="prediction">Что вы ожидаете получить?</label><textarea id="prediction" name="prediction" minlength="12" required placeholder="Например: число сравнений растёт логарифмически при удвоении массива."></textarea><label for="rationale">Почему вы так считаете?</label><textarea id="rationale" name="rationale" minlength="12" required placeholder="Обоснуйте прогноз и назовите условие, при котором он может не подтвердиться."></textarea><div class="row"><button>Зафиксировать гипотезу</button><small id="hypothesis-state">Нужна до отправки кода</small></div></form></section><section class="card"><div class="step"><span>2</span>Моё решение · Python</div><form id="attempt"><label for="code">Функция solve(data)</label><textarea id="code" name="code" class="code" spellcheck="false" required>${esc(lastAttempt?.code || t.starter)}</textarea><label for="explanation">Объяснение, сложность и граничные случаи</label><textarea id="explanation" name="explanation" minlength="20" required>${esc(lastAttempt?.explanation || "")}</textarea><label for="assistance">Как вы работали?</label><select id="assistance" name="assistance"><option value="independent">Самостоятельно</option><option value="reference">С методическим эталоном</option><option value="llm">С помощью LLM</option><option value="tutor">С тьютором</option></select><div class="row"><button>Сохранить версию</button><button type="button" class="secondary" data-action="run">Проверить код</button></div><p id="attempt-state" class="form-help">${lastAttempt ? "Последняя версия: " + lastAttempt.number : "Работа ещё не отправлена"}. Оценку выставляет преподаватель.</p></form><div id="run-result"></div></section></div><div class="stack"><section class="card"><div class="step"><span>↗</span>Лаборатория сложности</div><p class="muted">Сравните число операций эталонных алгоритмов. Для поиска массив отсортирован; для сортировок используется воспроизводимая перестановка.</p><form id="simulator"><label for="algorithm">Алгоритм</label><select id="algorithm" name="algorithm"><option value="binary">Двоичный поиск</option><option value="linear">Линейный поиск</option><option value="insertion">Сортировка вставками</option><option value="merge">Сортировка слиянием</option></select><div class="fieldrow"><div><label for="n">Размер n</label><input id="n" name="n" type="number" min="1" max="2048" value="32"></div><div><label for="target">Искомое число</label><input id="target" name="target" type="number" value="31"></div><div><label for="seed">Seed</label><input id="seed" name="seed" type="number" value="42"></div></div><label for="conclusion">План проверки / ожидаемый результат</label><textarea id="conclusion" name="conclusion" minlength="12" required></textarea><div class="row"><button class="secondary">Выполнить и записать опыт</button></div></form><div id="sim-result"></div></section><section class="card"><div class="step"><span>3</span>Сравнение решений</div><p class="muted">Сначала сохраните свой код. Эталон и ответ LLM имеют отдельные отметки происхождения.</p><form id="compare"><label for="compare-source">Источник</label><select id="compare-source" name="source"><option value="reference">Методический эталон</option><option value="llm">LLM — если подключена</option></select><label for="compare-note">Что вы сравниваете и как проверите различия?</label><textarea id="compare-note" name="conclusion" minlength="20" required></textarea><label class="check"><input name="consent" type="checkbox">Для LLM: разрешаю передать только публичное условие задачи</label><div class="row"><button class="secondary">Получить вариант и записать сравнение</button></div></form><div id="compare-result"></div></section><section class="card"><h3>Критерии работы</h3><p class="form-help">Корректность — 50%<br>Объяснение — 20%<br>Анализ сложности — 15%<br>Исследование — 15%</p><p class="form-help">${esc(t.rubric.note)}</p></section></div></div>`,
+      `<div class="workspace"><div class="stack"><section class="card"><div class="step"><span>1</span>Гипотеза перед решением</div><form id="hypothesis"><label for="prediction">Что вы ожидаете получить?</label><textarea id="prediction" name="prediction" minlength="12" required placeholder="Например: изменение параметра сохраняет инвариант или выявляет ошибку ИИ-варианта."></textarea><label for="rationale">Почему вы так считаете?</label><textarea id="rationale" name="rationale" minlength="12" required placeholder="Обоснуйте прогноз и назовите условие, при котором он может не подтвердиться."></textarea><div class="row"><button>Зафиксировать гипотезу</button><small id="hypothesis-state">Нужна до отправки кода</small></div></form></section><section class="card"><div class="step"><span>2</span>Моё решение · Python</div><form id="attempt"><label for="code">Функция solve(data)</label><textarea id="code" name="code" class="code" spellcheck="false" required>${esc(lastAttempt?.code || t.starter)}</textarea><label for="explanation">Объяснение, сложность и граничные случаи</label><textarea id="explanation" name="explanation" minlength="20" required>${esc(lastAttempt?.explanation || "")}</textarea><label for="assistance">Как вы работали?</label><select id="assistance" name="assistance"><option value="independent">Самостоятельно</option><option value="reference">С методическим эталоном</option><option value="llm">С помощью LLM</option><option value="tutor">С тьютором</option></select><div class="row"><button>Сохранить версию</button><button type="button" class="secondary" data-action="run">Проверить код</button></div><p id="attempt-state" class="form-help">${lastAttempt ? "Последняя версия: " + lastAttempt.number : "Работа ещё не отправлена"}. Оценку выставляет преподаватель.</p></form><div id="run-result"></div></section></div><div class="stack">${programUI.simulatorHTML()}<section class="card"><div class="step"><span>3</span>Сравнение решений</div><p class="muted">Сначала сохраните свой код. Эталон и ответ LLM имеют отдельные отметки происхождения.</p><form id="compare"><label for="compare-source">Источник</label><select id="compare-source" name="source"><option value="reference">Методический эталон</option>${t.has_fixture?'<option value="fixture">Учебный ИИ-сценарий · без LLM</option>':""}<option value="llm">LLM – если подключена</option></select><label for="compare-note">Что вы сравниваете и как проверите различия?</label><textarea id="compare-note" name="conclusion" minlength="20" required></textarea><label class="check"><input name="consent" type="checkbox">Для LLM: разрешаю передать только публичное условие задачи</label><div class="row"><button class="secondary">Получить вариант и записать сравнение</button></div></form><div id="compare-result"></div></section>${programUI.artifactForm()}<section class="card"><h3>Критерии работы</h3><p class="form-help">Корректность — 50%<br>Объяснение — 20%<br>Анализ сложности — 15%<br>Исследование — 15%</p><p class="form-help">${esc(t.rubric.note)}</p></section></div></div>`,
   );
 }
-async function showJournal(target) {
-  const d = await api(
-    "journal" + (target ? "?userId=" + encodeURIComponent(target) : ""),
-  );
-  shell(
-    head(
-      "Журнал и артефакты",
-      "Версии кода, проверки и события сохраняются на сервере.",
-    ) +
-      `<div class="stats">${stat("Версии работ", d.attempts.length, "история сохраняется")}${stat("Проверки", d.runs.length, "запуски Python")}${stat("Отзывы", d.reviews.length, "от преподавателя")}</div><div class="section-title"><h2>Мои работы</h2></div>${d.attempts.length ? `<div class="table-wrap"><table><thead><tr><th>Работа</th><th>Версия</th><th>Проверка</th><th>Действия</th></tr></thead><tbody>${d.attempts.map((a) => `<tr><td><strong>${esc(a.title)}</strong><details><summary>Код и объяснение</summary><pre>${esc(a.code)}\n\n${esc(a.explanation)}</pre></details></td><td>v${a.number}<br><small>${esc(assistanceNames[a.assistance] || a.assistance)}</small></td><td>${d.reviews.some((r) => r.attempt_id === a.id) ? `<strong>${esc(d.reviews.find((r) => r.attempt_id === a.id).score)} / 100</strong><br>` : ""}${esc(statusNames[d.runs.find((r) => r.attempt_id === a.id && !r.result?.comparisonId)?.status] || "Не запускалась")}<br><small>${esc(d.reviews.find((r) => r.attempt_id === a.id)?.feedback || "Ожидает преподавателя")}</small></td><td><button class="secondary" data-appeal="${a.id}">Апелляция</button></td></tr>`).join("")}</tbody></table></div>` : '<div class="empty"><h3>Первая работа ещё впереди</h3>Выберите тему в дисциплине и сохраните решение.</div>'}<div class="section-title"><h2>События обучения</h2></div><div class="table-wrap"><table><thead><tr><th>Время</th><th>Событие</th></tr></thead><tbody>${d.events.map((e) => `<tr><td>${esc(new Date(e.created_at).toLocaleString("ru"))}</td><td>${esc(eventNames[e.kind] || e.kind)}</td></tr>`).join("") || '<tr><td colspan="2">Событий пока нет</td></tr>'}</tbody></table></div>${journalResearch(d)}<div class="section-title"><h2>Исходные отметки из Excel</h2><small>${d.imported.length} записей</small></div><p class="muted">Значения сохранены без автоматического толкования и не заменяют новые оценки преподавателя.</p>${d.imported.length ? `<div class="table-wrap"><table><thead><tr><th>Источник</th><th>Лист / ячейка</th><th>Значение</th></tr></thead><tbody>${d.imported.map((o) => `<tr><td>${esc(o.file_name)}</td><td>${esc(o.sheet)} / ${esc(o.cell)}</td><td>${esc(o.raw_value)}</td></tr>`).join("")}</tbody></table></div>` : '<div class="empty">Для этой дисциплины исходных отметок нет.</div>'}`,
-  );
-}
+async function showJournal(target){return programUI.showJournal(target);}
 async function showManagement(next) {
   if (next === "backups") {
     shell(
@@ -267,7 +228,7 @@ async function showManagement(next) {
         "Компетентностная модель",
         "Проверьте соответствие задания индикатору. Утверждение доступно руководителю программы.",
       ) +
-        `<div class="stats">${stat("Компетенции", d.competencies.length, "целевая модель")}${stat("Индикаторы", d.indicators.length, "уникальные коды")}${stat("Утверждённые связи", d.mappings.filter((m) => m.status === "approved").length, "задание → индикатор")}</div><div class="notice warn">РПД использует коды ПКН-4 и SS-1. Семантическое соответствие целевой модели требует решения методиста; покрытие всех компетенций одним курсом не заявляется.</div><section class="card"><h3>Связать задание и индикатор</h3><form id="mapping"><div class="two"><div><label>Код задания</label><input name="taskId" value="alg-01-l1" required></div><div><label>Индикатор</label><select name="indicatorCode">${d.indicators.map((i) => `<option>${esc(i.code)}</option>`).join("")}</select></div></div><label>Педагогическое обоснование</label><textarea name="reason" minlength="20" required></textarea>${user.roles.includes("program_manager") ? '<label class="check"><input type="checkbox" name="approve">Утвердить связь для последующих проверок</label>' : ""}<div class="row"><button>Сохранить связь</button></div></form></section><div class="section-title"><h2>Покрытие индикаторов</h2></div><div class="table-wrap"><table><thead><tr><th>Код</th><th>Индикатор</th><th>Утверждённые задания</th></tr></thead><tbody>${d.coverage.map((i) => `<tr><td>${esc(i.code)}</td><td>${esc(i.title)}</td><td>${i.approved_tasks}</td></tr>`).join("")}</tbody></table></div>`,
+        `<div class="stats">${stat("Компетенции", d.competencies.length, "целевая модель")}${stat("Индикаторы", d.indicators.length, "уникальные коды")}${stat("Утверждённые связи", d.mappings.filter((m) => m.status === "approved").length, "задание → индикатор")}</div><div class="notice warn">Коды дисциплин и компетенций сверены с учебным планом и КРМ. Связи конкретных заданий с индикаторами остаются методическими предложениями до утверждения.</div><section class="card"><h3>Связать задание и индикатор</h3><form id="mapping"><div class="two"><div><label>Код задания</label><input name="taskId" value="alg-01-l1" required></div><div><label>Индикатор</label><select name="indicatorCode">${d.indicators.map((i) => `<option>${esc(i.code)}</option>`).join("")}</select></div></div><label>Педагогическое обоснование</label><textarea name="reason" minlength="20" required></textarea>${user.roles.includes("program_manager") ? '<label class="check"><input type="checkbox" name="approve">Утвердить связь для последующих проверок</label>' : ""}<div class="row"><button>Сохранить связь</button></div></form></section><div class="section-title"><h2>Покрытие индикаторов</h2></div><div class="table-wrap"><table><thead><tr><th>Код</th><th>Индикатор</th><th>Утверждённые задания</th></tr></thead><tbody>${d.coverage.map((i) => `<tr><td>${esc(i.code)}</td><td>${esc(i.title)}</td><td>${i.approved_tasks}</td></tr>`).join("")}</tbody></table></div>`,
     );
   } else if (next === "analytics") {
     const d = await api("analytics");
@@ -318,7 +279,7 @@ async function showManagement(next) {
           )
           .join(
             "",
-          )}</select></div><div><label>Группа</label><select name="groupId">${d.groups.map((g) => `<option value="${esc(g.id)}">${esc(g.title)}</option>`).join("")}</select></div></div><div class="two"><div><label>Роль</label><select name="role"><option value="teacher">Преподаватель</option><option value="tutor">Тьютор</option></select></div><div><label>Дисциплина</label><select name="courseId"><option value="algorithms">Алгоритмы и структуры данных</option></select></div></div><div class="row"><button>Назначить</button></div></form></section><div class="section-title"><h2>Пользователи · ${d.users.length}</h2></div><div class="table-wrap"><table><thead><tr><th>Имя и логин</th><th>Роль</th><th>Состояние</th><th>Управление</th></tr></thead><tbody>${d.users.map((u) => `<tr><td>${esc(u.name)}<br><small>${esc(u.login)}</small></td><td>${esc(u.roles)}</td><td>${u.active ? "Активна" : "Требует назначения"}${u.force_reset ? "<br><small>Смена пароля обязательна</small>" : ""}</td><td>${!u.active ? `<button class="secondary" data-activate="${esc(u.id)}">Назначить владельца</button> ` : ""}<button class="secondary" data-reset="${esc(u.id)}">Сброс пароля</button></td></tr>`).join("")}</tbody></table></div><div id="admin-result"></div>`,
+          )}</select></div><div><label>Группа</label><select name="groupId">${d.groups.map((g) => `<option value="${esc(g.id)}">${esc(g.title)}</option>`).join("")}</select></div></div><div class="two"><div><label>Роль</label><select name="role"><option value="teacher">Преподаватель</option><option value="tutor">Тьютор</option></select></div><div><label>Дисциплина</label><select name="courseId">${d.courses.map(c=>`<option value="${esc(c.id)}">${esc(c.title)}</option>`).join("")}</select></div></div><div class="row"><button>Назначить</button></div></form></section><div class="section-title"><h2>Пользователи · ${d.users.length}</h2></div><div class="table-wrap"><table><thead><tr><th>Имя и логин</th><th>Роль</th><th>Состояние</th><th>Управление</th></tr></thead><tbody>${d.users.map((u) => `<tr><td>${esc(u.name)}<br><small>${esc(u.login)}</small></td><td>${esc(u.roles)}</td><td>${u.active ? "Активна" : "Требует назначения"}${u.force_reset ? "<br><small>Смена пароля обязательна</small>" : ""}</td><td>${!u.active ? `<button class="secondary" data-activate="${esc(u.id)}">Назначить владельца</button> ` : ""}<button class="secondary" data-reset="${esc(u.id)}">Сброс пароля</button></td></tr>`).join("")}</tbody></table></div><div id="admin-result"></div>`,
     );
   } else if (next === "audit") {
     const d = await api("admin/audit");
@@ -375,16 +336,10 @@ document.addEventListener("submit", async (e) => {
       if (!hypothesisId) throw new Error("Сначала зафиксируйте гипотезу");
       const d = await api("simulate", {
         hypothesisId,
-        parameters: {
-          algorithm: values.algorithm,
-          n: Number(values.n),
-          target: Number(values.target),
-          seed: Number(values.seed),
-        },
+        parameters:values.labId.startsWith("complexity:")?{algorithm:values.labId.split(":")[1],n:Number(values.n),target:Number(values.parameter),seed:Number(values.seed)}:{labId:values.labId,n:Number(values.n),seed:Number(values.seed),parameter:Number(values.parameter)},
         conclusion: values.conclusion,
       });
-      $("#sim-result").innerHTML =
-        `<div class="result"><strong>${d.comparisons} сравнений</strong><p>${esc(d.metric)}</p><div class="trace">${d.trace.map((x) => `<span>${x.middle !== undefined ? "m=" + x.middle : "i=" + x.index}</span>`).join("")}</div><small>Опыт сохранён · seed ${d.seed} · ${d.version}</small></div>`;
+      $("#sim-result").innerHTML = programUI.renderSimulation(d);
     } else if (f.id === "compare") {
       if (!lastAttempt)
         throw new Error("Сначала сохраните свою версию решения");
@@ -402,6 +357,7 @@ document.addEventListener("submit", async (e) => {
         feedback: values.feedback,
         independent: values.independent === "on",
         transfer: values.transfer === "on",
+        ...(values.controlOutcome&&values.controlOutcome!=="none"?{controlOutcome:values.controlOutcome==="passed",controlCriterion:values.controlCriterion}:{}),
       });
       toast("Проверка и запись журнала сохранены");
       await show("staff");
@@ -545,6 +501,7 @@ async function browserRun(attemptId, comparisonId) {
   });
   return api("browser-run/finish", { runId: job.id, ...result });
 }
+programUI=createProgramUI({api,esc,shell,head,stat,toast,getUser:()=>user,getHome:()=>home,setHome:v=>home=v,getCourse:()=>course,setCourse:v=>course=v,getLastAttempt:()=>lastAttempt,getPage:()=>page,setPage:v=>page=v});
 try {
   const d = await api("me");
   user = d.user;

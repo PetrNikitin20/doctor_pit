@@ -86,7 +86,7 @@ export async function handleBrowser(c) {
         status,
         source: result.source,
         comparisonId: result.comparisonId,
-      });
+      },a.course_id);
     });
     json(200, {
       id: run.id,

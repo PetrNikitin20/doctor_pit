@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { randomUUID } from "node:crypto";
 import { openDb } from "../src/db.mjs";
-import { seed, roles } from "./seed.mjs";
+import { seed, roles, refreshEnrollments } from "./seed.mjs";
 import { hashPassword, secret } from "../src/security.mjs";
 export async function importPrivate(db, payload) {
   await seed(db);
@@ -69,14 +69,16 @@ export async function importPrivate(db, payload) {
         "INSERT INTO groups VALUES($1,$2,$3,$4) ON CONFLICT DO NOTHING",
         [g.id, g.title, g.year, g.source],
       );
-    const courses = await tx.rows("SELECT id,year FROM courses");
+    const courses = await tx.rows("SELECT id,year,catalog_meta FROM courses");
     for (const u of payload.users) {
       await tx.query(
         "INSERT INTO group_members VALUES($1,$2) ON CONFLICT DO NOTHING",
         [u.group_id, u.id],
       );
+      const studyYear=payload.groups.find(g=>g.id===u.group_id)?.year;
+      if(!Number.isInteger(studyYear)||studyYear<1||studyYear>4)throw Error('Для студента отсутствует подтверждённый курс группы');
       for (const c of courses.filter(
-        (c) => c.year === (u.cohort === 2026 ? 1 : 2),
+        (c) => (c.catalog_meta.years||[c.year]).includes(studyYear),
       ))
         await tx.query(
           "INSERT INTO enrollments VALUES($1,$2) ON CONFLICT DO NOTHING",
@@ -109,6 +111,7 @@ export async function importPrivate(db, payload) {
         ],
       );
   });
+  await refreshEnrollments(db);
   return credentials;
 }
 if (

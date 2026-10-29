@@ -2,6 +2,7 @@ import { fail, text, uuid } from "./server.mjs";
 import { requireRole, digest } from "./security.mjs";
 import { mastery, simulate } from "./model.mjs";
 import { generateCode } from "./llm.mjs";
+import { AI_LABS,runAiLab } from "./ai-simulators.mjs";
 export async function handleLearning(c) {
   const {
     db,
@@ -55,13 +56,15 @@ export async function handleLearning(c) {
   }
   if (path === "/api/course" && method === "GET") {
     const id = url.searchParams.get("id") || "algorithms";
-    if (!(await courseAccess(user, id))) fail(403, "Нет доступа к дисциплине");
+    const metadata=await db.one('SELECT * FROM courses WHERE id=$1',[id]);if(!metadata)fail(404,'Дисциплина не найдена');
+    // Published teaching material is readable in preview; submissions require enrollment/scope.
+    const preview=!(await courseAccess(user,id,true));
     const units = await db.rows(
       "SELECT * FROM learning_units WHERE course_id=$1 ORDER BY position",
       [id],
     );
     const tasks = await db.rows(
-      "SELECT t.id,t.unit_id,t.title,t.level,t.kind,t.statement,t.starter,t.rubric,t.version FROM tasks t JOIN learning_units u ON u.id=t.unit_id WHERE u.course_id=$1 AND t.published=true ORDER BY u.position,t.level",
+      "SELECT t.id,t.unit_id,t.title,t.level,t.kind,t.statement,t.starter,t.rubric,t.version,(t.ai_fixture IS NOT NULL) has_fixture FROM tasks t JOIN learning_units u ON u.id=t.unit_id WHERE u.course_id=$1 AND t.published=true ORDER BY u.position,t.level",
       [id],
     );
     const attempts = await db.rows(
@@ -69,6 +72,9 @@ export async function handleLearning(c) {
       [user.id, id],
     );
     json(200, {
+      course:metadata,preview,
+      competencies:await db.rows('SELECT l.*,c.title FROM course_competencies l JOIN competencies c ON c.code=l.competency_code WHERE l.course_id=$1',[id]),
+      simulators:[AI_LABS[metadata.catalog_meta.lab]].filter(Boolean),
       units,
       tasks,
       attempts,
@@ -94,7 +100,7 @@ export async function handleLearning(c) {
           text(body.rationale, 12, 3000),
         ],
       );
-      await event(tx, user, "hypothesis.created", id, { taskId: t.id });
+      await event(tx, user, "hypothesis.created", id, { taskId: t.id },t.course_id);
     });
     json(201, { id });
     return true;
@@ -106,10 +112,17 @@ export async function handleLearning(c) {
       [body.hypothesisId, user.id],
     );
     if (!h) fail(400, "Сначала сохраните свою гипотезу");
-    await getTask(user, h.task_id);
+    const task=await getTask(user, h.task_id);
     let result;
     try {
-      result = simulate(body.parameters);
+      if(body.parameters?.labId){
+        const course=await db.one('SELECT catalog_meta FROM courses WHERE id=$1',[task.course_id]);
+        if(body.parameters.labId!==course.catalog_meta.lab)fail(400,'Симулятор не относится к этой дисциплине');
+        result=runAiLab(body.parameters);
+      }else{
+        if(task.course_id!=='algorithms')fail(400,'Выберите симулятор своей дисциплины');
+        result = simulate(body.parameters);
+      }
     } catch (e) {
       fail(400, e.message);
     }
@@ -121,7 +134,7 @@ export async function handleLearning(c) {
           id,
           h.id,
           user.id,
-          JSON.stringify(body.parameters),
+          JSON.stringify(result.parameters||body.parameters),
           JSON.stringify(result),
           text(body.conclusion, 12, 3000),
         ],
@@ -129,7 +142,7 @@ export async function handleLearning(c) {
       await event(tx, user, "experiment.saved", id, {
         hypothesisId: h.id,
         version: result.version,
-      });
+      },task.course_id);
     });
     json(201, { id, ...result });
     return true;
@@ -192,7 +205,7 @@ export async function handleLearning(c) {
         revisionId: rid,
         taskVersion: t.version,
         assistance,
-      });
+      },t.course_id);
     });
     json(201, { id, revisionId: rid, number, status: "submitted" });
     return true;
@@ -232,6 +245,9 @@ export async function handleLearning(c) {
           code,
         ],
       );
+    } else if(source==='fixture'){
+      if(!a.ai_fixture)fail(400,'Для этой версии задания нет учебного ИИ-сценария');
+      code=a.ai_fixture;
     } else if (source !== "reference")
       fail(400, "Неизвестный источник сравнения");
     const id = uuid();
@@ -250,7 +266,7 @@ export async function handleLearning(c) {
       await event(tx, user, "comparison.saved", id, {
         revisionId: a.revision_id,
         source,
-      });
+      },a.course_id);
     });
     json(201, {
       id,
@@ -259,7 +275,7 @@ export async function handleLearning(c) {
       note:
         source === "reference"
           ? "Методический эталон. LLM не вызывалась."
-          : "Ответ LLM требует проверки; оценка не выставлялась.",
+          : source==='fixture'?'Авторский сценарий ошибки ИИ. Модель не вызывалась; код нужно проверить на тех же тестах.':"Ответ LLM требует проверки; оценка не выставлялась.",
     });
     return true;
   }
@@ -305,6 +321,8 @@ export async function handleLearning(c) {
         "SELECT kind,object_id,payload,created_at FROM learning_events WHERE user_id=$1 AND course_id=$2 ORDER BY created_at DESC LIMIT 100",
         [target, course],
       ),
+      artifacts:await db.rows('SELECT r.* FROM research_artifacts r JOIN tasks t ON t.id=r.task_id JOIN learning_units u ON u.id=t.unit_id WHERE r.owner_id=$1 AND u.course_id=$2 ORDER BY r.created_at DESC',[target,course]),
+      controls:await db.rows('SELECT o.* FROM control_outcomes o JOIN learning_units u ON u.id=o.unit_id WHERE o.user_id=$1 AND u.course_id=$2 ORDER BY o.created_at DESC',[target,course]),
     });
     return true;
   }

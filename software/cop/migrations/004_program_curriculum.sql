@@ -1,0 +1,15 @@
+ALTER TABLE courses ADD COLUMN catalog_meta jsonb NOT NULL DEFAULT '{}';
+ALTER TABLE enrollments ADD COLUMN kind text NOT NULL DEFAULT 'study' CHECK(kind IN ('study','bridging','preview'));
+ALTER TABLE learning_units ADD COLUMN metadata jsonb NOT NULL DEFAULT '{}';
+ALTER TABLE tasks ADD COLUMN assessment_family text;
+ALTER TABLE tasks ADD COLUMN ai_fixture text;
+ALTER TABLE task_versions ADD COLUMN ai_fixture text;
+ALTER TABLE comparisons DROP CONSTRAINT comparisons_source_check;
+ALTER TABLE comparisons ADD CONSTRAINT comparisons_source_check CHECK(source IN ('reference','llm','fixture'));
+CREATE TABLE course_competencies(course_id text NOT NULL REFERENCES courses,competency_code text NOT NULL REFERENCES competencies,status text NOT NULL CHECK(status IN ('documented','proposed')),source jsonb NOT NULL,PRIMARY KEY(course_id,competency_code));
+CREATE TABLE transition_rules(id text PRIMARY KEY,title text NOT NULL,target_unit_id text NOT NULL REFERENCES learning_units,target_level integer NOT NULL CHECK(target_level BETWEEN 1 AND 3),status text NOT NULL DEFAULT 'candidate' CHECK(status IN ('candidate','approved','retired')),version integer NOT NULL DEFAULT 1,metadata jsonb NOT NULL DEFAULT '{}');
+CREATE TABLE transition_inputs(rule_id text NOT NULL REFERENCES transition_rules,unit_id text NOT NULL REFERENCES learning_units,min_level integer NOT NULL CHECK(min_level BETWEEN 1 AND 3),PRIMARY KEY(rule_id,unit_id));
+CREATE TABLE control_outcomes(id text PRIMARY KEY,review_id text NOT NULL REFERENCES reviews,user_id text NOT NULL REFERENCES users,task_id text NOT NULL REFERENCES tasks,unit_id text NOT NULL REFERENCES learning_units,level integer NOT NULL CHECK(level BETWEEN 1 AND 3),family_id text NOT NULL,passed boolean NOT NULL,independent boolean NOT NULL,transfer boolean NOT NULL,approved_mapping boolean NOT NULL,criterion text NOT NULL,created_at timestamptz NOT NULL DEFAULT now(),UNIQUE(review_id));
+CREATE INDEX control_outcomes_user ON control_outcomes(user_id,unit_id,level);
+CREATE TABLE research_artifacts(id text PRIMARY KEY,owner_id text NOT NULL REFERENCES users,task_id text NOT NULL REFERENCES tasks,attempt_id text NOT NULL REFERENCES attempts,kind text NOT NULL CHECK(kind IN ('report','dataset','prompt','ai_response','verification','protocol')),title text NOT NULL,content text NOT NULL,sha256 text NOT NULL,created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE elective_selections(user_id text NOT NULL REFERENCES users,module_code text NOT NULL,version text NOT NULL,created_at timestamptz NOT NULL DEFAULT now(),PRIMARY KEY(user_id,module_code));

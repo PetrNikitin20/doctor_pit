@@ -2,7 +2,7 @@ import { fail, text, uuid } from "./server.mjs";
 import { requireRole, secret, hashPassword } from "./security.mjs";
 import { exportSnapshot } from "../scripts/export-snapshot.mjs";
 export async function handleManagement(c) {
-  const { db, user, path, method, body, json, audit, getAttempt, getTask } = c;
+  const { db, user, url, path, method, body, json, audit, getAttempt, getTask } = c;
   if (path === "/api/admin/backup" && method === "POST") {
     requireRole(user, "admin");
     await audit(db, user, "backup.export", null);
@@ -19,6 +19,7 @@ export async function handleManagement(c) {
   }
   if (path === "/api/staff/journal" && method === "GET") {
     requireRole(user, "teacher", "tutor", "expert");
+    const courseId=url.searchParams.get('courseId')||'algorithms';
     if (
       user.roles.includes("expert") &&
       !user.roles.some((r) => ["teacher", "tutor"].includes(r))
@@ -32,13 +33,13 @@ export async function handleManagement(c) {
     }
     const students = await db.rows(
       "SELECT DISTINCT u.id,u.name,g.title AS group_title FROM users u JOIN group_members m ON m.user_id=u.id JOIN groups g ON g.id=m.group_id JOIN staff_scopes s ON s.group_id=g.id WHERE s.user_id=$1 AND s.course_id=$2 ORDER BY g.title,u.name",
-      [user.id, "algorithms"],
+      [user.id, courseId],
     );
     const attempts = [];
     for (const s of students) {
       const rows = await db.rows(
         "SELECT a.id,a.user_id,a.task_id,a.status,a.created_at,r.code,r.explanation,r.assistance,r.number,t.title FROM attempts a JOIN artifact_revisions r ON r.id=a.revision_id JOIN tasks t ON t.id=a.task_id JOIN learning_units u ON u.id=t.unit_id WHERE a.user_id=$1 AND u.course_id=$2 ORDER BY a.created_at DESC",
-        [s.id, "algorithms"],
+        [s.id, courseId],
       );
       attempts.push(
         ...rows.map((x) => ({ ...x, student: s.name, group: s.group_title })),
@@ -57,6 +58,9 @@ export async function handleManagement(c) {
     const feedback = text(body.feedback, 20, 6000),
       id = uuid(),
       independent = body.independent === true && a.assistance === "independent";
+    const control=typeof body.controlOutcome==='boolean';
+    if(control&&!independent)fail(400,'Бинарный исход требует самостоятельного выполнения; работа с помощью ИИ не подходит');
+    const criterion=control?text(body.controlCriterion,20,3000):null;
     await db.transaction(async (tx) => {
       await tx.query(
         "INSERT INTO reviews(id,attempt_id,reviewer_id,score,independent,transfer,feedback) VALUES($1,$2,$3,$4,$5,$6,$7)",
@@ -92,6 +96,10 @@ export async function handleManagement(c) {
       await tx.query("UPDATE attempts SET status='reviewed' WHERE id=$1", [
         a.id,
       ]);
+      if(control){
+        const mappings=await tx.one("SELECT count(*)::int total,count(*) FILTER(WHERE status='approved')::int approved FROM task_indicators WHERE task_id=$1",[a.task_id]);
+        await tx.query('INSERT INTO control_outcomes(id,review_id,user_id,task_id,unit_id,level,family_id,passed,independent,transfer,approved_mapping,criterion) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)',[uuid(),id,a.user_id,a.task_id,a.unit_id,a.level,a.assessment_family||a.task_id,body.controlOutcome,independent,body.transfer===true,mappings.total>0&&mappings.total===mappings.approved,criterion]);
+      }
       await tx.query(
         "INSERT INTO grade_entries(id,user_id,course_id,review_id,score,author_id,note) VALUES($1,$2,$3,$4,$5,$6,$7)",
         [uuid(), a.user_id, a.course_id, id, body.score, user.id, feedback],
@@ -187,6 +195,7 @@ export async function handleManagement(c) {
         "SELECT u.id,u.login,u.name,u.active,u.force_reset,u.version,COALESCE(string_agg(r.role_code,','),'') roles FROM users u LEFT JOIN user_roles r ON r.user_id=u.id GROUP BY u.id ORDER BY u.login LIMIT 500",
       ),
       groups: await db.rows("SELECT * FROM groups ORDER BY title"),
+      courses:await db.rows('SELECT id,title,year FROM courses ORDER BY year,title'),
     });
     return true;
   }

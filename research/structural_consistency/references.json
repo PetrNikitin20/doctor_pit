@@ -1,0 +1,82 @@
+[
+  {
+    "number": 1,
+    "text": "Dawson S., Hubball H. Curriculum analytics: Application of social network analysis for improving strategic curriculum decision-making in a research-intensive university. Teaching & Learning Inquiry, 2014, vol. 2, no. 2, pp. 59–74.",
+    "doi": "10.20343/teachlearninqu.2.2.59"
+  },
+  {
+    "number": 2,
+    "text": "Stavrinides P., Zuev K. M. Course-prerequisite networks for analyzing and understanding academic curricula. Applied Network Science, 2023, vol. 8, article 19.",
+    "doi": "10.1007/s41109-023-00543-w"
+  },
+  {
+    "number": 3,
+    "text": "Yang B., Gharebhaygloo M., Rondi H. R., Hortis E., Zeledon Lostalo E., Huang X., Ercal G. Comparative analysis of course prerequisite networks for five Midwestern public institutions. Applied Network Science, 2024, vol. 9, article 25.",
+    "doi": "10.1007/s41109-024-00637-z"
+  },
+  {
+    "number": 4,
+    "text": "Hou B., Lin Y., Li Y., Fang C., Li C., Wang X. KG-PLPPM: A Knowledge Graph-Based Personal Learning Path Planning Method Used in Online Learning. Electronics, 2025, vol. 14, no. 2, article 255.",
+    "doi": "10.3390/electronics14020255"
+  },
+  {
+    "number": 5,
+    "text": "Xu Z., Guan X., Shi C., Chen Q., Yu R. Evaluating 21st-Century Competencies in Postsecondary Curricula with Large Language Models: Performance Benchmarking and Reasoning-Based Prompting Strategies. Journal of Learning Analytics, 2026, vol. 13, no. 1, pp. 7–30.",
+    "doi": "10.18608/jla.2026.9127"
+  },
+  {
+    "number": 6,
+    "text": "Winkler S., von Pilgrim J. A survey of traceability in requirements engineering and model-driven development. Software and Systems Modeling, 2010, vol. 9, no. 4, pp. 529–565.",
+    "doi": "10.1007/s10270-009-0145-0"
+  },
+  {
+    "number": 7,
+    "text": "Hogan A., Blomqvist E., Cochez M. et al. Knowledge Graphs. ACM Computing Surveys, 2021, vol. 54, no. 4, article 71, pp. 1–37.",
+    "doi": "10.1145/3447772"
+  },
+  {
+    "number": 8,
+    "text": "Gallo G., Longo G., Pallottino S., Nguyen S. Directed hypergraphs and applications. Discrete Applied Mathematics, 1993, vol. 42, no. 2–3, pp. 177–201.",
+    "doi": "10.1016/0166-218X(93)90045-P"
+  },
+  {
+    "number": 9,
+    "text": "Dowling W. F., Gallier J. H. Linear-time algorithms for testing the satisfiability of propositional Horn formulae. Journal of Logic Programming, 1984, vol. 1, no. 3, pp. 267–284.",
+    "doi": "10.1016/0743-1066(84)90014-1"
+  },
+  {
+    "number": 10,
+    "text": "Imieliński T., Lipski W. Incomplete Information in Relational Databases. Journal of the ACM, 1984, vol. 31, no. 4, pp. 761–791.",
+    "doi": "10.1145/1634.1886"
+  },
+  {
+    "number": 11,
+    "text": "Gupta A., Mumick I. S., Subrahmanian V. S. Maintaining views incrementally. Proceedings of the 1993 ACM SIGMOD International Conference on Management of Data. New York, ACM, 1993, pp. 157–166.",
+    "doi": "10.1145/170035.170066"
+  },
+  {
+    "number": 12,
+    "text": "Motik B., Nenov Y., Piro R., Horrocks I. Incremental Update of Datalog Materialisation: the Backward/Forward Algorithm. Proceedings of the AAAI Conference on Artificial Intelligence, 2015, vol. 29, no. 1, pp. 1560–1568.",
+    "doi": "10.1609/aaai.v29i1.9409"
+  },
+  {
+    "number": 13,
+    "text": "Corman J., Florenzano F., Reutter J. L., Savković O. Validating SHACL Constraints over a SPARQL Endpoint. The Semantic Web – ISWC 2019. Lecture Notes in Computer Science, vol. 11778. Cham, Springer, 2019, pp. 145–163.",
+    "doi": "10.1007/978-3-030-30793-6_9"
+  },
+  {
+    "number": 14,
+    "text": "Knublauch H., Kontokostas D. (eds.). Shapes Constraint Language (SHACL). W3C Recommendation, 20 July 2017. URL: https://www.w3.org/TR/shacl/ (accessed 25.10.2026).",
+    "doi": null
+  },
+  {
+    "number": 15,
+    "text": "Moreau L., Missier P. (eds.). PROV-DM: The PROV Data Model. W3C Recommendation, 30 April 2013. URL: https://www.w3.org/TR/prov-dm/ (accessed 25.10.2026).",
+    "doi": null
+  },
+  {
+    "number": 16,
+    "text": "Chen T. Y., Kuo F.-C., Liu H., Poon P.-L., Towey D., Tse T. H., Zhou Z. Q. Metamorphic Testing: A Review of Challenges and Opportunities. ACM Computing Surveys, 2018, vol. 51, no. 1, article 4, pp. 1–27.",
+    "doi": "10.1145/3143561"
+  }
+]

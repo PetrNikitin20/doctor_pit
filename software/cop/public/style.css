@@ -12,6 +12,8 @@
   background: var(--bg);
   font-size: 15px;
 }
+.program-filters{display:flex;gap:16px;align-items:end;flex-wrap:wrap;margin:22px 0}.program-filters label{flex:1;min-width:190px}.program-filters input,.program-filters select,.course-selector select{width:100%;margin-top:7px}.course-selector{display:block;max-width:740px;margin:20px 0}.competency-pills{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.competency-pills .badge{font-size:11px}.card details pre,details.card pre{white-space:pre-wrap;overflow-wrap:anywhere}.card>h3{margin-bottom:14px}.program-filters button{margin-bottom:0}
+@media(max-width:680px){.program-filters{display:block}.program-filters label{display:block;margin:12px 0}.program-filters button{width:100%}}
 * {
   box-sizing: border-box;
 }

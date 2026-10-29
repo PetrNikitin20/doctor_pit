@@ -41,6 +41,12 @@ export const snapshotTables = [
   "research_consents",
   "research_experiments",
   "expert_assignments",
+  "course_competencies",
+  "transition_rules",
+  "transition_inputs",
+  "control_outcomes",
+  "research_artifacts",
+  "elective_selections",
 ];
 const literal = (v) =>
   v === null
@@ -59,7 +65,7 @@ const literal = (v) =>
               : String(v)
           ).replaceAll("'", "''") +
           "'";
-export async function exportSnapshot(db) {
+export async function exportSnapshot(db,{allowLegacySchema=false}={}) {
   const lines = [
     "-- PRIVATE: identities, source marks and password hashes. Never commit.",
     "BEGIN;",
@@ -68,7 +74,11 @@ export async function exportSnapshot(db) {
   const counts = {};
   await db.transaction(async (tx) => {
     await tx.query("SET TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY");
+    const present=new Set((await tx.rows("SELECT tablename FROM pg_tables WHERE schemaname='public'")).map(x=>x.tablename));
+    const required=allowLegacySchema?snapshotTables.slice(0,38):snapshotTables;
+    for(const table of required)if(!present.has(table))throw Error('Missing required snapshot table: '+table);
     for (const table of snapshotTables) {
+      if(!present.has(table)){if(allowLegacySchema)continue;throw Error('Missing snapshot table: '+table);}
       const rows = await tx.rows("SELECT * FROM " + table);
       counts[table] = rows.length;
       for (const row of rows) {

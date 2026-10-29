@@ -1,6 +1,7 @@
 {
   "source": "https://github.com/PetrNikitin20/MKRmodel",
-  "commit": "992f964e82e30d678a73965bd29daeec18a04bf0",
+  "commit": "6e8cb5d4452ab3493c53929649db10a66296e766",
+  "hashBasis": "canonical committed Git blob bytes",
   "files": [
     {
       "path": ".dockerignore",
@@ -24,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "source_file_sha256": "b643624c5a0b289add1938159fa4928bb44be15b906f778615d0290b38666068",
-      "repository_file_sha256": "2f97cb0697238aef264e07b39f11c1782a5cfab7e4ec83c7eb50cf4d80ec2a1b"
+      "source_file_sha256": "a8aeff04116f11e6163fa9eb65db09f6426bc816a691177a88535ea19a709692",
+      "repository_file_sha256": "a8aeff04116f11e6163fa9eb65db09f6426bc816a691177a88535ea19a709692"
     },
     {
       "path": "content/competencies.json",
@@ -36,6 +37,21 @@
       "path": "content/courses.json",
       "source_file_sha256": "dadfc5cf24d3c051a2d052c4bb2e610c4b5882eda2b09b6cbf172572be2df7d6",
       "repository_file_sha256": "dadfc5cf24d3c051a2d052c4bb2e610c4b5882eda2b09b6cbf172572be2df7d6"
+    },
+    {
+      "path": "content/curriculum-source.json",
+      "source_file_sha256": "40740423268b3b4ae1cdccdfd46b8c4a491a16f0c67eb43e6daa5a972295d809",
+      "repository_file_sha256": "40740423268b3b4ae1cdccdfd46b8c4a491a16f0c67eb43e6daa5a972295d809"
+    },
+    {
+      "path": "content/program.mjs",
+      "source_file_sha256": "c090a2bdaba22d133a0aecd342152be25483b3a8f960ee60816a798d40241a09",
+      "repository_file_sha256": "c090a2bdaba22d133a0aecd342152be25483b3a8f960ee60816a798d40241a09"
+    },
+    {
+      "path": "content/task-patterns.mjs",
+      "source_file_sha256": "0b1b0f7eff0f3085c95bbf16b84d9558a8d6fc8ef30f3818205b593e4678be31",
+      "repository_file_sha256": "0b1b0f7eff0f3085c95bbf16b84d9558a8d6fc8ef30f3818205b593e4678be31"
     },
     {
       "path": "content/tasks.mjs",
@@ -69,18 +85,23 @@
     },
     {
       "path": "docs/ACCEPTANCE.md",
-      "source_file_sha256": "773d9e4011aff146127fc836db5f75832ceea5c491c583a6ae0556adf9c3cb3e",
-      "repository_file_sha256": "4749e9ab0698a29aa96679f0911d2f3c2eb24c77db53a990f97186c5c2faf134"
+      "source_file_sha256": "27bce8ab71ea68cc3c7e6231c4c6f46d1158004620197ed07ca2f1ca41a0b978",
+      "repository_file_sha256": "27bce8ab71ea68cc3c7e6231c4c6f46d1158004620197ed07ca2f1ca41a0b978"
     },
     {
       "path": "docs/API.md",
-      "source_file_sha256": "539f0ee8ae9c25320beda993333ad2a65cf19d3257f5ef750bca7ca15a0fb179",
-      "repository_file_sha256": "481ca3a3171bcd34f7776552dbc3e5d936004a07f38502bfdaab7faea1959f4a"
+      "source_file_sha256": "20ebf57443c41eb4c9f65e18791d6de11bfb6e72cbdc52eb6ea2630313d1c813",
+      "repository_file_sha256": "20ebf57443c41eb4c9f65e18791d6de11bfb6e72cbdc52eb6ea2630313d1c813"
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "source_file_sha256": "56d1f5bfebd624f69483c1d23314ad15643f58b19e22bbe89f69ad82c61cb79c",
-      "repository_file_sha256": "48db8abbb295a43c5e1c4f1d336742ad1cfeaec801d31c7a41bc8bc9506452e0"
+      "source_file_sha256": "df0e3704b7db15ea1639a2eb7d8751aabf706bd563f8ca996c09d6bee51c4063",
+      "repository_file_sha256": "df0e3704b7db15ea1639a2eb7d8751aabf706bd563f8ca996c09d6bee51c4063"
+    },
+    {
+      "path": "docs/ARTICLE_IMPACT_2026-10-29.md",
+      "source_file_sha256": "3d48fbfc0bfc4ebcd2d1091dedad5bb98ca299a95dab3cb23670829c7e6ce554",
+      "repository_file_sha256": "3d48fbfc0bfc4ebcd2d1091dedad5bb98ca299a95dab3cb23670829c7e6ce554"
     },
     {
       "path": "docs/DEPLOY_RU.md",
@@ -94,13 +115,23 @@
     },
     {
       "path": "docs/LOCAL.md",
-      "source_file_sha256": "6dc9b0444bd7606f4cd636834b7018f8d5d2bf9ca9cc6a56578eb770f689bb3c",
-      "repository_file_sha256": "6dc9b0444bd7606f4cd636834b7018f8d5d2bf9ca9cc6a56578eb770f689bb3c"
+      "source_file_sha256": "ea9e1c075860f5293a9b65164926292742c7b597833fa9e30c210dd8d2bfe446",
+      "repository_file_sha256": "ea9e1c075860f5293a9b65164926292742c7b597833fa9e30c210dd8d2bfe446"
+    },
+    {
+      "path": "docs/PROGRAM.md",
+      "source_file_sha256": "9ea9083aa57a0d58492ff92fb72501fec81959e0a6ddab8d0138ae61b894d434",
+      "repository_file_sha256": "9ea9083aa57a0d58492ff92fb72501fec81959e0a6ddab8d0138ae61b894d434"
     },
     {
       "path": "docs/TZ.md",
-      "source_file_sha256": "476732b51b2456aa487c99ce68fed3467f94cf8d81275d19934ab07f8505f4c6",
-      "repository_file_sha256": "476732b51b2456aa487c99ce68fed3467f94cf8d81275d19934ab07f8505f4c6"
+      "source_file_sha256": "191005fc2f08ed2aec0fdc659089c0302a2ca68ede1576f803e8004329eb5748",
+      "repository_file_sha256": "191005fc2f08ed2aec0fdc659089c0302a2ca68ede1576f803e8004329eb5748"
+    },
+    {
+      "path": "docs/validation-program-2026-10-29.json",
+      "source_file_sha256": "2f6dbc61db69fa9c0361ece736055f6a08b6bead7bd5912f1ef84b13dcc2b955",
+      "repository_file_sha256": "2f6dbc61db69fa9c0361ece736055f6a08b6bead7bd5912f1ef84b13dcc2b955"
     },
     {
       "path": "docs/ТЗ_ЦОП_1_0.docx",
@@ -123,9 +154,14 @@
       "repository_file_sha256": "3f54c92fc45752dcb835a716c233839bafca3a4217106ce64573ba569c248561"
     },
     {
+      "path": "migrations/004_program_curriculum.sql",
+      "source_file_sha256": "563c2f37bb45e9bad0f75573b6d20613b1f13fc1351894d3f8811ca163ab89af",
+      "repository_file_sha256": "563c2f37bb45e9bad0f75573b6d20613b1f13fc1351894d3f8811ca163ab89af"
+    },
+    {
       "path": "package.json",
-      "source_file_sha256": "5a9fb4adfeeaaece341b2dcb1b6b63878017566a5cfdcc783514a9aa140297c7",
-      "repository_file_sha256": "5a9fb4adfeeaaece341b2dcb1b6b63878017566a5cfdcc783514a9aa140297c7"
+      "source_file_sha256": "ceba99a96b2f17d2dbcdc677f518dd3df1a7c3e8e77d2dfee66d0cd40df4204d",
+      "repository_file_sha256": "ceba99a96b2f17d2dbcdc677f518dd3df1a7c3e8e77d2dfee66d0cd40df4204d"
     },
     {
       "path": "pnpm-lock.yaml",
@@ -134,13 +170,18 @@
     },
     {
       "path": "public/app.js",
-      "source_file_sha256": "e909ca5cf1ab06acc5b53139519ba0f209766ba20e666f4c5df30bcb59695f13",
-      "repository_file_sha256": "e909ca5cf1ab06acc5b53139519ba0f209766ba20e666f4c5df30bcb59695f13"
+      "source_file_sha256": "6900b43bc8fa916b799957c3747aed4e1ff210ab927c279b522ce1f41164f4d7",
+      "repository_file_sha256": "6900b43bc8fa916b799957c3747aed4e1ff210ab927c279b522ce1f41164f4d7"
     },
     {
       "path": "public/index.html",
-      "source_file_sha256": "09441d21cca116f87866485ccbcadb13630c33ede4a2de250c09d02d6f00aa71",
-      "repository_file_sha256": "09441d21cca116f87866485ccbcadb13630c33ede4a2de250c09d02d6f00aa71"
+      "source_file_sha256": "3ef4ec78fb523d8a477f44fd732cff604b7e8c31b67fdad3876651cefda589d8",
+      "repository_file_sha256": "3ef4ec78fb523d8a477f44fd732cff604b7e8c31b67fdad3876651cefda589d8"
+    },
+    {
+      "path": "public/program-ui.js",
+      "source_file_sha256": "eab936950e54c404b9d84f710e23f13e917479a90cae093bf800524896ec54e5",
+      "repository_file_sha256": "eab936950e54c404b9d84f710e23f13e917479a90cae093bf800524896ec54e5"
     },
     {
       "path": "public/python-worker.js",
@@ -149,8 +190,8 @@
     },
     {
       "path": "public/style.css",
-      "source_file_sha256": "8f0674366bcdee115c9196c97853c82f49c28695ae27c211478321fad4589e59",
-      "repository_file_sha256": "8f0674366bcdee115c9196c97853c82f49c28695ae27c211478321fad4589e59"
+      "source_file_sha256": "3c4da886c8556edfc9c66479dbe1aa24d04813b67a10de287b035bff7e3788c4",
+      "repository_file_sha256": "3c4da886c8556edfc9c66479dbe1aa24d04813b67a10de287b035bff7e3788c4"
     },
     {
       "path": "runner/Dockerfile",
@@ -174,23 +215,38 @@
     },
     {
       "path": "scripts/Start-Local.ps1",
-      "source_file_sha256": "fb0cd4b52d1f2d7716c174f46972bb091dc415c77ee368d5b4de4202a71d47ef",
+      "source_file_sha256": "eb6eeba88d63e9788cfb1f9af884273cad759525e37dc7b849ca3c2c711190be",
       "repository_file_sha256": "eb6eeba88d63e9788cfb1f9af884273cad759525e37dc7b849ca3c2c711190be"
     },
     {
       "path": "scripts/Stop-Local.ps1",
-      "source_file_sha256": "17ae1fe2dbd2b96e495c6273da4f575289a61c98e8ddb518dc17f3610193e7f9",
+      "source_file_sha256": "ff05100609d32789270e6f5e56c54c98c29eb6b6f37c204cb44a215814febbbe",
       "repository_file_sha256": "ff05100609d32789270e6f5e56c54c98c29eb6b6f37c204cb44a215814febbbe"
     },
     {
+      "path": "scripts/check-teaching-contracts.mjs",
+      "source_file_sha256": "8d94cd6ccbc496efee9cfef88d8b513a336babfba30d5fef11859eedce532662",
+      "repository_file_sha256": "8d94cd6ccbc496efee9cfef88d8b513a336babfba30d5fef11859eedce532662"
+    },
+    {
+      "path": "scripts/check-teaching-contracts.py",
+      "source_file_sha256": "a82cb412b4622fd6efceeba2e75ebfddb7077ff46d0c8fcc67e692ec3027cd49",
+      "repository_file_sha256": "a82cb412b4622fd6efceeba2e75ebfddb7077ff46d0c8fcc67e692ec3027cd49"
+    },
+    {
       "path": "scripts/export-snapshot.mjs",
-      "source_file_sha256": "d1ee315aeed8837db6997b5fc930e94c55a4aeb67a8b9c8474d08e1653c888c8",
-      "repository_file_sha256": "d1ee315aeed8837db6997b5fc930e94c55a4aeb67a8b9c8474d08e1653c888c8"
+      "source_file_sha256": "6c776517771e533af3f47dfca1d2b9849f09d0e247a87903778c1ecec13c1ead",
+      "repository_file_sha256": "6c776517771e533af3f47dfca1d2b9849f09d0e247a87903778c1ecec13c1ead"
+    },
+    {
+      "path": "scripts/extract-curriculum.py",
+      "source_file_sha256": "710f01f366960f97f91f0ee324fe054841fc5837668ee3d31422e5bfc4092e86",
+      "repository_file_sha256": "710f01f366960f97f91f0ee324fe054841fc5837668ee3d31422e5bfc4092e86"
     },
     {
       "path": "scripts/import-private.mjs",
-      "source_file_sha256": "0f5f70b36b90611cf61dd267f2c640e35123837bccb794638eba420dc2d2eec8",
-      "repository_file_sha256": "0f5f70b36b90611cf61dd267f2c640e35123837bccb794638eba420dc2d2eec8"
+      "source_file_sha256": "c3c80804e7b46712197d669a1c42fdb78ff7f71ff7564468de065ea09d14c7b0",
+      "repository_file_sha256": "c3c80804e7b46712197d669a1c42fdb78ff7f71ff7564468de065ea09d14c7b0"
     },
     {
       "path": "scripts/migrate.mjs",
@@ -198,14 +254,34 @@
       "repository_file_sha256": "27abea8ac9a02aa860b66bf8d4dae14b002f4761fff0673222845a52ae938680"
     },
     {
+      "path": "scripts/qa-preview.mjs",
+      "source_file_sha256": "5e223a4c44a95d0ed41888e2304b3eb8d7814c5e5dfe828355a48c4ce8bc50e3",
+      "repository_file_sha256": "5e223a4c44a95d0ed41888e2304b3eb8d7814c5e5dfe828355a48c4ce8bc50e3"
+    },
+    {
+      "path": "scripts/seed-program.mjs",
+      "source_file_sha256": "50526f8f836808e943dea7c0ecce921a439e87bd2a7cfebd01aac903729758e5",
+      "repository_file_sha256": "50526f8f836808e943dea7c0ecce921a439e87bd2a7cfebd01aac903729758e5"
+    },
+    {
       "path": "scripts/seed.mjs",
-      "source_file_sha256": "0fc232987169f4b139b34720fec2a2d7dfc5ae31019ef8213fcc63a4e36943be",
-      "repository_file_sha256": "0fc232987169f4b139b34720fec2a2d7dfc5ae31019ef8213fcc63a4e36943be"
+      "source_file_sha256": "2d32d4ea0ee303be2439286b1ae2ed098a78066e6e9e4e3e5b6916cae5c6f4f8",
+      "repository_file_sha256": "2d32d4ea0ee303be2439286b1ae2ed098a78066e6e9e4e3e5b6916cae5c6f4f8"
+    },
+    {
+      "path": "scripts/upgrade-program.mjs",
+      "source_file_sha256": "728a29a0d640581f585eb377f620d97d80737e7871db64c83f8ef27268e71ff1",
+      "repository_file_sha256": "728a29a0d640581f585eb377f620d97d80737e7871db64c83f8ef27268e71ff1"
     },
     {
       "path": "scripts/verify-snapshot.mjs",
       "source_file_sha256": "8adccd310fa77b8ab44231c05ccf8b1056caf91d9ad105ddc8209c056947a0dc",
       "repository_file_sha256": "8adccd310fa77b8ab44231c05ccf8b1056caf91d9ad105ddc8209c056947a0dc"
+    },
+    {
+      "path": "src/ai-simulators.mjs",
+      "source_file_sha256": "2c09e26fac65ea4cf511e1dc741614ae0af584bbbeb53b6300d9993d5f7941b1",
+      "repository_file_sha256": "2c09e26fac65ea4cf511e1dc741614ae0af584bbbeb53b6300d9993d5f7941b1"
     },
     {
       "path": "src/db.mjs",
@@ -223,19 +299,29 @@
       "repository_file_sha256": "4bf879eead0b446ef932a97eb292d5f7b64aa8df3a2cc75a6c3e89bd5092d88a"
     },
     {
+      "path": "src/program-model.mjs",
+      "source_file_sha256": "facec5f292fd945f01bd099552ba7b85cc82dc6aaacd53a41276a56b6b628790",
+      "repository_file_sha256": "facec5f292fd945f01bd099552ba7b85cc82dc6aaacd53a41276a56b6b628790"
+    },
+    {
       "path": "src/routes-browser.mjs",
-      "source_file_sha256": "16c1f1c4648788f226bf1e77c34a1030a79469be92f6f06e1c3dfbd23370b34e",
-      "repository_file_sha256": "16c1f1c4648788f226bf1e77c34a1030a79469be92f6f06e1c3dfbd23370b34e"
+      "source_file_sha256": "743a360fff1fac4b1f9823a15ef7645e51f6b594b4009fc04a01363f534fa083",
+      "repository_file_sha256": "743a360fff1fac4b1f9823a15ef7645e51f6b594b4009fc04a01363f534fa083"
     },
     {
       "path": "src/routes-learning.mjs",
-      "source_file_sha256": "5ce60bd28ef7f08feee6c627a44bc954aace02d141514e2340222321d5572d3d",
-      "repository_file_sha256": "5ce60bd28ef7f08feee6c627a44bc954aace02d141514e2340222321d5572d3d"
+      "source_file_sha256": "23f112dbc068272a1cc7a3d31c48d0561ba4cd07f29e704a9e558ad0f696e5f1",
+      "repository_file_sha256": "23f112dbc068272a1cc7a3d31c48d0561ba4cd07f29e704a9e558ad0f696e5f1"
     },
     {
       "path": "src/routes-management.mjs",
-      "source_file_sha256": "467b017e636997cfb39a16de45c35509814203d4378dbd513867918595c75472",
-      "repository_file_sha256": "467b017e636997cfb39a16de45c35509814203d4378dbd513867918595c75472"
+      "source_file_sha256": "99098419500ac241d105b33dcc8fa14f501dd123fdc91d3617ab48394228cc08",
+      "repository_file_sha256": "99098419500ac241d105b33dcc8fa14f501dd123fdc91d3617ab48394228cc08"
+    },
+    {
+      "path": "src/routes-program.mjs",
+      "source_file_sha256": "67d10a9391d0b134fc576b97a9195b3dd4158ce8e56b176aa494dbe3c4c47439",
+      "repository_file_sha256": "67d10a9391d0b134fc576b97a9195b3dd4158ce8e56b176aa494dbe3c4c47439"
     },
     {
       "path": "src/security.mjs",
@@ -244,14 +330,18 @@
     },
     {
       "path": "src/server.mjs",
-      "source_file_sha256": "a97264259d51c285dd0e38c5634cf09f95c8d72f3405e180753c5b1ba5b6d9a1",
-      "repository_file_sha256": "a97264259d51c285dd0e38c5634cf09f95c8d72f3405e180753c5b1ba5b6d9a1"
+      "source_file_sha256": "ef125f72e5e9f4ee84b8081ec04dbccc4690ec809c231faff3e69fddb02663c1",
+      "repository_file_sha256": "ef125f72e5e9f4ee84b8081ec04dbccc4690ec809c231faff3e69fddb02663c1"
     },
     {
       "path": "test/pilot.test.mjs",
-      "source_file_sha256": "b1d454c221fb22a6b4d44f50f31e607ccb79cfd74d6c1389ec526f9a482384a1",
-      "repository_file_sha256": "b1d454c221fb22a6b4d44f50f31e607ccb79cfd74d6c1389ec526f9a482384a1"
+      "source_file_sha256": "92f1e30eab0df94b2dbad5b927fb1df4b56a692f137593a0d8048d82ddd5eed9",
+      "repository_file_sha256": "92f1e30eab0df94b2dbad5b927fb1df4b56a692f137593a0d8048d82ddd5eed9"
+    },
+    {
+      "path": "test/program.test.mjs",
+      "source_file_sha256": "e9212837fd52961542672061adcf37bbfa42b19ea7577605494a60f3d5fd8608",
+      "repository_file_sha256": "e9212837fd52961542672061adcf37bbfa42b19ea7577605494a60f3d5fd8608"
     }
-  ],
-  "line_endings": "Text is stored as LF in Git; original workstation byte hashes are retained separately."
+  ]
 }

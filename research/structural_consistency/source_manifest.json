@@ -1,0 +1,35 @@
+{
+  "created": "2026-10-25",
+  "scope": "Six discipline rows; indicator-level, prerequisite and assessment links are author-proposed candidate annotations, not approved curricular facts.",
+  "sources": [
+    {
+      "filename": "Учебный план ПМО актуализированный.xlsx",
+      "sha256": "fa822d4472c92665bc0589bf7746647ad8f872a5ccf886e948f791d99025f168"
+    },
+    {
+      "filename": "КРМ-версия3.0.xlsx",
+      "sha256": "2e96489da6603e99bab0a476f990d4e2090941b4a104abbcb48464796506e1fb"
+    },
+    {
+      "filename": "целевая компетентностная модель выпускника.pdf",
+      "sha256": "e1b8501ea0d9ae8ecf3c56f68f2439ac29b02a120f3ce46614bf7693d5843626"
+    }
+  ],
+  "pdf_pages": {
+    "PL-1_PL-1.1": [
+      23
+    ],
+    "MF-1_MF-1.1": [
+      2
+    ],
+    "BD-3_BD-3.1": [
+      8
+    ],
+    "ML-2_ML-2.2": [
+      10
+    ]
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "processor": "AMD Ryzen 5 5500U with Radeon Graphics"
+}
